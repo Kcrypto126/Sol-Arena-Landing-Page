@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import CharacterSection from "./components/CharacterSection";
 import FeaturesSection from "./components/FeaturesSection";
