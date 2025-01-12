@@ -4,8 +4,10 @@ import Image from "next/image";
 import CharacterSection from "./components/CharacterSection";
 import FeaturesSection from "./components/FeaturesSection";
 import EvaSection from "./components/EvaSection";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const navigator = useRouter();
   return (
     <div className="relative z-[0]">
       <main className="w-full">
@@ -49,17 +51,79 @@ export default function Home() {
                 />
               </div>
               <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
-                <FeaturesSection featurestext={true} featurescolor="#8C46FF" featureswidth="360" featuresborder="#EAD4FF" featurestop="/assets/features/feature-image-top1.png" featuresbottom="/assets/features/feature-image-bottom1.png" />
-                <FeaturesSection featurestext={false} featurescolor="#EF821D" featureswidth="180" featuresborder="#FFFBD4" featurestop="/assets/features/feature-image-top2.png" featuresbottom="/assets/features/feature-image-bottom2.png" />
-                <FeaturesSection featurestext={false} featurescolor="#E6D11D" featureswidth="180" featuresborder="#FFFACC" featurestop="/assets/features/feature-image-top3.png" featuresbottom="/assets/features/feature-image-bottom3.png" />
-                <FeaturesSection featurestext={false} featurescolor="#21E6AB" featureswidth="180" featuresborder="#B3FFE8" featurestop="/assets/features/feature-image-top4.png" featuresbottom="/assets/features/feature-image-bottom4.png" />
-                <FeaturesSection featurestext={false} featurescolor="#2AD0F4" featureswidth="180" featuresborder="#B3F1FF" featurestop="/assets/features/feature-image-top5.png" featuresbottom="/assets/features/feature-image-bottom5.png" />
+                <FeaturesSection
+                  featurestext={true}
+                  featurescolor="#8C46FF"
+                  featureswidth="360"
+                  featuresborder="#EAD4FF"
+                  featurestop="/assets/features/feature-image-top1.png"
+                  featuresbottom="/assets/features/feature-image-bottom1.png"
+                />
+                <FeaturesSection
+                  featurestext={false}
+                  featurescolor="#EF821D"
+                  featureswidth="180"
+                  featuresborder="#FFFBD4"
+                  featurestop="/assets/features/feature-image-top2.png"
+                  featuresbottom="/assets/features/feature-image-bottom2.png"
+                />
+                <FeaturesSection
+                  featurestext={false}
+                  featurescolor="#E6D11D"
+                  featureswidth="180"
+                  featuresborder="#FFFACC"
+                  featurestop="/assets/features/feature-image-top3.png"
+                  featuresbottom="/assets/features/feature-image-bottom3.png"
+                />
+                <FeaturesSection
+                  featurestext={false}
+                  featurescolor="#21E6AB"
+                  featureswidth="180"
+                  featuresborder="#B3FFE8"
+                  featurestop="/assets/features/feature-image-top4.png"
+                  featuresbottom="/assets/features/feature-image-bottom4.png"
+                />
+                <FeaturesSection
+                  featurestext={false}
+                  featurescolor="#2AD0F4"
+                  featureswidth="180"
+                  featuresborder="#B3F1FF"
+                  featurestop="/assets/features/feature-image-top5.png"
+                  featuresbottom="/assets/features/feature-image-bottom5.png"
+                />
               </div>
             </div>
           </div>
         </div>
-        <div>
+        <div className="">
           <EvaSection />
+        </div>
+        <div
+          className="section w-full h-[1400px] bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
+        >
+          <div className="max-w-[1440px] m-auto flex flex-col justify-center items-center pt-[50px] pb-[162px] border">
+            <Image
+              src={"/assets/season/season-logo.png"}
+              alt="logo"
+              width={288}
+              height={120}
+            />
+            <div className="mt-[51px] h-[502px]">sfdsdf</div>
+            <button
+              className="w-[264px] h-[84px] rounded-md mt-[55px] font-bold font-[Oswald] text-[38px] text-[#020215]"
+              style={{
+                backgroundImage: "url(./assets/play-now-btn.png)",
+                backgroundSize: "100% 100%",
+                boxShadow: "0px 0px 20px 3px",
+              }}
+              onClick={() => {
+                navigator.push("/");
+              }}
+            >
+              PLAY NOW
+            </button>
+          </div>
         </div>
       </main>
       <footer className=""></footer>

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 
@@ -132,7 +134,3 @@ const EvaSection: React.FC = () => {
   );
 };
 export default EvaSection;
-
-// className =
-//   " w-[160px] h-[160px] border-4 border-[#41FFC6] rounded-[50%] bg-center bg-[100% 100%]";
-// /assets/eva/avatar-1.png

@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 interface FeaturesSection {
   featurestop: string;
@@ -65,7 +67,10 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
             }}
           />
         </div>
-        <div className="z-10 text-white flex flex-col absolute bottom-[45px] left-[-71px]" style={{display: featurestext ? "block" : "none"}}>
+        <div
+          className="z-10 text-white flex flex-col absolute bottom-[45px] left-[-71px]"
+          style={{ display: featurestext ? "block" : "none" }}
+        >
           <div
             className="w-[154px] h-[42px] flex justify-center items-center bg-center bg-no-repeat font-[Montserrat] font-semibold text-[20px]"
             style={{
@@ -74,9 +79,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           >
             <h1 className="pr-5">Feature 1</h1>
           </div>
-          <div
-            className="text-[16px] font-[Montserrat] text-white font-medium px-4 py-3 border-[2px] border-[#130C51] rounded-[20px] rounded-ss-[0] max-w-[366px] bg-[#603CDB]"
-          >
+          <div className="text-[16px] font-[Montserrat] text-white font-medium px-4 py-3 border-[2px] border-[#130C51] rounded-[20px] rounded-ss-[0] max-w-[366px] bg-[#603CDB]">
             Lorem ipsum dolor sit amet conser. Rhoncus gravida massa posuere
             sed. Pharet lorem facis. Sit laoreet sed pretm fusce nisl faucibus.
           </div>
