@@ -1,0 +1,59 @@
+"use client";
+import Image from "next/image";
+import CharacterSection from "./components/CharacterSection";
+import FeaturesSection from "./components/FeaturesSection";
+
+export default function Home() {
+  return (
+    <div className="relative z-[0]">
+      <main className="w-full">
+        <div
+          className="section w-full h-[1864px] bg-center bg-no-repeat mb-[-2px]"
+          style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
+        ></div>
+
+        <CharacterSection
+          backImage="/assets/character/character-section-bg1.webp"
+          bigGuy="/assets/character/character-girl.png"
+          smallGuy="/assets/character/character-small-girl.png"
+        />
+        {/* <CharacterSection
+          backImage="/assets/character/character-section-bg2.webp"
+          bigGuy="/assets/character/character-boy.png"
+          smallGuy="/assets/character/character-small-boy.png"
+        /> */}
+        <div
+          className="section w-full h-[1024px] bg-center"
+          style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
+        >
+          <div className="max-w-[1440px] m-auto pt-[101px] px-[64px]">
+            <div className="flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-8 border-[#41FFC6] rounded-[56px] shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
+              <div
+                className="flex justify-center items-center w-[283px] h-[76px] absolute top-0 right-[-1px] bg-cover bg-center text-[32px] font-black text-[#0A164E]"
+                style={{
+                  backgroundImage: "url('/assets/features/text-back.png')",
+                }}
+              >
+                <h1 className="pl-[25px] pb-[8px]">Features</h1>
+              </div>
+              <div className="">
+                <Image
+                  src={"/assets/features/frog.png"}
+                  alt="frog"
+                  width={238}
+                  height={240}
+                  className="absolute bottom-[-75px] right-[-30px]"
+                />
+              </div>
+              <div className="flex flex-row justify-center items-center gap-4">
+                <FeaturesSection featuresBack="/assets/features/feature-comp-bg1.png" />
+                <FeaturesSection featuresBack="/assets/features/feature-comp-bg2.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer className=""></footer>
+    </div>
+  );
+}
