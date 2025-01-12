@@ -3,6 +3,7 @@
 import Image from "next/image";
 import CharacterSection from "./components/CharacterSection";
 import FeaturesSection from "./components/FeaturesSection";
+import EvaSection from "./components/EvaSection";
 
 export default function Home() {
   return (
@@ -24,10 +25,10 @@ export default function Home() {
           smallGuy="/assets/character/character-small-boy.png"
         /> */}
         <div
-          className="section w-full h-[1024px] bg-center"
+          className="section w-full h-auto bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
-          <div className="max-w-[1440px] m-auto pt-[101px] px-[64px]">
+          <div className="max-w-[1440px] m-auto py-[101px] px-[64px]">
             <div className="flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-8 border-[#41FFC6] rounded-[56px] shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
               <div
                 className="flex justify-center items-center w-[283px] h-[76px] absolute top-0 right-[-1px] bg-cover bg-center text-[32px] font-black text-[#0A164E]"
@@ -47,7 +48,7 @@ export default function Home() {
                   className="absolute bottom-[-75px] right-[-30px] z-20"
                 />
               </div>
-              <div className="flex flex-row justify-center items-center gap-5">
+              <div className="flex flex-row justify-center items-center gap-5 flex-wrap">
                 <FeaturesSection featurestext={true} featurescolor="#8C46FF" featureswidth="360" featuresborder="#EAD4FF" featurestop="/assets/features/feature-image-top1.png" featuresbottom="/assets/features/feature-image-bottom1.png" />
                 <FeaturesSection featurestext={false} featurescolor="#EF821D" featureswidth="180" featuresborder="#FFFBD4" featurestop="/assets/features/feature-image-top2.png" featuresbottom="/assets/features/feature-image-bottom2.png" />
                 <FeaturesSection featurestext={false} featurescolor="#E6D11D" featureswidth="180" featuresborder="#FFFACC" featurestop="/assets/features/feature-image-top3.png" featuresbottom="/assets/features/feature-image-bottom3.png" />
@@ -56,6 +57,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div>
+          <EvaSection />
         </div>
       </main>
       <footer className=""></footer>
