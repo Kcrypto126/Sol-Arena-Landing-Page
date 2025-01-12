@@ -43,12 +43,16 @@ export default function Home() {
                   alt="frog"
                   width={238}
                   height={240}
-                  className="absolute bottom-[-75px] right-[-30px]"
+                  // layout="responsive"
+                  className="absolute bottom-[-75px] right-[-30px] z-20"
                 />
               </div>
-              <div className="flex flex-row justify-center items-center gap-4">
-                <FeaturesSection featuresBack="/assets/features/feature-comp-bg1.png" />
-                <FeaturesSection featuresBack="/assets/features/feature-comp-bg2.png"/>
+              <div className="flex flex-row justify-center items-center gap-5">
+                <FeaturesSection featurestext={true} featurescolor="#8C46FF" featureswidth="360" featuresborder="#EAD4FF" featurestop="/assets/features/feature-image-top1.png" featuresbottom="/assets/features/feature-image-bottom1.png" />
+                <FeaturesSection featurestext={false} featurescolor="#EF821D" featureswidth="180" featuresborder="#FFFBD4" featurestop="/assets/features/feature-image-top2.png" featuresbottom="/assets/features/feature-image-bottom2.png" />
+                <FeaturesSection featurestext={false} featurescolor="#E6D11D" featureswidth="180" featuresborder="#FFFACC" featurestop="/assets/features/feature-image-top3.png" featuresbottom="/assets/features/feature-image-bottom3.png" />
+                <FeaturesSection featurestext={false} featurescolor="#21E6AB" featureswidth="180" featuresborder="#B3FFE8" featurestop="/assets/features/feature-image-top4.png" featuresbottom="/assets/features/feature-image-bottom4.png" />
+                <FeaturesSection featurestext={false} featurescolor="#2AD0F4" featureswidth="180" featuresborder="#B3F1FF" featurestop="/assets/features/feature-image-top5.png" featuresbottom="/assets/features/feature-image-bottom5.png" />
               </div>
             </div>
           </div>
