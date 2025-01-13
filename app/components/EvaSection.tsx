@@ -33,7 +33,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className=" w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all"
+                className=" max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all"
                 style={{
                   backgroundImage: "url('/assets/eva/text-back1.png')",
                   backgroundSize: "100% 100%",
@@ -70,7 +70,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className="w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all"
+                className="max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all"
                 style={{
                   backgroundImage: "url('/assets/eva/text-back2.png')",
                   backgroundSize: "100% 100%",
@@ -105,7 +105,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className="w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all"
+                className="max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all"
                 style={{
                   backgroundImage: "url('/assets/eva/text-back3.png')",
                   backgroundSize: "100% 100%",

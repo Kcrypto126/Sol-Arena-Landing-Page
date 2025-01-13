@@ -35,7 +35,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
               </div>
             </div>
             <div
-              className="w-[529px] p-10 mt-[50px] border-l-8 border-[#38E8FF] bg-[#070733] bg-opacity-45 bg-[url('/assets/character/Pattern.png')] bg-no-repeat"
+              className="max-w-[529px] p-10 mt-[50px] border-l-8 border-[#38E8FF] bg-[#070733] bg-opacity-45 bg-[url('/assets/character/Pattern.png')] bg-no-repeat"
               style={{ backgroundSize: "auto 100%" }}
             >
               <p className="text-[#CAD4EF] font-semibold text-xl leading-9 tracking-wider">
