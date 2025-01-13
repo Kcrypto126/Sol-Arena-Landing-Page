@@ -4,6 +4,8 @@ import Image from "next/image";
 import CharacterSection from "./components/CharacterSection";
 import FeaturesSection from "./components/FeaturesSection";
 import EvaSection from "./components/EvaSection";
+import SeasonSection from "./components/SeasonSection";
+
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -12,7 +14,7 @@ export default function Home() {
     <div className="relative z-[0]">
       <main className="w-full">
         <div
-          className="section w-full h-[1864px] bg-center bg-no-repeat mb-[-2px]"
+          className="section w-full h-[1249px] bg-center bg-no-repeat mb-[-2px]"
           style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
         ></div>
 
@@ -26,6 +28,7 @@ export default function Home() {
           bigGuy="/assets/character/character-boy.png"
           smallGuy="/assets/character/character-small-boy.png"
         /> */}
+
         <div
           className="section w-full h-auto bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
@@ -46,7 +49,6 @@ export default function Home() {
                   alt="frog"
                   width={238}
                   height={240}
-                  // layout="responsive"
                   className="absolute bottom-[-75px] right-[-30px] z-20"
                 />
               </div>
@@ -54,7 +56,7 @@ export default function Home() {
                 <FeaturesSection
                   featurestext={true}
                   featurescolor="#8C46FF"
-                  featureswidth="360"
+                  featureswidth={360}
                   featuresborder="#EAD4FF"
                   featurestop="/assets/features/feature-image-top1.png"
                   featuresbottom="/assets/features/feature-image-bottom1.png"
@@ -62,7 +64,7 @@ export default function Home() {
                 <FeaturesSection
                   featurestext={false}
                   featurescolor="#EF821D"
-                  featureswidth="180"
+                  featureswidth={180}
                   featuresborder="#FFFBD4"
                   featurestop="/assets/features/feature-image-top2.png"
                   featuresbottom="/assets/features/feature-image-bottom2.png"
@@ -70,7 +72,7 @@ export default function Home() {
                 <FeaturesSection
                   featurestext={false}
                   featurescolor="#E6D11D"
-                  featureswidth="180"
+                  featureswidth={180}
                   featuresborder="#FFFACC"
                   featurestop="/assets/features/feature-image-top3.png"
                   featuresbottom="/assets/features/feature-image-bottom3.png"
@@ -78,7 +80,7 @@ export default function Home() {
                 <FeaturesSection
                   featurestext={false}
                   featurescolor="#21E6AB"
-                  featureswidth="180"
+                  featureswidth={180}
                   featuresborder="#B3FFE8"
                   featurestop="/assets/features/feature-image-top4.png"
                   featuresbottom="/assets/features/feature-image-bottom4.png"
@@ -86,7 +88,7 @@ export default function Home() {
                 <FeaturesSection
                   featurestext={false}
                   featurescolor="#2AD0F4"
-                  featureswidth="180"
+                  featureswidth={180}
                   featuresborder="#B3F1FF"
                   featurestop="/assets/features/feature-image-top5.png"
                   featuresbottom="/assets/features/feature-image-bottom5.png"
@@ -95,21 +97,23 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="">
-          <EvaSection />
-        </div>
+
+        <EvaSection />
+        
         <div
-          className="section w-full h-[1400px] bg-center bg-no-repeat"
+          className="section w-full h-[1024px] bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
-          <div className="max-w-[1440px] m-auto flex flex-col justify-center items-center pt-[50px] pb-[162px] border">
+          <div className="max-w-[1440px] m-auto flex flex-col justify-center items-center pt-[50px] pb-[162px]">
             <Image
               src={"/assets/season/season-logo.png"}
               alt="logo"
               width={288}
               height={120}
             />
-            <div className="mt-[51px] h-[502px]">sfdsdf</div>
+            <div className="mt-[51px]">
+              <SeasonSection />
+            </div>
             <button
               className="w-[264px] h-[84px] rounded-md mt-[55px] font-bold font-[Oswald] text-[38px] text-[#020215]"
               style={{
@@ -126,7 +130,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className=""></footer>
     </div>
   );
 }

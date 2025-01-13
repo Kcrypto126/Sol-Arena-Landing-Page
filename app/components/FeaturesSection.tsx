@@ -6,7 +6,7 @@ interface FeaturesSection {
   featuresbottom: string;
   featurescolor: string;
   featuresborder: string;
-  featureswidth: string;
+  featureswidth: number;
   featurestext: boolean;
 }
 
@@ -18,15 +18,17 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
   featureswidth,
   featurestext,
 }) => {
-  const topLeftPosition = Number(featureswidth) / 2 - 58;
-  const bottomLeftPosition = Number(featureswidth) / 2 - 35;
+  const topLeftPosition = featureswidth / 2 - 58;
+  const bottomLeftPosition = featureswidth / 2 - 35;
   return (
     <>
       <div className=" relative">
         <div
-          className={`w-[${featureswidth}px] h-[600px] border-[${featuresborder}] border-2 rounded-3xl p-5 bg-black bg-opacity-55 relative`}
+          className="h-[600px] border-2 rounded-3xl p-5 bg-black bg-opacity-55 relative"
           style={{
             boxShadow: `inset 0 0 20px 15px ${featurescolor}`,
+            width: `${featureswidth}px`,
+            borderColor: `${featuresborder}`
           }}
         >
           <div
