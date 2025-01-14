@@ -15,7 +15,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
   return (
     <>
       <div
-        className="section w-full h-auto bg-center bg-no-repeat"
+        className="section w-full bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backImage})` }}
       >
         <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] flex-wrap">
