@@ -7,7 +7,7 @@ const Header: React.FC = () => {
   const navigator = useRouter();
   return (
     <>
-      <div className="w-full bg-[#02021D] relative z-50">
+      <div className="w-full bg-[#02021D] z-50 fixed top-0 left-0">
         <div className="max-w-[1440px] h-[72px] m-[auto] flex flex-row justify-between items-center">
           <div className="flex flex-1 justify-center">
             <Image
@@ -34,13 +34,6 @@ const Header: React.FC = () => {
               prefetch
               className="text-[#CAD4EF] hover:text-white hover:bg-[#603CDB] px-9 py-[0.4rem] rounded-[50px] transition-all"
             >
-              LEADERBOARD
-            </Link>
-            <Link
-              href={"/"}
-              prefetch
-              className="text-[#CAD4EF] hover:text-white hover:bg-[#603CDB] px-9 py-[0.4rem] rounded-[50px] transition-all"
-            >
               HOW TO PLAY
             </Link>
             <Link
@@ -48,7 +41,7 @@ const Header: React.FC = () => {
               prefetch
               className="text-[#CAD4EF] hover:text-white hover:bg-[#603CDB] px-9 py-[0.4rem] rounded-[50px] transition-all"
             >
-              SCHILL
+              $CHILL
             </Link>
           </div>
           <div className="flex flex-1 justify-end items-start">
