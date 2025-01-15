@@ -18,7 +18,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
         className="section w-full bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${backImage})` }}
       >
-        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] flex-wrap">
+        <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] border relative">
           <div className="flex-1 pt-[120px] pb-[140px]">
             <Image
               src={"/assets/character/text-img1.png"}
@@ -90,7 +90,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
               />
             </div>
           </div>
-          <div className=" h-[977px] flex-1 flex justify-center pt-[78px] relative">
+          <div className=" h-[977px] flex-1 justify-center pt-[78px] relative hidden lg:flex">
             <Image
               src={`${bigGuy}`}
               alt="character girl"
