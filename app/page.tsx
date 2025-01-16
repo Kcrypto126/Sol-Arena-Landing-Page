@@ -53,18 +53,18 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <CharacterSection
+        <CharacterSection
           backImage="/assets/character/character-section-bg1.webp"
           bigGuy="/assets/character/character-girl.png"
           smallGuy="/assets/character/character-small-girl.png"
-        /> */}
+        />
         {/* <CharacterSection
           backImage="/assets/character/character-section-bg2.webp"
           bigGuy="/assets/character/character-boy.png"
           smallGuy="/assets/character/character-small-boy.png"
         /> */}
 
-        {/* <div
+        <div
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
@@ -131,11 +131,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
         {/* <EvaSection /> */}
 
-        {/* <div
+        <div
           className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
@@ -163,7 +163,7 @@ export default function Home() {
               PLAY NOW
             </button>
           </div>
-        </div> */}
+        </div>
       </main>
     </div>
   );
