@@ -45,7 +45,7 @@ const CharacterSection: React.FC = () => {
             >
               Challengers
             </div>
-            <div className=" h-[165px] mt-[54px] flex flex-row justify-start items-end gap-0 ">
+            <div className=" h-[165px] mt-[54px] flex flex-col lg: lg:flex-row justify-start items-end gap-0 ">
               <Image
                 src={isScale !== 1 ? "/assets/character/avatar-1.png" : "/assets/character/avatar-1-big.png"}
                 alt="avatar"
