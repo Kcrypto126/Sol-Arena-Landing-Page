@@ -2,23 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
-interface CharacterSectionPropsType {
-  backImage: string;
-  bigGuy: string;
-  smallGuy: string;
-}
 
-const CharacterSection: React.FC<CharacterSectionPropsType> = ({
-  backImage,
-  bigGuy,
-  smallGuy,
-}) => {
+const CharacterSection: React.FC = () => {
   const [isScale, setIsScale] = useState(1)
   return (
     <>
       <div
         className="section w-full bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${backImage})` }}
+        style={{ backgroundImage: isScale % 2 !== 0 ? "url('/assets/character/character-section-bg1.webp')" : "url('/assets/character/character-section-bg2.webp')" }}
       >
         <div className="max-w-[1440px] m-auto flex flex-row pl-[96px] pr-[24px] relative">
           <div className="flex-1 pt-[120px] pb-[140px]">
@@ -54,7 +45,7 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
             >
               Challengers
             </div>
-            <div className=" h-[165px] mt-[54px] flex flex-row justify-start items-end gap-1 ">
+            <div className=" h-[165px] mt-[54px] flex flex-row justify-start items-end gap-0 ">
               <Image
                 src={isScale !== 1 ? "/assets/character/avatar-1.png" : "/assets/character/avatar-1-big.png"}
                 alt="avatar"
@@ -99,14 +90,14 @@ const CharacterSection: React.FC<CharacterSectionPropsType> = ({
           </div>
           <div className=" h-[977px] flex-1 justify-center pt-[78px] relative hidden lg:flex">
             <Image
-              src={`${bigGuy}`}
+              src={ isScale % 2 !== 0 ? "/assets/character/character-girl.png" : "/assets/character/character-boy.png" }
               alt="character girl"
               width={580}
               height={730}
               className="max-w-[580px] max-h-[730px]"
             />
             <Image
-              src={`${smallGuy}`}
+              src={ isScale % 2 !== 0 ? "/assets/character/character-small-girl.png" : "/assets/character/character-small-boy.png" }
               alt="character smal girl"
               width={302}
               height={484}
