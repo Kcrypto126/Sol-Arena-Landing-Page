@@ -11,6 +11,19 @@ const Header: React.FC = () => {
   const [isMenuPlay, setIsMenuPlay] = useState(0);
   const [isMenuChill, setIsMenuChill] = useState(0);
   const [isButton, setIsButton] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  window.onresize = () => {
+    if (window.outerWidth > 1024) {
+      setIsOpen(true);
+    } else {
+      setIsOpen(false);
+    }
+  };
 
   const handleButton = () => {
     setIsButton(true);
@@ -23,30 +36,45 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="w-full bg-[#02021D] z-50 fixed top-0 left-0">
+      <div className="w-full bg-[#02021D] fixed top-0 left-0">
         <div
-          className="max-w-[1440px] h-[72px] m-[auto] flex flex-row justify-between items-center relative bg-no-repeat bg-right-top pl-0 pr-0 sm:pl-[20px] lg:pl-[83px]"
+          className="max-w-[1440px] h-[72px] m-[auto] flex flex-row justify-between items-center bg-no-repeat bg-right-top pl-0 pr-0 relative"
           style={{
             backgroundImage: "url('/assets/navbar-back2.png')",
           }}
         >
-          <div className="flex flex-1 pl-4 sm:pl-0">
+          <div className="flex flex-1 pl-4 sm:pl-[20px] lg:pl-[83px] z-50">
             <Image
               src={"/assets/logo.svg"}
-              width={"150"}
-              height={"100"}
+              width={"154"}
+              height={"62"}
               alt="logo"
-              className="logo cursor-pointer "
+              className="logo cursor-pointer hidden lg:block"
+              onClick={() => {
+                navigator.push("/");
+              }}
+            />
+            <Image
+              src={"/assets/logo.svg"}
+              width={86}
+              height={36}
+              alt="logo"
+              className="logo cursor-pointer block lg:hidden"
               onClick={() => {
                 navigator.push("/");
               }}
             />
           </div>
-          <div className=" border flex flex-[3] flex-wrap flex-col sm:flex-row justify-center sm:justify-start items-center absolute top-0 h-[100vh] sm:h-auto sm:relative w-[100%] gap-4 font-[Oswald] text-[18px] font-bold">
+          <div
+            className={` flex-[3] flex-wrap flex-col lg:flex-row justify-start lg:justify-start items-center absolute pt-[116px] lg:pt-0 top-0 lg:top-0 h-[100vh] lg:h-auto lg:relative w-[100%] gap-8 lg:gap-4 font-[Oswald] text-[18px] font-bold bg-cover bg-no-repeat bg-right bg-[url('/assets/mobile-header-bck.png')] lg:bg-none transition-opacity duration-500 ease-in-out ${
+              isOpen ? "opacity-100 flex" : "opacity-0 hidden"
+            } `}
+            style={{ display: isOpen ? "flex" : "none" }}
+          >
             <Link
               href={"/"}
               prefetch
-              className="text-[#CAD4EF] px-9 py-[0.4rem] rounded-[50px] transition-all"
+              className="text-[#CAD4EF] w-[192px] lg:w-[140px] h-11 lg:h-10 flex flex-row justify-center items-center rounded-[50px] transition-all"
               style={{
                 backgroundColor:
                   pathname == "/"
@@ -81,7 +109,7 @@ const Header: React.FC = () => {
             <Link
               href={"/play"}
               prefetch
-              className="text-[#CAD4EF] px-9 py-[0.4rem] rounded-[50px] transition-all"
+              className="text-[#CAD4EF] w-[192px] lg:w-[140px] h-11 lg:h-10 flex flex-row justify-center items-center rounded-[50px] transition-all"
               style={{
                 backgroundColor:
                   pathname == "/play"
@@ -116,7 +144,7 @@ const Header: React.FC = () => {
             <Link
               href={"/chill"}
               prefetch
-              className="text-[#CAD4EF] px-9 py-[0.4rem] rounded-[50px] transition-all"
+              className="text-[#CAD4EF] w-[192px] lg:w-[140px] h-11 lg:h-10 flex flex-row justify-center items-center rounded-[50px] transition-all"
               style={{
                 backgroundColor:
                   pathname == "/chill"
@@ -149,9 +177,14 @@ const Header: React.FC = () => {
               $CHILL
             </Link>
           </div>
-          <div className="flex-1 flex justify-center lg:justify-end items-center lg:items-start h-[100vh] lg:h-[100%] w-[100%] absolute lg:relative lg:flex">
+          <div
+            className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[684px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${
+              isOpen ? "opacity-100 flex" : "opacity-0 hidden"
+            } `}
+            style={{ display: isOpen ? "flex" : "none" }}
+          >
             <button
-              className="w-[264px] h-[84px] rounded-md font-bold font-[Oswald] text-[38px] text-[#020215]"
+              className=" w-[163px] lg:w-[264px] h-[52px] lg:h-[84px] rounded-md font-bold font-[Oswald] text-[28px] lg:text-[38px] text-[#020215]"
               style={{
                 backgroundImage: "url(./assets/play-now-btn.png)",
                 backgroundSize: "100% 100%",
@@ -168,18 +201,22 @@ const Header: React.FC = () => {
               alt="spark"
               width={264}
               height={264}
-              className=" absolute top-[-70px] left-[-30px] transition-all duration-300"
-              style={{ display: isButton == true ? "block" : "none" }}
+              className=" absolute top-[-40px] left-[50%-50] lg:top-[-70px] lg:left-[-30px] transition-all duration-300 w-[160px] lg:w-[264px] h-[160px] lg:h-[264px]"
+              style={{ display: isButton ? "block" : "none" }}
             />
           </div>
-          <div className="pr-4 sm:pr-0 flex-1 text-white flex flex-row justify-end items-center sm:hidden">
+          <div className="pr-4 lg:pr-0 flex-1 text-white flex flex-row justify-end items-center lg:hidden z-50">
             <button
               className=" w-9 h-9 bg-center bg-no-repeat"
               style={{
-                backgroundImage: "url('/assets/menu-open.png')",
+                backgroundImage: !isOpen
+                  ? "url('/assets/menu-open.png')"
+                  : "url('/assets/menu-close.png')",
                 backgroundSize: "24px 24px",
               }}
-              onClick={() => {}}
+              onClick={() => {
+                handleMenu();
+              }}
             ></button>
           </div>
         </div>
