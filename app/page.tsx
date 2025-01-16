@@ -133,7 +133,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <EvaSection /> */}
+        <EvaSection />
 
         <div
           className="section w-full bg-center bg-no-repeat"
