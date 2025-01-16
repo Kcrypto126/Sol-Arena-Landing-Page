@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header: React.FC = () => {
   const navigator = useRouter();
@@ -16,14 +16,15 @@ const Header: React.FC = () => {
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-  window.onresize = () => {
-    if (window.outerWidth > 1024) {
-      setIsOpen(true);
-    } else {
-      setIsOpen(false);
-    }
-  };
+  useEffect(() => {
+    window.onresize = () => {
+      if (window.outerWidth > 1024) {
+        setIsOpen(true);
+      } else {
+        setIsOpen(false);
+      }
+    };
+  })
 
   const handleButton = () => {
     setIsButton(true);
