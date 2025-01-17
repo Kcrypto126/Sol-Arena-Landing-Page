@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   const [isMenuPlay, setIsMenuPlay] = useState(0);
   const [isMenuChill, setIsMenuChill] = useState(0);
   const [isButton, setIsButton] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);

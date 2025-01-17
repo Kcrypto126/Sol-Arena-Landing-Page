@@ -59,7 +59,7 @@ export default function Home() {
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
-          <div className="max-w-[1440px] border m-auto py-0 md:py-[101px] px-0 md:px-[64px] ">
+          <div className="max-w-[1440px] m-auto py-0 md:py-[101px] px-0 md:px-[64px] ">
             <div className=" px-2 overflow-hidden flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-0 md:border-8 border-[#41FFC6] rounded-none md:rounded-[56px] shadow-none md:shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
               <div
                 className="flex justify-center mr-[-15px] md:mr-0 items-center w-[210px] md:w-[283px] h-10 md:h-[76px] absolute top-[38px] md:top-0 right-[-1px] bg-cover bg-center text-[24px] md:text-[32px] font-black text-[#0A164E] "
@@ -227,9 +227,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <EvaSection /> */}
+        <EvaSection />
 
-        {/* <div
+        <div
           className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
@@ -257,7 +257,7 @@ export default function Home() {
               PLAY NOW
             </button>
           </div>
-        </div> */}
+        </div>
       </main>
     </div>
   );
