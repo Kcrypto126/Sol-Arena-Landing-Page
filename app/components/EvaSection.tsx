@@ -7,7 +7,7 @@ const EvaSection: React.FC = () => {
   return (
     <>
       <div
-        className="section w-full h-[894px] md:h-auto relative border-2 border-[#000] bg-no-repeat bg-right md:bg-center transition-all duration-300"
+        className={`section w-full h-[928px] md:h-auto relative bg-no-repeat ${mouseover == 1 ? "bg-[right_-200px_top] md:bg-right" : "bg-right"} md:bg-center transition-all duration-300`}
         style={{
           backgroundImage:
             mouseover == 0
@@ -17,8 +17,8 @@ const EvaSection: React.FC = () => {
               : "url('/assets/eva/eva-back3.webp')",
         }}
       >
-        <div  className=" border max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[234px] pb-[278px] relative">
-          <div className="border flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[146px] md:bottom-0 w-[100%] md:w-auto">
+        <div  className=" max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[264px] pb-[298px] relative">
+          <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[46px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">
               <div
                 className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
@@ -33,7 +33,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 0 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back1.png')] md:bg-[url('/assets/eva/text-back1.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-243px] left-[-20.2px] md:top-[-114px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 0 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back1.png')] md:bg-[url('/assets/eva/text-back1.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-20.2px] md:top-[-60px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
@@ -54,7 +54,7 @@ const EvaSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className=" relative border">
+            <div className=" relative">
               <div
                 className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
                 style={{
@@ -68,7 +68,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 1 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back2.png')] md:bg-[url('/assets/eva/text-back2.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-244px] left-[-129.3px] md:top-[-114px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 1 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back2.png')] md:bg-[url('/assets/eva/text-back2.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-129.3px] md:top-[-110px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
@@ -101,7 +101,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 2 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back3.png')] md:bg-[url('/assets/eva/text-back3.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-243px] left-[-239px] md:top-[-114px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 2 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back3.png')] md:bg-[url('/assets/eva/text-back3.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-238px] md:top-[-154px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
