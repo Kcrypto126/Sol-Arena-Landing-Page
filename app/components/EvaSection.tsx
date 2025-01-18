@@ -18,7 +18,7 @@ const EvaSection: React.FC = () => {
         }}
       >
         <div  className=" max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[264px] pb-[298px] relative">
-          <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[46px] md:bottom-0 w-[100%] md:w-auto">
+          <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[66px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">
               <div
                 className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"

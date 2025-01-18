@@ -4,13 +4,13 @@ import Image from "next/image";
 const SeasonSection: React.FC = () => {
   return (
     <>
-      <div className="w-[540px] h-[540px] flex justify-center items-center relative hover:cursor-pointer">
+      <div className="w-[540px] h-[540px] border flex justify-center items-center relative hover:cursor-pointer">
         <Image
           src={"/assets/season/rot-circle1.png"}
           alt="rot circle"
           width={540}
           height={540}
-          className="absolute transition-transform duration-500 animate-spin-slow"
+          className=" absolute transition-transform duration-500 animate-spin-slow"
         />
         <Image
           src={"/assets/season/rot-circle2.png"}
