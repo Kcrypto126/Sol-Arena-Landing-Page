@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
+// import Link from "next/link";
 
 const Footer: React.FC = () => {
   const navigator = useRouter();
@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
               <div className="font-[Oswald] text-[16px] text-white font-semibold">
                 Subscribe to the latest news
               </div>
-              <div className=" flex flex-row gap-0">
+              {/* <div className=" flex flex-row gap-0">
                 <input
                   className="border-2 border-[#41FFC6] w-[290px] h-[60px] bg-[#070733] outline-none ring-0 pl-3 font-[Oswald] text-[#41FFC6] font-bold text-[20px] placeholder:text-[#3e977d]"
                   placeholder="Enter Email"
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                     height={20}
                   />
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className=" flex flex-row gap-8">
               <button
@@ -131,7 +131,7 @@ const Footer: React.FC = () => {
             width={140}
             height={58}
           />
-          <div className="flex flex-row gap-6 text-[12px] text-[#99B9FF]">
+          {/* <div className="flex flex-row gap-6 text-[12px] text-[#99B9FF]">
             <Link href={"/"} prefetch>
               Privacy Policy
             </Link>
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
             <Link href={"/"} prefetch>
               Terms of Service
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

@@ -229,7 +229,7 @@ export default function Home() {
         <EvaSection />
 
         <div
-          className="section w-full bg-right bg-no-repeat border"
+          className="section w-full bg-right bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
           <div className="max-w-[1440px] m-auto flex flex-col gap-14 justify-center items-center pt-[40px] md:pt-[50px] pb-[162px]">
