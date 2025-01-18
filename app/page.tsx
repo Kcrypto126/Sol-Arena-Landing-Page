@@ -12,7 +12,6 @@ export default function Home() {
   const navigator = useRouter();
   const [isButton, setIsButton] = useState(false);
   const [activeCardID, setActiveCardID] = useState(0);
-  const [isSelectCard, setIsSelectCard] = useState(0);
 
   const handlePlayButton = () => {
     setIsButton(true);
@@ -229,7 +228,7 @@ export default function Home() {
 
         <EvaSection />
 
-        <div
+        {/* <div
           className="section w-full bg-center bg-no-repeat"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
@@ -257,7 +256,7 @@ export default function Home() {
               PLAY NOW
             </button>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );

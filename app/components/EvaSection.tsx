@@ -17,11 +17,11 @@ const EvaSection: React.FC = () => {
               : "url('/assets/eva/eva-back3.webp')",
         }}
       >
-        <div  className=" border max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[40px] lg:px-[99px] pt-[234px] pb-[278px] relative">
-          <div className="border flex flex-row md:flex-col gap-12 justify-center absolute md:relative bottom-[146px] md:bottom-0 w-[100%] md:w-auto">
+        <div  className=" border max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[234px] pb-[278px] relative">
+          <div className="border flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[146px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">
               <div
-                className="w-[128px] h-[128px] border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
+                className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
                 style={{
                   backgroundImage: "url('/assets/eva/avatar-1.png')",
                   backgroundSize: "120% 120%",
@@ -33,18 +33,17 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 0 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-84px] left-[144px] transition-all`}
+                className={` ${mouseover == 0 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back1.png')] md:bg-[url('/assets/eva/text-back1.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-243px] left-[-20.2px] md:top-[-114px] md:left-[144px] transition-all `}
                 style={{
-                  backgroundImage: "url('/assets/eva/text-back1.png')",
                   backgroundSize: "100% 100%",
                 }}
               >
                 <div className="">
-                  <h1 className=" text-[32px] font-[Poppins] font-bold text-[#41FFC6]">
+                  <h1 className=" text-[14px] md:text-[28px] font-[Poppins] font-bold text-[#41FFC6]">
                     Eva, the Host
                   </h1>
-                  <div className="w-[283px] h-1 bg-[#1E7EF4] mt-6"></div>
-                  <div className="text-[18px] font-medium font-[Poppins] text-[#CAD4EF] mt-12">
+                  <div className="w-[224px] md:w-[283px] h-[2px] md:h-1 mt-3 md:mt-6 bg-[#1E7EF4]"></div>
+                  <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -55,9 +54,9 @@ const EvaSection: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className=" relative">
+            <div className=" relative border">
               <div
-                className="w-[128px] h-[128px] border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
+                className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
                 style={{
                   backgroundImage: "url('/assets/eva/avatar-2.png')",
                   backgroundSize: "100% 100%",
@@ -69,17 +68,16 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 1 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-144px] left-[144px] transition-all`}
+                className={` ${mouseover == 1 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back2.png')] md:bg-[url('/assets/eva/text-back2.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-244px] left-[-129.3px] md:top-[-114px] md:left-[144px] transition-all `}
                 style={{
-                  backgroundImage: "url('/assets/eva/text-back2.png')",
                   backgroundSize: "100% 100%",
                 }}
               >
-                <h1 className=" text-[32px] font-[Poppins] font-bold text-[#41FFC6]">
+                <h1 className=" text-[14px] md:text-[28px] font-[Poppins] font-bold text-[#41FFC6]">
                   SOL Arena, the Games
                 </h1>
-                <div className="w-[283px] h-1 bg-[#FF62FC] mt-6"></div>
-                <div className="text-[18px] font-medium font-[Poppins] text-[#CAD4EF] mt-12">
+                <div className=" w-[224px] md:w-[283px] h-[2px] md:h-1 bg-[#FF62FC] mt-3 md:mt-6"></div>
+                <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -91,7 +89,7 @@ const EvaSection: React.FC = () => {
             </div>
             <div className=" relative">
               <div
-                className="w-[128px] h-[128px] border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
+                className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
                 style={{
                   backgroundImage: "url('/assets/eva/avatar-3.png')",
                   backgroundSize: "100% 100%",
@@ -103,17 +101,16 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 2 ? "block" : "hidden"} hidden max-w-[606px] h-[420px] pt-[55px] pb-[60px] ps-[103px] pe-[50px] bg-left bg-no-repeat absolute top-[-204px] left-[144px] transition-all`}
+                className={` ${mouseover == 2 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back3.png')] md:bg-[url('/assets/eva/text-back3.png')] w-[343px] md:w-[550px] border pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-243px] left-[-239px] md:top-[-114px] md:left-[144px] transition-all `}
                 style={{
-                  backgroundImage: "url('/assets/eva/text-back3.png')",
                   backgroundSize: "100% 100%",
                 }}
               >
-                <h1 className=" text-[32px] font-[Poppins] font-bold text-[#41FFC6]">
+                <h1 className=" text-[14px] md:text-[28px] font-[Poppins] font-bold text-[#41FFC6]">
                   Spectators, The Draw
                 </h1>
-                <div className="w-[283px] h-1 bg-[#6F58FF] mt-6"></div>
-                <div className="text-[18px] font-medium font-[Poppins] text-[#CAD4EF] mt-12">
+                <div className="w-[224px] md:w-[283px] h-[2px] md:h-1 mt-3 md:mt-6 bg-[#6F58FF]"></div>
+                <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
