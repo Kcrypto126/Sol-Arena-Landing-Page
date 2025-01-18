@@ -22,8 +22,8 @@ const SeasonSection: React.FC = () => {
         <Image
           src={"/assets/season/rot-circle-small-1.png"}
           alt="rot circle"
-          width={311}
-          height={286}
+          width={320}
+          height={295}
           className=" block md:hidden absolute transition-transform duration-500 animate-spin-slow"
         />
         <Image

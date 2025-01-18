@@ -10,13 +10,20 @@ const Header: React.FC = () => {
   const [isMenu, setIsMenu] = useState(0);
   const [isMenuPlay, setIsMenuPlay] = useState(0);
   const [isMenuChill, setIsMenuChill] = useState(0);
-  const [isButton, setIsButton] = useState(false);
+  const [isEffect, setIsEffect] = useState(false);
+
   const [isOpen, setIsOpen] = useState(true);
 
   const handleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   useEffect(() => {
+    const handleResize = () => {
+      setIsOpen(window.outerWidth > 1024);
+    };
+    handleResize();
+
     window.onresize = () => {
       if (window.outerWidth > 1024) {
         setIsOpen(true);
@@ -32,14 +39,14 @@ const Header: React.FC = () => {
     } else {
       setIsOpen(true);
     }
-  }
+  };
 
-  const handleButton = () => {
-    setIsButton(true);
+  const effectPlayButton = () => {
+    setIsEffect(true);
     navigator.push("/");
 
     setTimeout(() => {
-      setIsButton(false);
+      setIsEffect(false);
     }, 600);
   };
 
@@ -195,7 +202,7 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div
-            className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[684px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${
+            className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[484px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${
               isOpen ? "opacity-100 flex" : "opacity-0 hidden"
             } `}
           >
@@ -207,7 +214,7 @@ const Header: React.FC = () => {
                 boxShadow: "0px 0px 20px 3px",
               }}
               onClick={() => {
-                handleButton();
+                effectPlayButton();
               }}
             >
               PLAY NOW
@@ -218,7 +225,7 @@ const Header: React.FC = () => {
               width={264}
               height={264}
               className=" absolute top-[-40px] left-[50%] lg:top-[-70px] lg:left-[-30px] transition-all duration-300 w-[160px] lg:w-[264px] h-[160px] lg:h-[264px]"
-              style={{ display: isButton ? "block" : "none" }}
+              style={{ display: isEffect ? "block" : "none" }}
             />
           </div>
           <div className="pr-4 lg:pr-0 flex-1 text-white flex flex-row justify-end items-center lg:hidden z-50">
