@@ -33,7 +33,7 @@ export default function Home() {
               style={{
                 backgroundImage: "url(./assets/play-now-btn.png)",
                 backgroundSize: "100% 100%",
-                boxShadow: "0px 0px 20px 3px",
+                boxShadow: "0px 0px 10px 1px",
               }}
               onClick={() => {
                 handlePlayButton();
@@ -229,7 +229,7 @@ export default function Home() {
         <EvaSection />
 
         <div
-          className="section w-full bg-right bg-no-repeat"
+          className="section w-full bg-[left_-80px_top] bg-no-repeat mt-[-215px] z-10 relative pt-[215px]"
           style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
         >
           <div className="max-w-[1440px] m-auto flex flex-col gap-14 justify-center items-center pt-[40px] md:pt-[50px] pb-[162px]">

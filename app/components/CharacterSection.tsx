@@ -195,7 +195,7 @@ const CharacterSection: React.FC = () => {
               alt="character girl"
               width={580}
               height={730}
-              className="max-w-[343px] max-h-[421px] md:max-w-[580px] md:max-h-[730px] mr-[-60px] md:mr-0 z-0"
+              className="max-w-[343px] max-h-[421px] md:max-w-[580px] md:max-h-[730px] mr-[-25px] md:mr-0 z-0"
             />
             <Image
               src={

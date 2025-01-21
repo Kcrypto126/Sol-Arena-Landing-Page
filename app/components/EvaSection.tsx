@@ -1,13 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const EvaSection: React.FC = () => {
-  const [mouseover, setMouseOver] = useState(1);
+  const [mouseover, setMouseOver] = useState(0);
   return (
     <>
       <div
-        className={`section w-full h-[928px] md:h-auto relative bg-no-repeat ${mouseover == 1 ? "bg-[right_-200px_top] md:bg-right" : "bg-right"} md:bg-center transition-all duration-300`}
+        className={`section w-full h-[1128px] md:h-auto relative bg-no-repeat ${mouseover == 1 ? "bg-[right_-280px_top] md:bg-right" : mouseover !== 0 ? "bg-[right_0px_top_-100px] md:bg-right" : "bg-right"} md:bg-center transition-all duration-300`}
         style={{
           backgroundImage:
             mouseover == 0
@@ -17,8 +18,15 @@ const EvaSection: React.FC = () => {
               : "url('/assets/eva/eva-back3.webp')",
         }}
       >
-        <div  className=" max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[264px] pb-[298px] relative">
-          <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[66px] md:bottom-0 w-[100%] md:w-auto">
+        <div className=" max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[264px] pb-[298px] relative">
+          <Image
+            src={"/assets/eva/top-effect.png"}
+            alt="effect"
+            width={1391}
+            height={171}
+            className={` w-[100%] h-[171px] border ${mouseover !== 1 && mouseover !== 0 ? "block" : "hidden"} md:hidden absolute top-0 left-0 `}
+          />
+          <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[206px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">
               <div
                 className="w-[80px] h-[80px] md:w-[128px] md:h-[128px] border-2 md:border-4 rounded-[50%] bg-center bg-no-repeat transition-all cursor-pointer"
