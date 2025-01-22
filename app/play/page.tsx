@@ -188,6 +188,86 @@ const Page: React.FC = () => {
                 </div>
               </div>
             </SwiperSlide>
+            {/* 4m-5m */}
+            <SwiperSlide className=" relative flex flex-row justify-center items-center">
+              <div className=" w-[100%] h-[100%] flex flex-row gap-4 justify-center items-center">
+                {/* 4m */}
+                <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
+                  <div className=" flex flex-col justify-center items-center gap-8">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                      4. Boost to Win
+                    </h2>
+                    <div className=" relative">
+                      <Image
+                        src={"/assets/play/2m.png"}
+                        alt="4m"
+                        width={640}
+                        height={360}
+                        className=" relative z-10"
+                      />
+                      <Image
+                        src={"/assets/play/4m-1.png"}
+                        alt="2m-1"
+                        width={111}
+                        height={112}
+                        className=" absolute left-[0px] top-10 z-20"
+                      />
+                      <Image
+                        src={"/assets/play/4m-2.png"}
+                        alt="2m-2"
+                        width={89}
+                        height={91}
+                        className=" absolute right-[40px] top-[-45px] z-20"
+                      />
+                    </div>
+                    <p className=" text-[#C9D5FF] text-[18px] font-medium py-[51px] leading-[150%] max-w-[640px] text-center">
+                    Tap Boost to speed up, but beware—it burns your Energy!
+                    </p>
+                  </div>
+                </div>
+                {/* 5m */}
+                <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
+                  <div className=" flex flex-col justify-center items-center gap-8">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                      5. Collect noCHILL
+                    </h2>
+                    <div className=" relative">
+                      <Image
+                        src={"/assets/play/3m.png"}
+                        alt="5m"
+                        width={640}
+                        height={360}
+                        className=" "
+                      />
+                      <Image
+                        src={"/assets/play/3m-1.png"}
+                        alt="3m-1"
+                        width={73}
+                        height={73}
+                        className=" absolute right-[-60px] top-[40px]"
+                      />
+                      <Image
+                        src={"/assets/play/3m-2.png"}
+                        alt="3m-2"
+                        width={227}
+                        height={226}
+                        className=" absolute right-[-100px] bottom-[-100px]"
+                      />
+                      <Image
+                        src={"/assets/play/3m-3.png"}
+                        alt="3m-3"
+                        width={77}
+                        height={77}
+                        className=" absolute left-37 top-[150px]"
+                      />
+                    </div>
+                    <p className=" text-[#C9D5FF] text-[18px] font-medium py-[51px] leading-[150%] max-w-[640px] text-center">
+                    Your main objective is to collect noCHILL. This is how you’ll climb the leaderboards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
       </div>
