@@ -10,14 +10,14 @@ import "swiper/css/pagination";
 import { useEffect, useState } from "react";
 
 const Page: React.FC = () => {
-  // const data = [
-  //   [{ img: "/assets/play/1m.png", title: "1. Enter the Arena", disc: "Choose your Challenger and Team—teammates can’t harm you! When you’re ready, Enter the Arena!" }],
-  //   [
-  //     { img: "/assets/play/2m.png", title: "", disc: "" },
-  //     { img: "/assets/play/3m.png", title: "", disc: "" },
-  //   ],
-  //   // "/assets/play/carousel/3.png",
-  // ];
+  const [isButton, setIsButton] = useState(false);
+
+  const handlePlayButton = () => {
+    setIsButton(true);
+    setTimeout(() => {
+      setIsButton(false);
+    }, 600);
+  };
 
   const [height, setHeight] = useState<number>(0);
 
@@ -39,7 +39,7 @@ const Page: React.FC = () => {
     <>
       {/* <Layout> */}
       <div className=" w-full bg-[url('/assets/play/back.webp')] bg-no-repeat h-screen bg-center bg-cover pt-[72px]">
-        <div className="max-w-[1440px] m-auto text-white ">
+        <div className="max-w-[1440px] m-auto ">
           <Swiper
             direction={"vertical"}
             pagination={{
@@ -53,9 +53,9 @@ const Page: React.FC = () => {
             className="mySwiper"
           >
             {/* 1m */}
-            <SwiperSlide className=" relative border flex flex-row justify-center items-center">
-              <div className=" border w-[100%] h-[100%] flex flex-col justify-center items-center gap-8">
-                <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+            <SwiperSlide className=" relative flex flex-row justify-center items-center">
+              <div className=" w-[100%] h-[100%] flex flex-col justify-center items-center gap-8 ">
+                <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                   1. Enter the Arena
                 </h2>
                 <div className=" relative">
@@ -71,17 +71,17 @@ const Page: React.FC = () => {
                     alt="1m-left"
                     width={407}
                     height={187}
-                    className=" absolute left-[-385px] bottom-0"
+                    className=" w-[185px] md:w-[407px] h-[85px] sm:h-[187px] absolute left-[-125px] md:left-[-375px] bottom-[-20px] md:bottom-0 "
                   />
                   <Image
                     src={"/assets/play/1m-right.png"}
                     alt="1m-left"
                     width={407}
                     height={187}
-                    className=" absolute right-[-385px] bottom-0"
+                    className=" w-[185px] md:w-[407px] h-[85px] sm:h-[187px] absolute right-[-50px] md:right-[-300px] bottom-[-20px] md:bottom-0 "
                   />
                 </div>
-                <p className=" text-[#C9D5FF] text-[18px] font-medium leading-[150%] max-w-[640px] h-[140px] flex justify-center items-center text-center">
+                <p className=" text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-auto md:h-[140px] flex justify-center items-center text-center">
                   Choose your Challenger and Team—teammates can’t harm you! When
                   you’re ready, Enter the Arena!
                 </p>
@@ -93,7 +93,7 @@ const Page: React.FC = () => {
                 {/* 2m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
                   <div className=" flex flex-col justify-center items-center gap-10">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       2. Gather Energy
                     </h2>
                     <div className=" relative">
@@ -109,7 +109,7 @@ const Page: React.FC = () => {
                         alt="2m-1"
                         width={121}
                         height={126}
-                        className=" absolute left-[-60px] top-10 z-0"
+                        className=" absolute left-[-60px] top-10 z-0 "
                       />
                       <Image
                         src={"/assets/play/2m-2.png"}
@@ -148,7 +148,7 @@ const Page: React.FC = () => {
                 {/* 3m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
                   <div className=" flex flex-col justify-center items-center gap-8">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       3. Mystery Box & Power-ups
                     </h2>
                     <div className=" relative">
@@ -194,7 +194,7 @@ const Page: React.FC = () => {
                 {/* 4m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
                   <div className=" flex flex-col justify-center items-center gap-10">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       4. Boost to Win
                     </h2>
                     <div className=" relative">
@@ -228,7 +228,7 @@ const Page: React.FC = () => {
                 {/* 5m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
                   <div className=" flex flex-col justify-center items-center gap-8">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       5. Collect noCHILL
                     </h2>
                     <div className=" relative">
@@ -275,7 +275,7 @@ const Page: React.FC = () => {
                 {/* 6m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
                   <div className=" flex flex-col justify-center items-center gap-10">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       6. Avoid Collisions
                     </h2>
                     <div className=" relative">
@@ -284,7 +284,7 @@ const Page: React.FC = () => {
                         alt="6m"
                         width={640}
                         height={360}
-                        className=" relative z-10 w-[640px] h-[360px]"
+                        className=" relative z-10"
                       />
                       <Image
                         src={"/assets/play/6m-1.png"}
@@ -309,7 +309,7 @@ const Page: React.FC = () => {
                 {/* 7m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
                   <div className=" flex flex-col justify-center items-center gap-8">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       7. Defeat Enemies
                     </h2>
                     <div className=" relative">
@@ -318,7 +318,7 @@ const Page: React.FC = () => {
                         alt="7m"
                         width={640}
                         height={360}
-                        className=" w-[640px] h-[360px]"
+                        className=" "
                       />
                       <Image
                         src={"/assets/play/7m-1.png"}
@@ -342,7 +342,7 @@ const Page: React.FC = () => {
                 {/* 8m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
                   <div className=" flex flex-col justify-center items-center gap-10">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       8. Use Wormholes to Extract
                     </h2>
                     <div className=" relative">
@@ -351,7 +351,7 @@ const Page: React.FC = () => {
                         alt="8m"
                         width={640}
                         height={360}
-                        className=" relative z-10 w-[640px] h-[360px]"
+                        className=" relative z-10 "
                       />
                       <Image
                         src={"/assets/play/8m-1.png"}
@@ -377,7 +377,7 @@ const Page: React.FC = () => {
                 {/* 9m */}
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
                   <div className=" flex flex-col justify-center items-center gap-8">
-                    <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                    <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                       9. Airdrop
                     </h2>
                     <div className=" relative">
@@ -386,7 +386,7 @@ const Page: React.FC = () => {
                         alt="9m"
                         width={640}
                         height={360}
-                        className=" w-[640px] h-[360px]"
+                        className=" "
                       />
                       <Image
                         src={"/assets/play/9m-1.png"}
@@ -408,7 +408,7 @@ const Page: React.FC = () => {
             <SwiperSlide className=" relative flex flex-row justify-center items-center">
               <div className=" w-[100%] h-[100%] flex flex-col justify-center items-center">
                 <div className=" flex flex-col justify-center items-center gap-10">
-                  <h2 className=" font-semibold text-[24px] text-[#41FFC6]">
+                  <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                     10. Refer your Friends!
                   </h2>
                   <div className=" relative">
@@ -417,7 +417,7 @@ const Page: React.FC = () => {
                       alt="10m"
                       width={640}
                       height={360}
-                      className=" border-[#6F58FF] border-[6px] relative z-10 w-[640px] h-[360px]"
+                      className=" border-[#6F58FF] border-[6px] relative z-10"
                     />
                     <Image
                       src={"/assets/play/10m-1.png"}
@@ -438,6 +438,29 @@ const Page: React.FC = () => {
                     Refer your friends and earn a 5% bonus on all their noCHILL
                     extractions!
                   </p>
+                  <div className="flex justify-center items-center w-[100%] relative">
+                    <button
+                      className=" w-[260px] h-[84px] rounded-md font-bold font-[Oswald] text-[38px] text-[#020215]"
+                      style={{
+                        backgroundImage: "url(./assets/play-now-btn.png)",
+                        backgroundSize: "100% 100%",
+                        boxShadow: "0px 0px 10px 1px",
+                      }}
+                      onClick={() => {
+                        handlePlayButton();
+                      }}
+                    >
+                      PLAY NOW
+                    </button>
+                    <Image
+                      src={"/assets/play-spark.png"}
+                      alt="spark"
+                      width={264}
+                      height={264}
+                      className=" absolute top-[-40px] left-[50%] w-[160px] h-[160px]"
+                      style={{ display: isButton ? "block" : "none" }}
+                    />
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
