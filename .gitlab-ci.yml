@@ -36,6 +36,6 @@ include:
       stage: deploy
       image: $AR_IMAGE:$IMAGE_TAG
       project_id: PROJECT
-      region: LOCATION
+      region: asia-northeast1
       service: landing-page
 
