@@ -1,5 +1,5 @@
 variables:
-  IMAGE_TAG: v$CI_PIPELINE_ID
+  IMAGE_TAG: latest
   AR_IMAGE: asia-northeast1-docker.pkg.dev/braided-hangout-438006-k2/landing-page/landing-page
 
 stages:
