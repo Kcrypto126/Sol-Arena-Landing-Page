@@ -1,6 +1,6 @@
 variables:
   IMAGE_TAG: latest
-  AR_IMAGE: asia-northeast1-docker.pkg.dev/braided-hangout-438006-k2/landing-page/landing-page
+  AR_IMAGE: asia-southeast1-docker.pkg.dev/braided-hangout-438006-k2/landing-page/landing-page
 
 stages:
   - build
@@ -21,7 +21,7 @@ push-to-artifact-registry:
   image: google/cloud-sdk:latest
   script:
     - gcloud auth activate-service-account --key-file=$GCP_SERVICE_KEY
-    - gcloud auth configure-docker asia-northeast1-docker.pkg.dev
+    - gcloud auth configure-docker asia-southeast1-docker.pkg.dev
     - docker pull $AR_IMAGE:$IMAGE_TAG
     - docker tag $AR_IMAGE:$IMAGE_TAG $AR_IMAGE:$IMAGE_TAG
     - docker push $AR_IMAGE:$IMAGE_TAG
@@ -32,8 +32,7 @@ deploy-to-cloud-run:
   stage: deploy
   image: google/cloud-sdk:latest
   script:
-    - echo $GCP_SERVICE_KEY | base64 -d > /tmp/gcp-key.json
-    - gcloud auth activate-service-account --key-file /tmp/gcp-key.json
+    - gcloud auth activate-service-account --key-file=$GCP_SERVICE_KEY
     - gcloud run deploy landing-page 
         --image $AR_IMAGE:$IMAGE_TAG 
         --project braided-hangout-438006-k2 
