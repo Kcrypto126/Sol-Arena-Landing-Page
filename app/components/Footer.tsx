@@ -103,14 +103,16 @@ const Footer: React.FC = () => {
               </button>
             </div>
           </div>
-          <div
-            className=" z-40 max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] lg:text-[16px] font-semibol text-[#282A33] leading-[150%] absolute bottom-[150px] right-[150px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
-            style={{
-              backgroundSize: "100% 100%",
-            }}
-          >
-            Subscribe to our newsletter for the latest updates and exclusive
-            rewards!
+          <div className="z-10">
+            <div
+              className=" max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] lg:text-[16px] font-semibol leading-[150%] absolute bottom-[150px] right-[150px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
+              style={{
+                backgroundSize: "100% 100%",
+              }}
+            >
+              Subscribe to our newsletter for the latest updates and exclusive
+              rewards!
+            </div>
           </div>
         </div>
         <div className=" absolute right-[-80px] sm:right-0 top-[331px] lg:top-9">

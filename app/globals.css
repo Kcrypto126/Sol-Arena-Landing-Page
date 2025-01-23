@@ -16,17 +16,17 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("./font/Oswald-VariableFont_wght.ttf"), format('ttf')
+  src: url("./font/Oswald-VariableFont_wght.ttf"), format("ttf");
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("./font/Poppins-Regular.ttf"), format('ttf')
+  src: url("./font/Poppins-Regular.ttf"), format("ttf");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("./font/Montserrat-Regular.ttf"), format('ttf')
+  src: url("./font/Montserrat-Regular.ttf"), format("ttf");
 }
 
 body {
@@ -35,21 +35,50 @@ body {
   font-family: Poppins;
 }
 .hero-section {
-  height: calc(100vw*1249/1440);
+  height: calc(100vw * 1249 / 1440);
   background-size: 100% 100%;
 }
 .section {
+  /* height: calc(100vw*1024/1440); */
+  /* height: 1400px; */
   background-size: 100% 100%;
+  /* padding-top: calc((calc(100vw * 1024 / 1440) - 1034px) / 2); */
 }
 .footer {
   background-size: 100% 100%;
 }
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 @media only screen and (max-width: 1440px) {
   .hero-section {
     height: 1249px;
     background-size: auto 100%;
   }
   .section {
+    /* height: 1024px; */
     background-size: auto 100%;
   }
   .footer {
@@ -62,30 +91,4 @@ body {
     height: 764px;
     background-size: auto 100%;
   }
-}
-
-.swiper-pagination {
-  border: 1px solid #492AD3;
-  border-radius: 30px;
-  width: 28px;
-  background-color: #130C51;
-  padding-top: 12px!important;
-  padding-bottom: 12px!important;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.swiper-pagination-bullet {
-  width: 12px!important;
-  height: 12px!important;
-  margin: 0px!important;
-  background-color: #8998dd!important;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #5CFFE2!important;
 }
