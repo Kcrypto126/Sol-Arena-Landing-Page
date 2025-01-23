@@ -12,7 +12,7 @@ build-job:
     - .runner-solarena
   stage: build
   script:
-    - docker build -t $CI_REGISTRY_IMAGE:$IMAGE_TAG --build-arg="name=Cloud Run" .
+    - docker build -t $AR_IMAGE:$IMAGE_TAG --build-arg="name=Cloud Run" .
 
 push-to-artifact-registry:
   extends:
@@ -23,8 +23,8 @@ push-to-artifact-registry:
     - echo $GCP_SERVICE_KEY | base64 -d > /tmp/gcp-key.json
     - gcloud auth activate-service-account --key-file /tmp/gcp-key.json
     - gcloud auth configure-docker asia-northeast1-docker.pkg.dev
-    - docker pull $CI_REGISTRY_IMAGE:$IMAGE_TAG
-    - docker tag $CI_REGISTRY_IMAGE:$IMAGE_TAG $AR_IMAGE:$IMAGE_TAG
+    - docker pull $AR_IMAGE:$IMAGE_TAG
+    - docker tag $AR_IMAGE:$IMAGE_TAG $AR_IMAGE:$IMAGE_TAG
     - docker push $AR_IMAGE:$IMAGE_TAG
 
 deploy-to-cloud-run:
