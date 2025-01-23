@@ -122,8 +122,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           />
         </div>
         <div
-          className="z-10 text-white flex flex-col absolute bottom-[-36px] md:bottom-[45px] left-[26.5px] md:left-[-71px]"
-          style={{ display: isActive ? "block" : "none" }}
+          className={` z-10 text-white flex flex-col absolute bottom-[-36px] md:bottom-[45px] left-[26.5px] md:left-[-71px] ${isActive ? "block" : " block md:hidden"} `}
         >
           <div
             className="w-[106px] md:w-[154px] h-[26px] md:h-[42px] flex justify-center items-center bg-center bg-no-repeat font-[Montserrat] font-semibold text-[14px] md:text-[20px]"
@@ -134,7 +133,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           >
             <h1 className="pr-5">Feature 1</h1>
           </div>
-          <div className=" text-[12px] md:text-[16px] font-[Montserrat] text-white font-medium px-3 md:px-4 py-2 md:py-3 border-[2px] border-[#130C51] rounded-[8px] md:rounded-[20px] rounded-ss-none md:rounded-ss-none max-w-[365px] bg-[#603CDB]">
+          <div className=" text-[12px] md:text-[16px] font-[Montserrat] text-white font-medium px-3 md:px-4 py-2 md:py-3 border-[2px] border-[#130C51] rounded-[8px] md:rounded-[20px] rounded-ss-none md:rounded-ss-none max-w-[289px] md:max-w-[365px] bg-[#603CDB]">
             Lorem ipsum dolor sit amet conser. Rhoncus gravida massa posuere
             sed. Pharet lorem facis. Sit laoreet sed pretm fusce nisl faucibus.
           </div>

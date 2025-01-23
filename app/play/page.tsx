@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-// import Layout from "../components/Layout";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
 // Import Swiper styles
@@ -50,7 +49,7 @@ const Page: React.FC = () => {
               height: height - 72 + "px",
             }}
             mousewheel
-            className="mySwiper"
+            className="playSlider"
           >
             {/* 1m */}
             <SwiperSlide className=" relative flex flex-row justify-center items-center">

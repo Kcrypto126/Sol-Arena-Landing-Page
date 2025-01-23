@@ -29,6 +29,10 @@
   src: url("./font/Montserrat-Regular.ttf"), format("ttf");
 }
 
+html {
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -47,30 +51,28 @@ body {
 .footer {
   background-size: 100% 100%;
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.swiper-pagination-bullets {
+  width: fit-content!important;
+  border: 2px solid #492AD3;
+  border-radius: 20px;
+  background-color: #130C51;
+  
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.swiper-pagination-bullet {
+  width: 12px!important;
+  height: 12px!important;
+  background-color: #8998DD!important;
+  margin-right: 6px!important;
+  margin-left: 6px!important;
 }
-html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+
+.swiper-pagination-bullet-active {
+  background-color: #5CFFE2!important;
 }
+
 
 @media only screen and (max-width: 1440px) {
   .hero-section {

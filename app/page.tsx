@@ -8,6 +8,12 @@ import SeasonSection from "./components/SeasonSection";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
 export default function Home() {
   const navigator = useRouter();
   const [isButton, setIsButton] = useState(false);
@@ -73,8 +79,8 @@ export default function Home() {
           className="section w-full bg-center"
           style={{ backgroundImage: "url('/assets/features/Features.webp')" }}
         >
-          <div className="max-w-[1440px] m-auto py-0 md:py-[101px] px-0 md:px-[64px] ">
-            <div className=" px-2 overflow-hidden flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-0 md:border-8 border-[#41FFC6] rounded-none md:rounded-[56px] shadow-none md:shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
+          <div className="max-w-[1440px] m-auto py-0 md:py-[101px] px-0 md:px-[64px] overflow-hidden">
+            <div className=" px-2 flex flex-row justify-center items-center bg-center bg-opacity-20 bg-[#1919AD] bg-[url('/assets/features/Mask-group.png')] w-full h-[837px] border-0 md:border-8 border-[#41FFC6] rounded-none md:rounded-[56px] shadow-none md:shadow-[0_0_41px_3px_#2600A8] shadow-inner-[0_0_50px_3px_#0095FF] relative">
               <div
                 className="flex justify-center mr-[-15px] md:mr-0 items-center w-[210px] md:w-[283px] h-10 md:h-[76px] absolute top-[38px] md:top-0 right-[-1px] bg-cover bg-center text-[24px] md:text-[32px] font-black text-[#0A164E] "
                 style={{
@@ -142,7 +148,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className=" block md:hidden">
+              <div className=" hidden md:hidden">
                 <FeaturesSection
                   setCardID={setActiveCardID}
                   id={0}
@@ -236,6 +242,43 @@ export default function Home() {
                     ></div>
                   </div>
                 </div>
+              </div>
+
+              <div className="w-[100%] block md:hidden pt-10">
+                <Swiper
+                  pagination={true}
+                  modules={[Pagination]}
+                  className="cardSlider"
+                  style={{ height: "580px" }}
+                >
+                  <SwiperSlide>
+                    <div className=" flex flex-row justify-center">
+                      <FeaturesSection
+                        setCardID={setActiveCardID}
+                        id={4}
+                        isActive={activeCardID === 4 ? true : false}
+                        featurescolor="#2AD0F4"
+                        featuresborder="#B3F1FF"
+                        featurestop="/assets/features/feature-image-top5.png"
+                        featuresbottom="/assets/features/feature-image-bottom5.png"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className=" flex flex-row justify-center">
+                      <FeaturesSection
+                        setCardID={setActiveCardID}
+                        id={4}
+                        isActive={activeCardID === 4 ? true : false}
+                        featurescolor="#2AD0F4"
+                        featuresborder="#B3F1FF"
+                        featurestop="/assets/features/feature-image-top5.png"
+                        featuresbottom="/assets/features/feature-image-bottom5.png"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  
+                </Swiper>
               </div>
             </div>
           </div>
