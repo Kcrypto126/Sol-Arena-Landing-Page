@@ -10,7 +10,7 @@ import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-// Import Swiper styles
+// Import Swiper sty
 import "swiper/css";
 import "swiper/css/pagination";
 
