@@ -31,7 +31,7 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen }) => {
 
     return (
         <>
-            <div id="right-bar" className={`${className} md:h-[100vh] transition-all duration-1000 md:block ${isOpen ? "block" : "hidden"} fixed z-20 left-10 border-[#6841FF] md:border-none rounded-2xl pb-[20px] md:rounded-none border-[5px] md:left-0 md:pt-24 md:mt-0 mt-24 right-10 top-5 md:relative text-white bg-[#11114C] md:bg-[#03102D]`}>
+            <div id="right-bar" className={`${className} md:h-[100vh] transition-all duration-1000 md:block ${isOpen ? "block" : "hidden"} fixed z-20 left-5 border-[#6841FF] md:border-none rounded-2xl pb-[20px] md:rounded-none border-[5px] md:left-0 md:pt-24 md:mt-0 mt-24 right-5 top-5 md:relative text-white bg-[#11114C] md:bg-[#03102D]`}>
                 <div className=" absolute z-30 md:mt-5 -translate-y-[50%] -translate-x-[6px]">
                     <div className=" relative h-fit md:w-[28vw] w-[60vw]">
                         <Image src={"/assets/chill/Group2303.png"} className="w-full" width={1000} height={200} alt="" />
@@ -40,12 +40,12 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen }) => {
                         </div>
                     </div>
                 </div>
-                <div className=" flex flex-col gap-[30px] md:mt-[150px] pl-5 text-[16px]">
+                <div className=" flex flex-col gap-[20px] md:gap-[30px] md:mt-[100px] pl-5 text-[16px]">
                     {
                         Lists.map((e, index) => {
                             return <div key={index}>
                                 <div>
-                                    <a href={`#${e.id}`}>{e.name}</a>
+                                    <a href={`#${e.id}`} >{e.name}</a>
                                 </div>
                                 <ul className={` relative space-y-5 pl-5 border-s-2`}>
                                     {e.childern && e.childern.map((k, i) => {

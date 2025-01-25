@@ -24,7 +24,7 @@ const EvaSection: React.FC = () => {
             alt="effect"
             width={1391}
             height={171}
-            className={` w-[100%] h-[171px] border ${mouseover !== 1 && mouseover !== 0 ? "block" : "hidden"} md:hidden absolute top-0 left-0 `}
+            className={` w-[100%] h-[171px] ${mouseover !== 1 && mouseover !== 0 ? "block" : "hidden"} md:hidden absolute top-0 left-0 `}
           />
           <div className="flex flex-row md:flex-col gap-7 md:gap-12 justify-center absolute md:relative bottom-[206px] md:bottom-0 w-[100%] md:w-auto">
             <div className=" relative">

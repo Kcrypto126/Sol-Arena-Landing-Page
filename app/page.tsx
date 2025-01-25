@@ -148,7 +148,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className=" hidden md:hidden">
+              {/* <div className=" hidden md:hidden">
                 <FeaturesSection
                   setCardID={setActiveCardID}
                   id={0}
@@ -242,7 +242,7 @@ export default function Home() {
                     ></div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="w-[100%] block md:hidden pt-10">
                 <Swiper
@@ -255,12 +255,51 @@ export default function Home() {
                     <div className=" flex flex-row justify-center">
                       <FeaturesSection
                         setCardID={setActiveCardID}
-                        id={4}
-                        isActive={activeCardID === 4 ? true : false}
-                        featurescolor="#2AD0F4"
-                        featuresborder="#B3F1FF"
-                        featurestop="/assets/features/feature-image-top5.png"
-                        featuresbottom="/assets/features/feature-image-bottom5.png"
+                        id={0}
+                        isActive={activeCardID === 0 ? true : false}
+                        featurescolor="#8C46FF"
+                        featuresborder="#EAD4FF"
+                        featurestop="/assets/features/feature-image-top1.png"
+                        featuresbottom="/assets/features/feature-image-bottom1.png"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className=" flex flex-row justify-center">
+                      <FeaturesSection
+                        setCardID={setActiveCardID}
+                        id={1}
+                        isActive={activeCardID === 1 ? true : false}
+                        featurescolor="#EF821D"
+                        featuresborder="#FFFBD4"
+                        featurestop="/assets/features/feature-image-top2.png"
+                        featuresbottom="/assets/features/feature-image-bottom2.png"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className=" flex flex-row justify-center">
+                      <FeaturesSection
+                        setCardID={setActiveCardID}
+                        id={2}
+                        isActive={activeCardID === 2 ? true : false}
+                        featurescolor="#E6D11D"
+                        featuresborder="#FFFACC"
+                        featurestop="/assets/features/feature-image-top3.png"
+                        featuresbottom="/assets/features/feature-image-bottom3.png"
+                      />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className=" flex flex-row justify-center">
+                      <FeaturesSection
+                        setCardID={setActiveCardID}
+                        id={3}
+                        isActive={activeCardID === 3 ? true : false}
+                        featurescolor="#21E6AB"
+                        featuresborder="#B3FFE8"
+                        featurestop="/assets/features/feature-image-top4.png"
+                        featuresbottom="/assets/features/feature-image-bottom4.png"
                       />
                     </div>
                   </SwiperSlide>
@@ -277,7 +316,7 @@ export default function Home() {
                       />
                     </div>
                   </SwiperSlide>
-                  
+
                 </Swiper>
               </div>
             </div>

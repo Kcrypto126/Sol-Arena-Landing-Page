@@ -43,7 +43,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
         <div id="right-content" onScroll={handleScroll} className={`${className} w-full h-[100vh] md:col-span-3 bg-cover bg-no-repeat overflow-auto scrollbar-hide relative bg-[url('/assets/chill/BG_img.png')]`}>
             <div className=" relative w-full h-[100vh]">
                 <div className=" h-[90vh] overflow-hidden object-center relative">
-                    <Image src={"/assets/chill/Art.png"} alt="" width={1440} height={1000} className="md:w-[1440px] absolute right-[50%] translate-x-[50%] max-w-[1440px]" />
+                    <Image src={"/assets/chill/Art.png"} alt="" width={1440} height={1000} className="sm:max-w-[1440px] absolute right-[50%] translate-x-[50%] max-w-[840px]" />
                 </div>
                 <div className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]" style={{ textShadow: "0px 0px 40px rgb(255,255,255)" }}>
                     <div className="py-[80px] text-center">
