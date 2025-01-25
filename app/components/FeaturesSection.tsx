@@ -32,7 +32,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
         <div
           className=" hidden md:block h-[600px] border-2 rounded-3xl p-5 bg-black bg-opacity-55 relative transition-all duration-300 cursor-pointer"
           style={{
-            boxShadow: `inset 0 0 20px 15px ${featurescolor}`,
+            boxShadow: `inset 0 0 20px 12px ${featurescolor}`,
             width: `${isActive ? 360 : 180}px`,
             borderColor: `${featuresborder}`,
           }}
@@ -43,13 +43,12 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           <div
             className=" relative flex justify-center items-center bg-transparent overflow-hidden rounded-lg"
             style={{
-              boxShadow: `inset 0 0 15px 2px ${featurescolor}`,
               width: "100%",
               height: "100%",
             }}
           >
-            <div className={` ${isActive ? "hidden" : "block"} absolute w-full h-full bg-[#00000062] `}>
-              
+            <div className={` ${isActive ? "" : " bg-[#00000062]"} absolute w-full h-full  `} style={{ boxShadow: `inset 0 0 15px 2px ${featurescolor}` }}>
+
             </div>
             <Image
               src={card}
