@@ -39,17 +39,37 @@ body {
   font-family: Poppins;
 }
 .hero-section {
-  height: calc(100vw * 1249 / 1440);
+  background-image: url("/assets/hero-img.webp");
+  height: 1300px;
   background-size: 100% 100%;
 }
 .section {
-  /* height: calc(100vw*1024/1440); */
-  /* height: 1400px; */
+  
   background-size: 100% 100%;
-  /* padding-top: calc((calc(100vw * 1024 / 1440) - 1034px) / 2); */
 }
 .footer {
   background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .hero-section {
+    height: 1024px;
+    background-size: auto 100%;
+  }
+  .section {
+    background-size: auto 100%;
+  }
+  .footer {
+    background-size: auto 100%;
+  }
+}
+/* bg-[url('/assets/hero-img-mobile.webp')] sm:bg-[url('/assets/hero-img.webp')] */
+@media only screen and (max-width: 560px) {
+  .hero-section {
+    background-image: url("/assets/hero-img-mobile.webp");
+    height: 764px;
+    background-size: 100% 100%;
+  }
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -89,26 +109,4 @@ body {
 
 .swiper-pagination-bullet-active {
   background-color: #5CFFE2!important;
-}
-
-
-@media only screen and (max-width: 1440px) {
-  .hero-section {
-    height: 1249px;
-    background-size: auto 100%;
-  }
-  .section {
-    /* height: 1024px; */
-    background-size: auto 100%;
-  }
-  .footer {
-    background-size: auto 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .hero-section {
-    height: 764px;
-    background-size: auto 100%;
-  }
 }

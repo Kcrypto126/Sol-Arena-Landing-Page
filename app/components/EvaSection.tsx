@@ -14,8 +14,8 @@ const EvaSection: React.FC = () => {
             mouseover == 0
               ? "url('/assets/eva/eva-back1.webp')"
               : mouseover == 1
-              ? "url('/assets/eva/eva-back2.webp')"
-              : "url('/assets/eva/eva-back3.webp')",
+                ? "url('/assets/eva/eva-back2.webp')"
+                : "url('/assets/eva/eva-back3.webp')",
         }}
       >
         <div className=" max-w-[1440px] h-[100%] md:h-auto m-auto px-0 md:px-[30px] lg:px-[99px] pt-[264px] pb-[298px] relative">
@@ -41,7 +41,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 0 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back1.png')] md:bg-[url('/assets/eva/text-back1.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-20.2px] md:top-[-60px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 0 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back1.png')] md:bg-[url('/assets/eva/text-back1.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-224px] left-[-20.2px] md:top-[-54px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
@@ -52,12 +52,7 @@ const EvaSection: React.FC = () => {
                   </h1>
                   <div className="w-[224px] md:w-[283px] h-[2px] md:h-1 mt-3 md:mt-6 bg-[#1E7EF4]"></div>
                   <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                    Eva is the heart of the arena, a host whose charm and energy light up every game. Her voice resonants through every clash of light, weaving battles into legend. To billions, she is a radiant goddess of spectacle, but behind her charm lies secrets known only to her.
                   </div>
                 </div>
               </div>
@@ -76,7 +71,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 1 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back2.png')] md:bg-[url('/assets/eva/text-back2.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-129.3px] md:top-[-110px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 1 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back2.png')] md:bg-[url('/assets/eva/text-back2.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-129.3px] md:top-[-94px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
@@ -86,12 +81,7 @@ const EvaSection: React.FC = () => {
                 </h1>
                 <div className=" w-[224px] md:w-[283px] h-[2px] md:h-1 bg-[#FF62FC] mt-3 md:mt-6"></div>
                 <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                  The arenas, glowing colosseums of shifting holograms, stand as battlegrounds for challengers of every kind. Reality twisted under the flicker of light, transforming each field into a realm of conflict and wonder. Here, corporate elites, rebellious underdogs, and wildcards fight to etch their names into history.
                 </div>
               </div>
             </div>
@@ -109,7 +99,7 @@ const EvaSection: React.FC = () => {
                 }}
               ></div>
               <div
-                className={` ${mouseover == 2 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back3.png')] md:bg-[url('/assets/eva/text-back3.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-242px] left-[-238px] md:top-[-154px] md:left-[144px] transition-all `}
+                className={` ${mouseover == 2 ? "block" : "hidden"} z-30 bg-[url('/assets/eva/mobile-text-back3.png')] md:bg-[url('/assets/eva/text-back3.png')] w-[343px] md:w-[550px] pt-5 md:pt-10 pb-10 md:pb-10 ps-[20px] pe-[20px] md:ps-[75px] md:pe-[30px] absolute top-[-224px] left-[-238px] md:top-[-142px] md:left-[144px] transition-all `}
                 style={{
                   backgroundSize: "100% 100%",
                 }}
@@ -119,12 +109,7 @@ const EvaSection: React.FC = () => {
                 </h1>
                 <div className="w-[224px] md:w-[283px] h-[2px] md:h-1 mt-3 md:mt-6 bg-[#6F58FF]"></div>
                 <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
+                  Can you hear the roar slicing through the twilight? The soul of the games—the crowd. Holograms beam in fans from across the world, their glowing emblems a testament to their loyalty. For them, this isn’t just entertainment—it’s pride, belonging, and a chance to live the game as if it were own.
                 </div>
               </div>
             </div>

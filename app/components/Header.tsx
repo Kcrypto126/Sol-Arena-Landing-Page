@@ -11,6 +11,7 @@ const Header: React.FC = () => {
   const [isMenuPlay, setIsMenuPlay] = useState(0);
   const [isMenuChill, setIsMenuChill] = useState(0);
   const [isEffect, setIsEffect] = useState(false);
+  const [isScroll, setIsScroll] = useState(false)
 
   const [isOpen, setIsOpen] = useState(true);
 
@@ -31,6 +32,23 @@ const Header: React.FC = () => {
         setIsOpen(false);
       }
     };
+
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScroll(true);
+      } else {
+        setIsScroll(false);
+      }
+    };
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener on unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+
   }, []);
 
   const handlHeader = () => {
@@ -82,9 +100,8 @@ const Header: React.FC = () => {
             />
           </div>
           <div
-            className={` flex-[3] flex-wrap flex-col lg:flex-row justify-start lg:justify-start items-center absolute pt-[116px] lg:pt-0 top-0 lg:top-0 h-[100vh] lg:h-auto lg:relative w-[100%] gap-8 lg:gap-4 font-[Oswald] text-[18px] font-bold bg-cover bg-no-repeat bg-right bg-[url('/assets/mobile-header-bck.png')] lg:bg-none transition-opacity duration-500 ease-in-out ${
-              isOpen ? "opacity-100 flex" : "opacity-0 hidden"
-            } `}
+            className={` flex-[3] flex-wrap flex-col lg:flex-row justify-start lg:justify-start items-center absolute pt-[116px] lg:pt-0 top-0 lg:top-0 h-[100vh] lg:h-auto lg:relative w-[100%] gap-8 lg:gap-4 font-[Oswald] text-[18px] font-bold bg-cover bg-no-repeat bg-right bg-[url('/assets/mobile-header-bck.png')] lg:bg-none transition-opacity duration-500 ease-in-out ${isOpen ? "opacity-100 flex" : "opacity-0 hidden"
+              } `}
           >
             <Link
               href={"/"}
@@ -95,16 +112,16 @@ const Header: React.FC = () => {
                   pathname == "/"
                     ? "#603CDB"
                     : isMenu == 2
-                    ? "#3B258F"
-                    : isMenu == 1
-                    ? "#41FFC6"
-                    : "#02021D",
+                      ? "#3B258F"
+                      : isMenu == 1
+                        ? "#41FFC6"
+                        : "#02021D",
                 color:
                   pathname == "/"
                     ? "#fff"
                     : isMenu == 1 || isMenu == 2
-                    ? "#fff"
-                    : "#CAD4EF",
+                      ? "#fff"
+                      : "#CAD4EF",
               }}
               onMouseDown={() => {
                 setIsMenu(1);
@@ -133,16 +150,16 @@ const Header: React.FC = () => {
                   pathname == "/play"
                     ? "#603CDB"
                     : isMenuPlay == 2
-                    ? "#3B258F"
-                    : isMenuPlay == 1
-                    ? "#41FFC6"
-                    : "#02021D",
+                      ? "#3B258F"
+                      : isMenuPlay == 1
+                        ? "#41FFC6"
+                        : "#02021D",
                 color:
                   pathname == "/play"
                     ? "#fff"
                     : isMenuPlay == 1 || isMenuPlay == 2
-                    ? "#fff"
-                    : "#CAD4EF",
+                      ? "#fff"
+                      : "#CAD4EF",
               }}
               onMouseDown={() => {
                 setIsMenuPlay(1);
@@ -171,16 +188,16 @@ const Header: React.FC = () => {
                   pathname == "/chill"
                     ? "#603CDB"
                     : isMenuChill == 2
-                    ? "#3B258F"
-                    : isMenuChill == 1
-                    ? "#41FFC6"
-                    : "#02021D",
+                      ? "#3B258F"
+                      : isMenuChill == 1
+                        ? "#41FFC6"
+                        : "#02021D",
                 color:
                   pathname == "/chill"
                     ? "#fff"
                     : isMenuChill == 1 || isMenuChill == 2
-                    ? "#fff"
-                    : "#CAD4EF",
+                      ? "#fff"
+                      : "#CAD4EF",
               }}
               onMouseDown={() => {
                 setIsMenuChill(1);
@@ -202,12 +219,11 @@ const Header: React.FC = () => {
             </Link>
           </div>
           <div
-            className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[484px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${
-              isOpen ? "opacity-100 flex" : "opacity-0 hidden"
-            } `}
+            className={`flex-1 justify-center lg:justify-end items-center lg:items-start w-[100%] absolute top-[484px] lg:top-0 lg:relative transition-opacity duration-500 ease-in-out ${isOpen ? "opacity-100 flex" : "opacity-0 hidden"
+              } `}
           >
             <button
-              className=" w-[163px] lg:w-[264px] h-[52px] lg:h-[84px] rounded-md font-bold font-[Oswald] text-[28px] lg:text-[38px] text-[#020215]"
+              className={` w-[163px] h-[52px] transition-all ${isScroll ? "lg:w-[150px] lg:h-[48px] lg:text-[21px]" : "lg:w-[264px] lg:h-[84px] lg:text-[38px]"} rounded-md font-bold font-[Oswald] text-[28px] text-[#020215] `}
               style={{
                 backgroundImage: "url(./assets/play-now-btn.png)",
                 backgroundSize: "100% 100%",

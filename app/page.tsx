@@ -30,10 +30,9 @@ export default function Home() {
     <div className="relative z-0 mt-[72px]">
       <main className="w-full">
         <div
-          className="hero-section w-full bg-center bg-no-repeat mb-[-2px]"
-          style={{ backgroundImage: "url('./assets/hero-img.webp')" }}
+          className="hero-section w-full h-[1024px] bg-center bg-no-repeat mb-[-2px]"
         >
-          <div className=" w-[100%] absolute top-[200px] md:top-[606px] flex flex-col justify-center items-center">
+          <div className=" w-[100%] absolute top-[200px] md:top-[358px] flex flex-col justify-center items-center">
             <div
               className=" w-[100%] m-auto h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
               style={{ backgroundSize: "100% 100%" }}
@@ -42,13 +41,13 @@ export default function Home() {
                 The Race for 150,000,000 $CHILL Has Begun
               </h1>
             </div>
-            <div className=" w-[100%] m-auto mt-[-210px] h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
+            <div className=" w-[100%] m-auto mt-[-230px] sm:mt-[-210px] h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
               <h1 className=" text-center leading-[110%] font-bold text-[20px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-23px]">
                 Collect, Extract, Dominate.
               </h1>
             </div>
           </div>
-          <div className="flex justify-center items-center w-[100%] absolute top-[525px] md:top-[974px]">
+          <div className="flex justify-center items-center w-[100%] absolute top-[502px] md:top-[742px]">
             <button
               className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-bold font-[Oswald] text-[28px] text-[#020215]"
               style={{
