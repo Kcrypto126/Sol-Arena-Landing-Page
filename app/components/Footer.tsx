@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               </button>
             </div>
             <div className=" flex flex-col gap-4">
-              <div className="font-[Oswald] text-[16px] text-white font-semibold">
+              <div className="font-[Oswald] text-[16px] text-white font-semibold text-center lg:text-left">
                 Subscribe to the latest news
               </div>
               <div className=" flex flex-row gap-0">
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                   placeholder="Enter Email"
                 ></input>
                 <button
-                  className=" w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] flex justify-center items-center bg-[#41FFC6]"
+                  className=" w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] ml-[-2px] flex justify-center items-center bg-[#41FFC6]"
                   onClick={() => {
                     navigator.push("/");
                   }}
@@ -57,6 +57,7 @@ const Footer: React.FC = () => {
                     alt=""
                     width={26}
                     height={20}
+                    className=" "
                   />
                 </button>
               </div>
@@ -105,7 +106,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="z-10">
             <div
-              className=" max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] lg:text-[16px] font-semibol leading-[150%] absolute bottom-[150px] right-[150px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
+              className=" max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] lg:text-[16px] font-semibol leading-[150%] absolute bottom-[145px] right-[190px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
               style={{
                 backgroundSize: "100% 100%",
               }}
@@ -115,7 +116,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className=" absolute right-[-80px] sm:right-0 top-[331px] lg:top-9">
+        <div className=" absolute right-[-60px] sm:right-0 top-[331px] lg:top-9">
           <Image
             src={"/assets/footer/footer-girl.webp"}
             alt=""

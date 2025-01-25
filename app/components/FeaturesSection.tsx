@@ -91,19 +91,21 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           }}
         >
           <div
-            className=" flex justify-center items-center bg-white overflow-hidden rounded-lg"
+            className=" relative flex justify-center items-center bg-transparent overflow-hidden rounded-lg"
             style={{
-              boxShadow: `inset 0 0 15px 2px ${featurescolor}`,
               width: "100%",
               height: "100%",
             }}
           >
+            <div className={` ${isActive ? "" : " bg-auto md:bg-[#00000062]"} absolute w-full h-full  `} style={{ boxShadow: `inset 0 0 15px 2px ${featurescolor}` }}>
+
+            </div>
             <Image
               src={card}
               alt="alt"
               width={360}
               height={600}
-              className="w-[100%] h-[100%]"
+              className={` ${isActive ? "w-[100%] h-[100%]" : "w-[360px] h-[600px]"} max-w-[360px] rounded-lg`}
             />
           </div>
           <Image
