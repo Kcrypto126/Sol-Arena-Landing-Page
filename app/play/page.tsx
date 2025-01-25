@@ -52,7 +52,7 @@ const Page: React.FC = () => {
             className="playSlider"
           >
             {/* 1m */}
-            <SwiperSlide className=" relative flex flex-row justify-center items-center">
+            <SwiperSlide className=" relative flex flex-row justify-center items-center  border px-[20px]">
               <div className=" w-[100%] h-[100%] flex flex-col justify-center items-center gap-8 ">
                 <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                   1. Enter the Arena
@@ -70,14 +70,14 @@ const Page: React.FC = () => {
                     alt="1m-left"
                     width={407}
                     height={187}
-                    className=" w-[185px] md:w-[407px] h-[85px] sm:h-[187px] absolute left-[-125px] md:left-[-375px] bottom-[-20px] md:bottom-0 "
+                    className=" w-[406px] h-[187px] absolute right-[100%] bottom-0 "
                   />
                   <Image
                     src={"/assets/play/1m-right.png"}
                     alt="1m-left"
                     width={407}
                     height={187}
-                    className=" w-[185px] md:w-[407px] h-[85px] sm:h-[187px] absolute right-[-50px] md:right-[-300px] bottom-[-20px] md:bottom-0 "
+                    className=" w-[406px] h-[187px] absolute left-[100%] bottom-0 "
                   />
                 </div>
                 <p className=" text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-auto md:h-[140px] flex justify-center items-center text-center">
