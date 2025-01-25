@@ -108,6 +108,9 @@ export default function Home() {
                     featuresborder="#EAD4FF"
                     featurestop="/assets/features/feature-image-top1.png"
                     featuresbottom="/assets/features/feature-image-bottom1.png"
+                    card="/assets/features/card-1.png"
+                    title="Snake Evolved"
+                    desc="Dive into adrenaline-pumping action inspired by Snake. Gather energy, grow stronger, and defeat opponents to loot their noCHILL. Outsmart, outmaneuver, and dominate the Arena!"
                   />
                   <FeaturesSection
                     setCardID={setActiveCardID}
@@ -117,6 +120,9 @@ export default function Home() {
                     featuresborder="#FFFBD4"
                     featurestop="/assets/features/feature-image-top2.png"
                     featuresbottom="/assets/features/feature-image-bottom2.png"
+                    card="/assets/features/card-2.png"
+                    title="Extraction"
+                    desc="Collect noCHILL and extract through wormholes to secure your winnings. But beware—only the clever and quick make it out alive. Will you survive or lose it all?"
                   />
                   <FeaturesSection
                     setCardID={setActiveCardID}
@@ -126,6 +132,10 @@ export default function Home() {
                     featuresborder="#FFFACC"
                     featurestop="/assets/features/feature-image-top3.png"
                     featuresbottom="/assets/features/feature-image-bottom3.png"
+                    card="/assets/features/card-3.png"
+                    title="Game Modes"
+                    desc="Play for noCHILL to climb the leaderboards
+or up the stakes in High Roller Mode to wager and win Solana. Real risk, real rewards."
                   />
                   <FeaturesSection
                     setCardID={setActiveCardID}
@@ -135,6 +145,10 @@ export default function Home() {
                     featuresborder="#B3FFE8"
                     featurestop="/assets/features/feature-image-top4.png"
                     featuresbottom="/assets/features/feature-image-bottom4.png"
+                    card="/assets/features/card-4.png"
+                    title="Power-ups"
+                    desc="Turn the tide with power-ups! 
+Collect mystery boxes to unlock power-ups and use them at just the right moment to crush your enemies."
                   />
                   <FeaturesSection
                     setCardID={setActiveCardID}
@@ -144,6 +158,9 @@ export default function Home() {
                     featuresborder="#B3F1FF"
                     featurestop="/assets/features/feature-image-top5.png"
                     featuresbottom="/assets/features/feature-image-bottom5.png"
+                    card="/assets/features/card-5.png"
+                    title="Team Play"
+                    desc="Join forces with your favorite Solana communities! Pick a team, dominate the competition, and climb the team leaderboards together."
                   />
                 </div>
               </div>
@@ -261,6 +278,9 @@ export default function Home() {
                         featuresborder="#EAD4FF"
                         featurestop="/assets/features/feature-image-top1.png"
                         featuresbottom="/assets/features/feature-image-bottom1.png"
+                        card="/assets/features/card-1.png"
+                        title="Snake Evolved"
+                        desc="Dive into adrenaline-pumping action inspired by Snake. Gather energy, grow stronger, and defeat opponents to loot their noCHILL. Outsmart, outmaneuver, and dominate the Arena!"
                       />
                     </div>
                   </SwiperSlide>
@@ -274,6 +294,9 @@ export default function Home() {
                         featuresborder="#FFFBD4"
                         featurestop="/assets/features/feature-image-top2.png"
                         featuresbottom="/assets/features/feature-image-bottom2.png"
+                        card="/assets/features/card-2.png"
+                        title="Extraction"
+                        desc="Collect noCHILL and extract through wormholes to secure your winnings. But beware—only the clever and quick make it out alive. Will you survive or lose it all?"
                       />
                     </div>
                   </SwiperSlide>
@@ -287,6 +310,10 @@ export default function Home() {
                         featuresborder="#FFFACC"
                         featurestop="/assets/features/feature-image-top3.png"
                         featuresbottom="/assets/features/feature-image-bottom3.png"
+                        card="/assets/features/card-3.png"
+                        title="Game Modes"
+                        desc="Play for noCHILL to climb the leaderboards
+or up the stakes in High Roller Mode to wager and win Solana. Real risk, real rewards."
                       />
                     </div>
                   </SwiperSlide>
@@ -300,6 +327,10 @@ export default function Home() {
                         featuresborder="#B3FFE8"
                         featurestop="/assets/features/feature-image-top4.png"
                         featuresbottom="/assets/features/feature-image-bottom4.png"
+                        card="/assets/features/card-4.png"
+                        title="Power-ups"
+                        desc="Turn the tide with power-ups! 
+Collect mystery boxes to unlock power-ups and use them at just the right moment to crush your enemies."
                       />
                     </div>
                   </SwiperSlide>
@@ -313,6 +344,9 @@ export default function Home() {
                         featuresborder="#B3F1FF"
                         featurestop="/assets/features/feature-image-top5.png"
                         featuresbottom="/assets/features/feature-image-bottom5.png"
+                        card="/assets/features/card-5.png"
+                        title="Team Play"
+                        desc="Join forces with your favorite Solana communities! Pick a team, dominate the competition, and climb the team leaderboards together."
                       />
                     </div>
                   </SwiperSlide>

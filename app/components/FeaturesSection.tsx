@@ -9,6 +9,9 @@ interface FeaturesSection {
   featuresbottom: string;
   featurescolor: string;
   featuresborder: string;
+  card: string;
+  title: string;
+  desc: string;
 }
 
 const FeaturesSection: React.FC<FeaturesSection> = ({
@@ -19,6 +22,9 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
   featuresbottom,
   featurescolor,
   featuresborder,
+  card,
+  title,
+  desc
 }) => {
   return (
     <>
@@ -35,18 +41,22 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           }}
         >
           <div
-            className=" flex justify-center items-center bg-white"
+            className=" relative flex justify-center items-center bg-transparent overflow-hidden rounded-lg"
             style={{
               boxShadow: `inset 0 0 15px 2px ${featurescolor}`,
               width: "100%",
               height: "100%",
             }}
           >
+            <div className={` ${isActive ? "hidden" : "block"} absolute w-full h-full bg-[#00000062] `}>
+              
+            </div>
             <Image
-              src={"/assets/features/alt-img.png"}
+              src={card}
               alt="alt"
-              width={48}
-              height={40}
+              width={360}
+              height={600}
+              className={` ${isActive ? "w-[100%] h-[100%]" : "w-[360px] h-[600px]"} max-w-[360px] rounded-lg`}
             />
           </div>
           <Image
@@ -82,7 +92,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           }}
         >
           <div
-            className=" flex justify-center items-center bg-white "
+            className=" flex justify-center items-center bg-white overflow-hidden rounded-lg"
             style={{
               boxShadow: `inset 0 0 15px 2px ${featurescolor}`,
               width: "100%",
@@ -90,10 +100,11 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
             }}
           >
             <Image
-              src={"/assets/features/alt-img.png"}
+              src={card}
               alt="alt"
-              width={48}
-              height={40}
+              width={360}
+              height={600}
+              className="w-[100%] h-[100%]"
             />
           </div>
           <Image
@@ -125,17 +136,16 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
           className={` z-10 text-white flex flex-col absolute bottom-[-36px] md:bottom-[45px] left-[26.5px] md:left-[-71px] ${isActive ? "block" : " block md:hidden"} `}
         >
           <div
-            className="w-[106px] md:w-[154px] h-[26px] md:h-[42px] flex justify-center items-center bg-center bg-no-repeat font-[Montserrat] font-semibold text-[14px] md:text-[20px]"
+            className="w-[136px] md:w-[194px] h-[26px] md:h-[42px] flex justify-start items-center pl-4 bg-center bg-no-repeat font-[Montserrat] font-semibold text-[12px] md:text-[20px]"
             style={{
               backgroundImage: "url('/assets/features/text-back2.png')",
               backgroundSize: "100% 100%"
             }}
           >
-            <h1 className="pr-5">Feature 1</h1>
+            <h1 className="pr-5">{title}</h1>
           </div>
           <div className=" text-[12px] md:text-[16px] font-[Montserrat] text-white font-medium px-3 md:px-4 py-2 md:py-3 border-[2px] border-[#130C51] rounded-[8px] md:rounded-[20px] rounded-ss-none md:rounded-ss-none max-w-[289px] md:max-w-[365px] bg-[#603CDB]">
-            Lorem ipsum dolor sit amet conser. Rhoncus gravida massa posuere
-            sed. Pharet lorem facis. Sit laoreet sed pretm fusce nisl faucibus.
+            {desc}
           </div>
         </div>
       </div>
