@@ -30,7 +30,8 @@
 }
 
 html {
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth;
+  /* Enable smooth scrolling */
 }
 
 body {
@@ -38,15 +39,18 @@ body {
   background: var(--background);
   font-family: Poppins;
 }
+
 .hero-section {
   background-image: url("/assets/hero-img.webp");
   height: 1300px;
   background-size: 100% 100%;
 }
+
 .section {
-  
+
   background-size: 100% 100%;
 }
+
 .footer {
   background-size: 100% 750px;
 }
@@ -56,13 +60,16 @@ body {
     height: 1024px;
     background-size: auto 100%;
   }
+
   .section {
     background-size: auto 100%;
   }
+
   .footer {
     background-size: auto 100%;
   }
 }
+
 /* bg-[url('/assets/hero-img-mobile.webp')] sm:bg-[url('/assets/hero-img.webp')] */
 @media only screen and (max-width: 560px) {
   .hero-section {
@@ -73,11 +80,11 @@ body {
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  padding-left: 6px!important;
-  padding-right: 6px!important;
-  left: 50%!important;
-  bottom: 0px!important;
-  transform: translateX(-50%)!important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+  left: 50% !important;
+  bottom: 0px !important;
+  transform: translateX(-50%) !important;
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
@@ -89,24 +96,42 @@ body {
 }
 
 .swiper-pagination-bullets.swiper-pagination-vertical .swiper-pagination-bullet {
-  margin: 0px!important;
-  margin-top: 6px!important;
-  margin-bottom: 6px!important;
+  margin: 0px !important;
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
 }
 
 .swiper-pagination-bullets {
-  width: fit-content!important;
+  width: fit-content !important;
   border: 2px solid #492AD3;
   border-radius: 20px;
-  background-color: #130C51;  
+  background-color: #130C51;
 }
 
 .swiper-pagination-bullet {
-  width: 12px!important;
-  height: 12px!important;
-  background-color: #8998DD!important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #8998DD !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #5CFFE2!important;
+  background-color: #5CFFE2 !important;
+}
+
+@media only screen and (max-width: 640px) {
+  .swiper-pagination-vertical {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .swiper-slide.slider-desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide.slider-mobile {
+    display: none;
+  }
 }
