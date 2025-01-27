@@ -139,7 +139,7 @@ const Footer: React.FC = () => {
             </Link>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
             <Link href={"/"} prefetch>
-              Copyright ____. All Rights Reserved.
+              Copyright Chillchat Holdings Pte Ltd. All rights reserved.
             </Link>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
             <Link href={"/"} prefetch>
