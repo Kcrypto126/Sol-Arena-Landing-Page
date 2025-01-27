@@ -121,7 +121,9 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                 </p>
                                 <p>At the same time, competitive players will find layers of strategic depth, utilizing power-ups and teamwork to outmaneuver opponents and dominate leaderboards, all while winning real crypto.</p>
                                 <div>
-                                    <Image src={'/assets/chill/image1097.png'} alt="" width={1000} height={1000} />
+                                    <video width="1000" height="1000" controls>
+                                        <source src="/assets/chill/video/SA_Teaser_Trimmed.mp4" type="video/mp4" />
+                                    </video>
                                 </div>
                             </div>
                         </div>
