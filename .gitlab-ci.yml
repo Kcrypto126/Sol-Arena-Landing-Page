@@ -39,6 +39,12 @@ deploy-to-cloud-run:
         --region asia-northeast1 
         --platform managed 
         --allow-unauthenticated
+    - gcloud run deploy landing-page-prod
+        --image $AR_IMAGE:$IMAGE_TAG 
+        --project braided-hangout-438006-k2 
+        --region asia-northeast1 
+        --platform managed 
+        --allow-unauthenticated
 
 .runner-solarena:
     tags: [solarena-dev]
