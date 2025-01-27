@@ -43,10 +43,10 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
         <div id="right-content" onScroll={handleScroll} className={`${className} w-full h-[100vh] md:col-span-3 bg-cover bg-no-repeat overflow-auto scrollbar-hide relative bg-[url('/assets/chill/BG_img.png')]`}>
             <div className=" relative w-full h-[100vh]">
                 <div className=" h-[90vh] overflow-hidden object-center relative mt-[-10px]">
-                    <Image src={"/assets/chill/Art.png"} alt="" width={1440} height={1000} className=" hidden sm:block sm:max-w-[1440px] absolute right-[50%] translate-x-[50%] max-w-[840px]" />
-                    <Image src={"/assets/chill/art-mobile.webp"} alt="" width={640} height={812} className=" block sm:hidden w-[100%] h-[812px] absolute right-[50%] translate-x-[50%] " />
+                    <Image src={"/assets/main1.webp"} alt="" width={1440} height={1000} className="max-w-[640px] sm:max-w-[1440px] absolute right-[50%] translate-x-[50%] translate-y-0 sm:translate-y-[-300px] " />
+                    {/* <Image src={"/assets/chill/art-mobile.webp"} alt="" width={640} height={812} className=" block sm:hidden w-[100%] h-[812px] absolute right-[50%] translate-x-[50%] " /> */}
                 </div>
-                <div className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]" style={{ textShadow: "0px 0px 40px rgb(255,255,255)" }}>
+                <div className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]" style={{ textShadow: "0px 0px 40px rgb(255,255,255)" }}>
                     <div className="py-[80px] text-center">
                         SOL Arena Whitepaper
                     </div>
@@ -98,7 +98,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
 
                                 <p>For players looking to up the stakes, High Roller Mode requires players to wager crypto to enter the Arena, where they can kill and loot other players to take their crypto. Extract with your loot to turn those high-stakes battles into crypto profits.</p>
                                 <div>
-                                    <Image src={'/assets/chill/image1097.png'} alt="" width={1000} height={1000} />
+                                    <Image src={'/assets/chill/image1197.png'} alt="" width={1000} height={1000} />
                                 </div>
                             </div>
                         </div>
@@ -275,7 +275,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                     <li>10% Airdrop</li>
                                 </ul>
                                 <div>
-                                    <Image src={'/assets/chill/image1099.png'} alt="" width={1000} height={1000} />
+                                    <Image src={'/assets/chill/image1199.png'} alt="" width={1000} height={1000} />
                                 </div>
                                 <div className=" text-[#CAD4EF] italic">
                                     Note: Allocation plans are subject to change to adapt to market conditions.
@@ -332,7 +332,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                         </li>
                                     </ul>
                                     <div>
-                                        <Image src={'/assets/chill/image1100.png'} alt="" width={1000} height={1000} />
+                                        <Image src={'/assets/chill/image1101.png'} alt="" width={1000} height={1000} />
                                     </div>
                                 </div>
                             </div>

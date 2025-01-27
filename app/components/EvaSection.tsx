@@ -105,7 +105,7 @@ const EvaSection: React.FC = () => {
                 }}
               >
                 <h1 className=" text-[14px] md:text-[28px] font-[Poppins] font-bold text-[#41FFC6]">
-                  Spectators, The Draw
+                  Spectators, the Draw
                 </h1>
                 <div className="w-[224px] md:w-[283px] h-[2px] md:h-1 mt-3 md:mt-6 bg-[#6F58FF]"></div>
                 <div className="text-[12px] md:text-[16px] font-medium font-[Poppins] text-[#CAD4EF] mt-3 md:mt-8 leading-[150%]">
