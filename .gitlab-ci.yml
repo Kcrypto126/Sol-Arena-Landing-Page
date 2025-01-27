@@ -33,7 +33,7 @@ deploy-to-cloud-run:
   image: google/cloud-sdk:latest
   script:
     - gcloud auth activate-service-account --key-file=$GCP_SERVICE_KEY
-    - gcloud run deploy landing-page-$ENVIRONMENT
+    - gcloud run deploy landing-page
         --image $AR_IMAGE:$IMAGE_TAG 
         --project braided-hangout-438006-k2 
         --region asia-northeast1 
