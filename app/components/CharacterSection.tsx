@@ -23,7 +23,7 @@ const CharacterSection: React.FC = () => {
         }}
       >
         <div
-          className={` border second-section max-w-[1440px] m-auto flex flex-row pl-0 pr-0 xl:pl-[180px] relative bg-no-repeat bg-[left_16px_top_133px] md:bg-[left_32px_top_133px] lg:bg-[left_32px_top_120px] xl:bg-[left_180px_top_120px] bg-[length:90%] md:bg-[length:550px_103px] lg:bg-[length:auto] `}
+          className={`second-section max-w-[1440px] m-auto flex flex-row pl-0 pr-0 xl:pl-[180px] pb-[60px] md:pb-0 relative bg-no-repeat bg-[left_16px_top_133px] md:bg-[left_32px_top_133px] lg:bg-[left_32px_top_120px] xl:bg-[left_180px_top_120px] bg-[length:90%] md:bg-[length:550px_103px] lg:bg-[length:auto] `}
           style={{
             backgroundImage:
               isScale == 1
@@ -37,7 +37,7 @@ const CharacterSection: React.FC = () => {
                       : "url('/assets/character/back-text-5.png",
           }}
         >
-          <div className="flex-1 pt-[263px] md:pt-[281px] pb-[72px] md:pb-[140px] flex flex-col border">
+          <div className="flex-1 pt-[227px] md:pt-[281px] pb-[72px] md:pb-[140px] flex flex-col">
             <Image
               src={
                 isScale == 1
@@ -53,18 +53,18 @@ const CharacterSection: React.FC = () => {
               alt="text img"
               width={685}
               height={70}
-              className={` md:h-[70px] h-[47px] ml-[-6px] absolute top-[195px] left-4 md:left-8 md:top-[190px] xl:left-[180px] ${isScale == 1
+              className={` md:h-[70px] h-[47px] ml-[-6px] absolute top-[165px] md:top-[190px] left-4 md:left-8 xl:left-[180px] ${isScale == 1
                 ? "  max-w-[398px]"
                 : isScale == 2
-                  ? " max-w-[509px]"
+                  ? " max-w-[90%] md:max-w-[509px]"
                   : isScale == 3
-                    ? " max-w-[449px]"
+                    ? " max-w-[90%] md:max-w-[449px]"
                     : isScale == 4
-                      ? " max-w-[688px]"
-                      : " max-w-[449px]"
+                      ? " max-w-[90%] md:max-w-[688px]"
+                      : " max-w-[90%] md:max-w-[449px]"
                 }`}
             />
-            <div className=" flex flex-row gap-4 pl-4 md:pl-8 xl:pl-0">
+            <div className=" flex flex-row gap-3 md:gap-4 pl-4 md:pl-8 xl:pl-0">
               <div
                 className={`flex justify-center items-center px-2 h-[30px] ${isScale == 1
                   ? "bg-[#7E81A9] border-[#F7FF80]"
@@ -75,7 +75,7 @@ const CharacterSection: React.FC = () => {
                       : isScale == 4
                         ? "bg-[#FF9E36] border-[#FCFF41]"
                         : "bg-[#FF3658] border-[#FFD341]"
-                  } rounded-sm border-b-2 border-r-2 text-[16px] font-semibold text-white`}
+                  } rounded-sm border-b-2 border-r-2 text-[12px] md:text-[16px] font-semibold text-white`}
               >
                 {isScale == 1
                   ? "Common"
@@ -88,7 +88,7 @@ const CharacterSection: React.FC = () => {
                         : "Artifact"}
               </div>
               <div
-                className={`flex justify-center items-center w-[32px] h-[32px] text-[9px] font-bold ${isScale == 1
+                className={`flex justify-center items-center w-[24px] md:w-[32px] h-[24px] md:h-[32px] text-[7px] md:text-[9px] font-bold ${isScale == 1
                   ? "text-[#C0D2FF]"
                   : isScale == 2
                     ? "text-[#61C2FF]"
@@ -109,13 +109,14 @@ const CharacterSection: React.FC = () => {
                           : isScale == 4
                             ? "url('/assets/character/hex-back-1.png"
                             : "url('/assets/character/hex-back-1.png",
+                  backgroundSize: "100% 100%"
                 }}
               >
                 NFT
               </div>
             </div>
             <div
-              className={` z-10 max-w-[283px] md:max-w-[594px] ms-8 xl:ms-0 p-4 md:p-8 mt-12 border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-0 md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
+              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-8 border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
                 ? "border-[#38E8FF]"
                 : isScale == 2
                   ? "border-[#FFD752]"
@@ -144,8 +145,8 @@ const CharacterSection: React.FC = () => {
             >
               Challengers
             </div>
-            <div className="h-[398px] md:h-[138px] mt-[47px] md:mt-4 relative ps-1 xl:ps-0 ">
-              <div className=" w-[72px] md:w-[594px] z-20 flex flex-col md:flex-row absolute top-0 md:bottom-0 justify-start md:justify-start items-center md:items-end gap-4 md:gap-1">
+            <div className="h-[398px] md:h-[138px] mt-[24px] md:mt-4 relative ps-1 xl:ps-0 ">
+              <div className=" w-[72px] md:w-[594px] z-20 flex flex-col md:flex-row absolute top-0 md:bottom-0 justify-start md:justify-start items-center md:items-end gap-2 md:gap-1">
                 <Image
                   src={
                     isScale !== 1
@@ -234,23 +235,23 @@ const CharacterSection: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-1 flex-row justify-start items-end z-0 md:relative absolute right-0 bottom-[105px] md:bottom-[41px] border">
+          <div className={` flex flex-1 flex-row justify-start items-end z-0 md:relative absolute md:top-auto bottom-auto md:bottom-[41px] right-auto md:right-0 md:left-auto ${isScale == 1 ? "left-[36px] top-[237px]" : isScale == 2 ? "left-[99px] top-[251px]" : isScale == 3 ? "left-[44px] top-[239px]" : isScale == 4 ? "left-[64px] top-[245px]" : "left-[43px] top-[247px]"} `}>
             <Image
               src={
                 isScale == 1
-                  ? "/assets/character/character-1.png"
+                  ? "/assets/character/effect-character/character-1.png"
                   : isScale == 2
-                    ? "/assets/character/character-2.png"
+                    ? "/assets/character/effect-character/character-2.png"
                     : isScale == 3
-                      ? "/assets/character/character-3.png"
+                      ? "/assets/character/effect-character/character-3.png"
                       : isScale == 4
-                        ? "/assets/character/character-4.png"
-                        : "/assets/character/character-5.png"
+                        ? "/assets/character/effect-character/character-4.png"
+                        : "/assets/character/effect-character/character-5.png"
               }
               alt="character"
-              width={899}
-              height={1039}
-              className={` ${ isScale == 4 ? "max-w-[899px] max-h-[1039px] md:ml-[-200px]" : isScale == 5 ? "max-w-[899px] max-h-[1039px] md:ml-[-200px] mb-[53px]" : ""}  ml-auto z-0 border`}
+              width={800}
+              height={938}
+              className={` ml-0 mb-0 ${isScale == 1 ? " max-w-[374px] max-h-[438px] md:max-w-[726px] md:max-h-[853px] md:ml-[-190px] md:mb-[46px]" : isScale == 2 ? " max-w-[315px] max-h-[370px] md:max-w-[600px] md:max-h-[704px] md:ml-[-35px] md:mb-[106px]" : isScale == 3 ? "max-w-[376px] max-h-[441px] md:max-w-[800px] md:max-h-[938px] md:ml-[-210px] md:mb-0" : isScale == 4 ? "max-w-[376px] max-h-[441px] md:max-w-[763px] md:max-h-[896px] md:mr-[-80px] md:mb-0 md:ml-[-50px]" : " max-w-[324px] max-h-[380px] md:max-w-[717px] md:max-h-[841px] md:ml-[-200px] md:mb-[53px]"} ml-auto z-0`}
             />
             <Image
               src={
@@ -267,7 +268,7 @@ const CharacterSection: React.FC = () => {
               alt="character"
               width={391}
               height={486}
-              className={` ${ isScale == 4 ? "md:max-w-[417px] md:max-h-[648px] " : isScale == 5 ? "md:max-w-[417px] md:max-h-[648px] " : ""} max-w-[104px] max-h-[161px] z-20 absolute bottom-0 right-0 border `}
+              className={` max-w-[124px] max-h-[181px] z-20 absolute md:right-0 ${isScale == 1 ? " max-w-[87px] max-h-[150px] right-[52px] md:max-w-[282px] md:max-h-[483px] " : isScale == 2 ? "max-w-[121px] max-h-[150px] right-[20px] mb-[-50px] md:max-w-[391px] md:max-h-[486px]" : isScale == 3 ? "max-w-[120px] max-h-[150px] right-[40px] md:max-w-[385px] md:max-h-[494px]" : isScale == 4 ? "max-w-[106px] max-h-[150px] right-[60px] mb-[10px] md:max-w-[326px] md:max-h-[448px]" : "max-w-[121px] max-h-[150px] right-0 mb-[-50px] md:max-w-[391px] md:max-h-[486px]"}  `}
             />
           </div>
         </div>
