@@ -32,22 +32,22 @@ export default function Home() {
         <div
           className="hero-section w-full h-[1024px] bg-center bg-no-repeat mb-[-2px]"
         >
-          <div className=" w-[100%] absolute top-[200px] md:top-[358px] flex flex-col justify-center items-center">
+          <div className=" w-[100%] absolute top-[340px] sm:top-[438px] flex flex-col justify-center items-center">
             <div
-              className=" w-[100%] m-auto h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
+              className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
               style={{ backgroundSize: "100% 100%" }}
             >
-              <h1 className=" text-center leading-[110%] text-[26px] md:text-[40px] lg:text-[56px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] lg:bg-[left_0_bottom_-35px]">
+              <h1 className=" text-center leading-[110%] text-[18px] md:text-[40px] lg:text-[56px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-10px] md:bg-[left_0_bottom_-25px] lg:bg-[left_0_bottom_-35px]">
                 The Race for 150,000,000 $CHILL Has Begun
               </h1>
             </div>
-            <div className=" w-[100%] m-auto mt-[-230px] sm:mt-[-210px] h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
-              <h1 className=" text-center leading-[110%] font-bold text-[20px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-23px]">
+            <div className=" w-[100%] m-auto mt-[-130px] md:mt-[-210px] h-[200px] md:h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
+              <h1 className=" text-center leading-[110%] font-bold text-[16px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-27px]">
                 Collect, Extract, Dominate.
               </h1>
             </div>
           </div>
-          <div className="flex justify-center items-center w-[100%] absolute top-[502px] md:top-[742px]">
+          <div className="flex justify-center items-center w-[100%] absolute top-[520px] sm:top-[642px] md:top-[782px]">
             <button
               className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[28px] text-[#020215]"
               style={{
@@ -163,102 +163,6 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                   />
                 </div>
               </div>
-
-              {/* <div className=" hidden md:hidden">
-                <FeaturesSection
-                  setCardID={setActiveCardID}
-                  id={0}
-                  isActive={true}
-                  featurescolor={
-                    activeCardID === 0
-                      ? "#8C46FF"
-                      : activeCardID === 1
-                      ? "#EF821D"
-                      : activeCardID === 2
-                      ? "#E6D11D"
-                      : activeCardID === 3
-                      ? "#21E6AB"
-                      : "#2AD0F4"
-                  }
-                  featuresborder={
-                    activeCardID === 0
-                      ? "#EAD4FF"
-                      : activeCardID === 1
-                      ? "#FFFBD4"
-                      : activeCardID === 2
-                      ? "#FFFACC"
-                      : activeCardID === 3
-                      ? "#B3FFE8"
-                      : "#B3F1FF"
-                  }
-                  featurestop={
-                    activeCardID === 0
-                      ? "/assets/features/feature-image-top1.png"
-                      : activeCardID === 1
-                      ? "/assets/features/feature-image-top2.png"
-                      : activeCardID === 2
-                      ? "/assets/features/feature-image-top3.png"
-                      : activeCardID === 3
-                      ? "/assets/features/feature-image-top4.png"
-                      : "/assets/features/feature-image-top5.png"
-                  }
-                  featuresbottom={
-                    activeCardID === 0
-                      ? "/assets/features/feature-image-bottom1.png"
-                      : activeCardID === 1
-                      ? "/assets/features/feature-image-bottom2.png"
-                      : activeCardID === 2
-                      ? "/assets/features/feature-image-bottom3.png"
-                      : activeCardID === 3
-                      ? "/assets/features/feature-image-bottom4.png"
-                      : "/assets/features/feature-image-bottom5.png"
-                  }
-                />
-                <div className="mt-[51px] w-[100%] flex flex-row justify-center items-center">
-                  <div className="border-2 rounded-[20px] p-2 flex gap-3">
-                    <div
-                      className={`w-[12px] h-[12px] rounded-[50%] ${
-                        activeCardID == 0 ? "bg-[#5CFFE2]" : "bg-[#8998DD]"
-                      }  cursor-pointer`}
-                      onClick={() => {
-                        setActiveCardID(0);
-                      }}
-                    ></div>
-                    <div
-                      className={`w-[12px] h-[12px] rounded-[50%] ${
-                        activeCardID == 1 ? "bg-[#5CFFE2]" : "bg-[#8998DD]"
-                      }  cursor-pointer`}
-                      onClick={() => {
-                        setActiveCardID(1);
-                      }}
-                    ></div>
-                    <div
-                      className={`w-[12px] h-[12px] rounded-[50%] ${
-                        activeCardID == 2 ? "bg-[#5CFFE2]" : "bg-[#8998DD]"
-                      }  cursor-pointer`}
-                      onClick={() => {
-                        setActiveCardID(2);
-                      }}
-                    ></div>
-                    <div
-                      className={`w-[12px] h-[12px] rounded-[50%] ${
-                        activeCardID == 3 ? "bg-[#5CFFE2]" : "bg-[#8998DD]"
-                      }  cursor-pointer`}
-                      onClick={() => {
-                        setActiveCardID(3);
-                      }}
-                    ></div>
-                    <div
-                      className={`w-[12px] h-[12px] rounded-[50%] ${
-                        activeCardID == 4 ? "bg-[#5CFFE2]" : "bg-[#8998DD]"
-                      }  cursor-pointer`}
-                      onClick={() => {
-                        setActiveCardID(4);
-                      }}
-                    ></div>
-                  </div>
-                </div>
-              </div> */}
 
               <div className="w-[100%] block md:hidden pt-10">
                 <Swiper

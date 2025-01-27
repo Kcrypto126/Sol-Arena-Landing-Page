@@ -105,7 +105,7 @@ const FeaturesSection: React.FC<FeaturesSection> = ({
               alt="alt"
               width={360}
               height={600}
-              className={` ${isActive ? "w-[100%] h-[100%]" : "w-[360px] h-[600px]"} max-w-[360px] rounded-lg`}
+              className={` w-[100%] h-[100%] max-w-[360px] rounded-lg`}
             />
           </div>
           <Image

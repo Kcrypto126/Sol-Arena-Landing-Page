@@ -248,9 +248,9 @@ const CharacterSection: React.FC = () => {
                         : "/assets/character/character-5.png"
               }
               alt="character"
-              width={699}
-              height={839}
-              className={` ${ isScale == 4 ? "max-w-[699px] max-h-[839px] md:ml-[-200px]" : isScale == 5 ? "max-w-[699px] max-h-[839px] md:ml-[-200px] mb-[53px]" : ""}  ml-auto z-0 border`}
+              width={899}
+              height={1039}
+              className={` ${ isScale == 4 ? "max-w-[899px] max-h-[1039px] md:ml-[-200px]" : isScale == 5 ? "max-w-[899px] max-h-[1039px] md:ml-[-200px] mb-[53px]" : ""}  ml-auto z-0 border`}
             />
             <Image
               src={

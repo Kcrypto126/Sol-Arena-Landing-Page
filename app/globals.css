@@ -71,7 +71,7 @@ body {
 }
 
 /* bg-[url('/assets/hero-img-mobile.webp')] sm:bg-[url('/assets/hero-img.webp')] */
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 640px) {
   .hero-section {
     background-image: url("/assets/hero-img-mobile.webp");
     height: 764px;
