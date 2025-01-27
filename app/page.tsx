@@ -24,6 +24,7 @@ export default function Home() {
     setTimeout(() => {
       setIsButton(false);
     }, 600);
+    navigator.push("https://play.solarena.io")
   };
 
   return (
@@ -285,7 +286,7 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                 boxShadow: "0px 0px 20px 1px",
               }}
               onClick={() => {
-                navigator.push("/");
+                navigator.push("https://play.solarena.io");
               }}
             >
               PLAY NOW

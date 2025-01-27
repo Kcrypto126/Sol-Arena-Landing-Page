@@ -61,11 +61,11 @@ const Header: React.FC = () => {
 
   const effectPlayButton = () => {
     setIsEffect(true);
-    navigator.push("/");
-
+    
     setTimeout(() => {
       setIsEffect(false);
     }, 600);
+    navigator.push("https://play.solarena.io");
   };
 
   return (

@@ -144,7 +144,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                 </svg>
                                 <time className=" absolute text-[16px] font-normal leading-none text-[#41FFC6] dark:text-gray-500">Q2 2024</time>
                                 <ul className="pt-6 px-5">
-                                    <li className="mb-4 text-base font-normal list-disc">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</li>
+                                    <li className="mb-4 text-base font-normal list-disc">Project Kick-off (April)</li>
                                 </ul>
                             </li>
                             <li className="mb-10 ms-4">

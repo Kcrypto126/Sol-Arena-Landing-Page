@@ -7,15 +7,18 @@ import { Mousewheel, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 const Page: React.FC = () => {
   const [isButton, setIsButton] = useState(false);
+  const navigator = useRouter();
 
   const handlePlayButton = () => {
     setIsButton(true);
     setTimeout(() => {
       setIsButton(false);
     }, 600);
+    navigator.push("https://play.solarena.io")
   };
 
   const [height, setHeight] = useState<number>(0);
