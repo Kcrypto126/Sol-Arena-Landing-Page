@@ -22,8 +22,8 @@ push-to-artifact-registry:
   script:
     - gcloud auth activate-service-account --key-file=$GCP_SERVICE_KEY
     - gcloud auth configure-docker asia-southeast1-docker.pkg.dev
-    - docker pull $AR_IMAGE:$IMAGE_TAG
-    - docker tag $AR_IMAGE:$IMAGE_TAG $AR_IMAGE:$IMAGE_TAG
+    #- docker pull $AR_IMAGE:$IMAGE_TAG
+    #- docker tag $AR_IMAGE:$IMAGE_TAG $AR_IMAGE:$IMAGE_TAG
     - docker push $AR_IMAGE:$IMAGE_TAG
 
 deploy-to-cloud-run:
