@@ -142,7 +142,7 @@ const Header: React.FC = () => {
               HOME
             </Link>
             <Link
-              href={"/play"}
+              href={"/how"}
               prefetch
               className="text-[#CAD4EF] w-[192px] lg:w-[140px] h-11 lg:h-10 flex flex-row justify-center items-center rounded-[50px] transition-all"
               style={{
