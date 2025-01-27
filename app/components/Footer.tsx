@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <div
-        className="footer w-full h-[691px] lg:h-[607px] bg-center bg-no-repeat relative overflow-hidden"
+        className="footer w-full h-[691px] lg:h-[607px] bg-center bg-no-repeat relative overflow-hidden "
         style={{ backgroundImage: "url('/assets/footer/footer-back.png')" }}
       >
         <div className="max-w-[1440px] m-auto flex flex-row">
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
           </div>
           <div className="z-10">
             <div
-              className=" max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] lg:text-[16px] font-semibol leading-[150%] absolute bottom-[145px] right-[190px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
+              className=" max-w-[363px] w-[164px] sm:w-auto bg-center bg-no-repeat px-[16px] lg:px-[23px] py-[16px] text-[14px] text-black lg:text-[16px] font-semibol leading-[150%] absolute bottom-[145px] right-[190px] sm:right-[250px] lg:right-[350px] bg-[url('/assets/footer/text-back-mobile.png')] sm:bg-[url('/assets/footer/text-back.png')] "
               style={{
                 backgroundSize: "100% 100%",
               }}
