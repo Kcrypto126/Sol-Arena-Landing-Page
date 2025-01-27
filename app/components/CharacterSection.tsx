@@ -116,7 +116,7 @@ const CharacterSection: React.FC = () => {
               </div>
             </div>
             <div
-              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-8 border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
+              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-8 mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
                 ? "border-[#38E8FF]"
                 : isScale == 2
                   ? "border-[#FFD752]"
