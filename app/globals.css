@@ -79,6 +79,10 @@ body {
   }
 }
 
+#card-content {
+  scroll-behavior: smooth;
+}
+
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   padding-left: 6px !important;
   padding-right: 6px !important;

@@ -97,8 +97,8 @@ export default function Home() {
                   className="absolute bottom-[-75px] right-[-30px] z-20"
                 />
               </div>
-              <div className=" pl-[70px] hidden md:block overflow-hidden">
-                <div className="flex flex-row items-center gap-5 overflow-hidden ">
+              <div className=" hidden md:block overflow-auto">
+                <div id="card-content" className=" flex flex-row items-center gap-5 px-[70px]">
                   <FeaturesSection
                     setCardID={setActiveCardID}
                     id={0}
