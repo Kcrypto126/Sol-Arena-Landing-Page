@@ -74,55 +74,9 @@ const CharacterSection: React.FC = () => {
                 }`}
             />
             <div className=" flex flex-row gap-3 md:gap-4 pl-4 md:pl-8 xl:pl-0">
-              <div
-                className={`flex justify-center items-center px-2 h-[30px] ${isScale == 1
-                  ? "bg-[#7E81A9] border-[#F7FF80]"
-                  : isScale == 2
-                    ? "bg-[#3676FF] border-[#41FFCC]"
-                    : isScale == 3
-                      ? "bg-[#E136FF] border-[#FFF641]"
-                      : isScale == 4
-                        ? "bg-[#FF9E36] border-[#FCFF41]"
-                        : "bg-[#FF3658] border-[#FFD341]"
-                  } rounded-sm border-b-2 border-r-2 text-[12px] md:text-[16px] font-semibold text-white`}
-              >
-                {isScale == 1
-                  ? "Common"
-                  : isScale == 2
-                    ? "Rare"
-                    : isScale == 3
-                      ? "Epic"
-                      : isScale == 4
-                        ? "Legendary"
-                        : "Artifact"}
-              </div>
-              <div
-                className={`flex justify-center items-center w-[24px] md:w-[32px] h-[24px] md:h-[32px] text-[7px] md:text-[9px] font-bold ${isScale == 1
-                  ? "text-[#C0D2FF]"
-                  : isScale == 2
-                    ? "text-[#61C2FF]"
-                    : isScale == 3
-                      ? "text-[#E136FF]"
-                      : isScale == 4
-                        ? "text-[#FEDA61]"
-                        : "text-[#FF898B]"
-                  } `}
-                style={{
-                  backgroundImage:
-                    isScale == 1
-                      ? "url('/assets/character/hex-back-1.png')"
-                      : isScale == 2
-                        ? "url('/assets/character/hex-back-1.png"
-                        : isScale == 3
-                          ? "url('/assets/character/hex-back-1.png"
-                          : isScale == 4
-                            ? "url('/assets/character/hex-back-1.png"
-                            : "url('/assets/character/hex-back-1.png",
-                  backgroundSize: "100% 100%"
-                }}
-              >
-                NFT
-              </div>
+              <h1 className={` font-[Oswald] italic font-[800] text-[40px] text-transparent bg-clip-text bg-gradient-to-t ${ isScale == 1 ? "from-[#D5E4EB]" : isScale == 2 ? "from-[#B7E8FF]" : isScale == 3 ? "from-[#FFD2FF]" : isScale == 4 ? "from-[#FAFFC9]" : "from-[#FFC9D9]" } to-[#fff] pr-2 `}>
+                {isScale == 1 ? "C RANK" : isScale == 2 ? "B RANK" : isScale == 3 ? "A RANK" : isScale == 4 ? "S RANK" : "SS RANK" }
+              </h1>
             </div>
             <div
               className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-[31px] mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
