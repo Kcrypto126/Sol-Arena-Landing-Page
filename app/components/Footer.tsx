@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
               <button
                 className="font-[Oswald] text-white text-[18px] font-bold border-2 border-[#6F58FF] w-[77px] h-10 flex justify-center items-center"
                 onClick={() => {
-                  navigator.push("/");
+                  navigator.push("#");
                 }}
               >
                 TOP
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
               <button
                 className="border-2 border-[#6F58FF] rounded-[50%] w-10 h-10 flex justify-center items-center"
                 onClick={() => {
-                  navigator.push("/");
+                  navigator.push("#");
                 }}
               >
                 <Image

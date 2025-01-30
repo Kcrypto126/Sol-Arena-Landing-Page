@@ -99,8 +99,8 @@ export default function Home() {
                     className="absolute bottom-[-75px] right-[-30px] z-20"
                   />
                 </div>
-                <div className=" hidden md:block overflow-auto">
-                  <div id="card-content" className=" flex flex-row items-center gap-5 px-[70px]">
+                <div className=" hidden md:block overflow-auto scrollbar-hide">
+                  <div id="card-content" className=" flex flex-row items-center gap-5 px-[70px] scrollbar-hide">
                     <FeaturesSection
                       setCardID={setActiveCardID}
                       id={0}
