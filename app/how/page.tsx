@@ -10,10 +10,57 @@ import "swiper/css/pagination";
 import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { Swiper as SwiperType } from "swiper";
 
 const Page: React.FC = () => {
   const [isButton, setIsButton] = useState(false);
   const navigator = useRouter();
+  const videoRefs = useRef<HTMLVideoElement[]>([]);
+  const videoMobileRefs = useRef<HTMLVideoElement[]>([]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const [aa, setAdd] = useState(0);
+
+  const handleSlideChange = (swiper: SwiperType) => {
+    setActiveIndex(swiper.activeIndex);
+  }
+
+  const addVideoRef = (element: HTMLVideoElement) => {
+    if (element && !videoRefs.current.includes(element)) {
+      videoRefs.current.push(element);
+    }
+  };
+  const addVideoMobileRef = (element: HTMLVideoElement) => {
+    if (element && !videoMobileRefs.current.includes(element)) {
+      videoMobileRefs.current.push(element);
+    }
+  };
+
+  useEffect(() => {
+    switch (activeIndex) {
+      case 0:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[0]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 1:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[1]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[2]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+
+    }
+
+  }, [activeIndex])
 
   const handlePlayButton = () => {
     setIsButton(true);
@@ -53,6 +100,8 @@ const Page: React.FC = () => {
             style={{
               height: height - 72 + "px",
             }}
+            slidesPerView={1}
+            onSlideChange={handleSlideChange}
             mousewheel
             className="playSlider"
           >
@@ -63,7 +112,7 @@ const Page: React.FC = () => {
                   1. Enter the Arena
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                     <source src="/assets/play/video/video-1.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -97,7 +146,7 @@ const Page: React.FC = () => {
                       2. Gather Energy
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                         <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -148,7 +197,7 @@ const Page: React.FC = () => {
                       3. Mystery Box & Power-ups
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                         <source src="/assets/play/video/video-3.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -187,7 +236,7 @@ const Page: React.FC = () => {
                   2. Gather Energy
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF] z-10">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF] z-10">
                     <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -238,7 +287,7 @@ const Page: React.FC = () => {
                   3. Mystery Box & Power-ups
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                     <source src="/assets/play/video/video-3.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -278,7 +327,7 @@ const Page: React.FC = () => {
                       4. Boost to Win
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
                         <source src="/assets/play/video/video-4.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -308,7 +357,7 @@ const Page: React.FC = () => {
                       5. Collect noCHILL
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#F29114]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#F29114]">
                         <source src="/assets/play/video/video-5.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -348,7 +397,7 @@ const Page: React.FC = () => {
                   4. Boost to Win
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
                     <source src="/assets/play/video/video-4.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -378,7 +427,7 @@ const Page: React.FC = () => {
                   5. Collect noCHILL
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#F29114]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#F29114]">
                     <source src="/assets/play/video/video-5.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -419,7 +468,7 @@ const Page: React.FC = () => {
                       6. Avoid Collisions
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                         <source src="/assets/play/video/video-6.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -449,7 +498,7 @@ const Page: React.FC = () => {
                       7. Defeat Enemies
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                         <source src="/assets/play/video/video-7.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -475,7 +524,7 @@ const Page: React.FC = () => {
                   6. Avoid Collisions
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                     <source src="/assets/play/video/video-6.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -505,7 +554,7 @@ const Page: React.FC = () => {
                   7. Defeat Enemies
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                     <source src="/assets/play/video/video-7.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -532,7 +581,7 @@ const Page: React.FC = () => {
                       8. Use Wormholes to Extract
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#82E240]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#82E240]">
                         <source src="/assets/play/video/video-8.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -563,7 +612,7 @@ const Page: React.FC = () => {
                       9. Airdrop
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
                         <source src="/assets/play/video/video-9.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -589,7 +638,7 @@ const Page: React.FC = () => {
                   8. Use Wormholes to Extract
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#82E240]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#82E240]">
                     <source src="/assets/play/video/video-8.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -620,7 +669,7 @@ const Page: React.FC = () => {
                   9. Airdrop
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
                     <source src="/assets/play/video/video-9.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -659,7 +708,7 @@ const Page: React.FC = () => {
                     10. Refer your Friends!
                   </h2>
                   <div className=" relative">
-                    <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                    <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                       <source src="/assets/play/video/video-10.mp4" type="video/mp4" />
                     </video>
                     <Image
