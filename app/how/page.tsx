@@ -7,7 +7,8 @@ import Footer from "../components/Footer";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { useEffect, useState } from "react";
+import 'swiper/swiper-bundle.css'; // Import Swiper styles
+import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 const Page: React.FC = () => {
@@ -707,7 +708,7 @@ const Page: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide className=" footer-slider">
-              <Footer/>
+              <Footer />
             </SwiperSlide>
           </Swiper>
         </div>

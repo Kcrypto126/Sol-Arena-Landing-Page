@@ -147,7 +147,7 @@ const Header: React.FC = () => {
               className="text-[#CAD4EF] w-[192px] lg:w-[140px] h-11 lg:h-10 flex flex-row justify-center items-center rounded-[50px] transition-all"
               style={{
                 backgroundColor:
-                  pathname == "/play"
+                  pathname == "/how"
                     ? "#603CDB"
                     : isMenuPlay == 2
                       ? "#3B258F"
