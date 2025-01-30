@@ -50,6 +50,9 @@ const Page: React.FC = () => {
         for (let i = 0; i < videoRefs.current.length; i++) {
           videoRefs.current[i]?.pause();
         }
+        videoRefs.current[3]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
         videoRefs.current[1]?.play().catch((error) => {
           console.error('Error trying to play the video:', error);
         });
@@ -57,7 +60,91 @@ const Page: React.FC = () => {
           console.error('Error trying to play the video:', error);
         });
         break;
-
+      case 2:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[4]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[5]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[6]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 3:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[7]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[9]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[10]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 4:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[8]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[13]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[14]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 5:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[11]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        videoRefs.current[17]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 6:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[12]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 7:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[15]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 8:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[16]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
+      case 9:
+        for (let i = 0; i < videoRefs.current.length; i++) {
+          videoRefs.current[i]?.pause();
+        }
+        videoRefs.current[17]?.play().catch((error) => {
+          console.error('Error trying to play the video:', error);
+        });
+        break;
     }
 
   }, [activeIndex])
