@@ -8,12 +8,11 @@ const EvaSection: React.FC = () => {
   const [mouseover, setMouseOver] = useState(0);
   return (
     <>
-    <Head>
-    <link rel="preload" href="/assets/eva/eva-back1.webp" as="image" />
-    <link rel="preload" href="/assets/eva/eva-back2.webp" as="image" />
-    <link rel="preload" href="/assets/eva/eva-back3.webp" as="image" />
-
-    </Head>
+      <Head>
+        <link rel="preload" href="/assets/eva/eva-back1.webp" as="image" />
+        <link rel="preload" href="/assets/eva/eva-back2.webp" as="image" />
+        <link rel="preload" href="/assets/eva/eva-back3.webp" as="image" />
+      </Head>
       <div
         className={`section w-full h-[1128px] md:h-auto relative bg-no-repeat ${mouseover == 1 ? "bg-[right_-280px_top] md:bg-right" : mouseover !== 0 ? "bg-[right_0px_top_-100px] md:bg-right" : "bg-right"} md:bg-center transition-all duration-300`}
         style={{

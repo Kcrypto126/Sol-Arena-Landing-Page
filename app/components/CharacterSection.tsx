@@ -260,6 +260,7 @@ const CharacterSection: React.FC = () => {
               alt="character"
               width={800}
               height={938}
+              priority
               className={` transition-all duration-300 ml-0 mb-0 ${isScale == 1 ? " max-w-[374px] max-h-[438px] md:max-w-[726px] md:max-h-[853px] md:ml-[-190px] md:mb-[46px]" : isScale == 2 ? " max-w-[315px] max-h-[370px] md:max-w-[600px] md:max-h-[704px] md:ml-[-35px] md:mb-[106px]" : isScale == 3 ? "max-w-[376px] max-h-[441px] md:max-w-[800px] md:max-h-[938px] md:ml-[-210px] md:mb-0" : isScale == 4 ? "max-w-[376px] max-h-[441px] md:max-w-[763px] md:max-h-[896px] md:mr-[-80px] md:mb-0 md:ml-[-50px]" : " max-w-[324px] max-h-[380px] md:max-w-[717px] md:max-h-[841px] md:ml-[-200px] md:mb-[53px]"} ml-auto z-0`}
             />
             <Image
@@ -277,6 +278,7 @@ const CharacterSection: React.FC = () => {
               alt="character"
               width={391}
               height={486}
+              priority
               className={` transition-all duration-300 max-w-[124px] max-h-[181px] z-20 absolute md:right-0 ${isScale == 1 ? " max-w-[87px] max-h-[150px] right-[52px] md:max-w-[282px] md:max-h-[483px] " : isScale == 2 ? "max-w-[121px] max-h-[150px] right-[20px] mb-[-50px] md:max-w-[391px] md:max-h-[486px]" : isScale == 3 ? "max-w-[120px] max-h-[150px] right-[40px] md:max-w-[385px] md:max-h-[494px]" : isScale == 4 ? "max-w-[106px] max-h-[150px] right-[60px] mb-[10px] md:max-w-[326px] md:max-h-[448px]" : "max-w-[121px] max-h-[150px] right-0 mb-[-50px] md:max-w-[391px] md:max-h-[486px]"}  `}
             />
           </div>
