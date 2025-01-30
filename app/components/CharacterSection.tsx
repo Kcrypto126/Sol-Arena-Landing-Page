@@ -1,18 +1,27 @@
 "use client";
 
 import Image from "next/image";
+import Head from "next/head";
 import { useState } from "react";
 
 const CharacterSection: React.FC = () => {
   const [isScale, setIsScale] = useState(1);
+
   return (
     <>
+      <Head>
+        <link rel="preload" href="/assets/character/character-back-1.webp" as="image" />
+        <link rel="preload" href="/assets/character/character-back-2.webp" as="image" />
+        <link rel="preload" href="/assets/character/character-back-3.webp" as="image" />
+        <link rel="preload" href="/assets/character/character-back-4.webp" as="image" />
+        <link rel="preload" href="/assets/character/character-back-5.webp" as="image" />
+      </Head>
       <div
-        className="section w-full bg-center bg-no-repeat overflow-hidden"
+        className="section w-full bg-center bg-no-repeat overflow-hidden transition-all duration-300"
         style={{
           backgroundImage:
             isScale == 1
-              ? "url('/assets/character/character-back-1.webp')"
+              ? "url('/assets/character/character-back-1.webp'), url('/assets/character/character-back-2.webp'), url('/assets/character/character-back-3.webp'), url('/assets/character/character-back-4.webp'), url('/assets/character/character-back-5.webp')"
               : isScale == 2
                 ? "url('/assets/character/character-back-2.webp')"
                 : isScale == 3
@@ -116,7 +125,7 @@ const CharacterSection: React.FC = () => {
               </div>
             </div>
             <div
-              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-8 mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
+              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-[31px] mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
                 ? "border-[#38E8FF]"
                 : isScale == 2
                   ? "border-[#FFD752]"
@@ -128,7 +137,7 @@ const CharacterSection: React.FC = () => {
                 } bg-[#070733] bg-opacity-45 bg-[url('/assets/character/Pattern.png')] bg-no-repeat`}
               style={{ backgroundSize: "auto 100%" }}
             >
-              <p className="text-[#CAD4EF] font-semibold text-[10px] md:text-[20px] leading-[150%] md:leading-[150%]">
+              <p className="text-[#CAD4EF] font-semibold text-[10px] md:text-[20px] leading-[150%]">
                 {isScale == 1 ? "Sakura, the bubbly girl next door with a mischievous spark, stumbled into the arena by chance. Her quick thinking and charisma made her a crowd favorite overnight. Every fight is a whirlwind of surprises, proving even the scrappiest underdog can shine in the spotlight."
                   : isScale == 2 ? "Bonkster lives for chaos, his wry grin a signal of trouble waiting to unfold. He moves through the arena with a reckless ease, every wink and smirk daring someone to challenge him. He fights to disrupt, to mock, to remind the powerful they are not untouchable—and to steal a few hearts on the way."
                     : isScale == 3 ? "Hoplyn’s name lights up the skyline, luring the city’s elite to Club Arcadia, the most luxurious gentlemen’s club where secrets are currency. On stage, she moves like a whispered dream, every gesture enchanting. But beneath the charm lies a sharp mind, quietly bending the powerful to her will."
@@ -251,7 +260,7 @@ const CharacterSection: React.FC = () => {
               alt="character"
               width={800}
               height={938}
-              className={` ml-0 mb-0 ${isScale == 1 ? " max-w-[374px] max-h-[438px] md:max-w-[726px] md:max-h-[853px] md:ml-[-190px] md:mb-[46px]" : isScale == 2 ? " max-w-[315px] max-h-[370px] md:max-w-[600px] md:max-h-[704px] md:ml-[-35px] md:mb-[106px]" : isScale == 3 ? "max-w-[376px] max-h-[441px] md:max-w-[800px] md:max-h-[938px] md:ml-[-210px] md:mb-0" : isScale == 4 ? "max-w-[376px] max-h-[441px] md:max-w-[763px] md:max-h-[896px] md:mr-[-80px] md:mb-0 md:ml-[-50px]" : " max-w-[324px] max-h-[380px] md:max-w-[717px] md:max-h-[841px] md:ml-[-200px] md:mb-[53px]"} ml-auto z-0`}
+              className={` transition-all duration-300 ml-0 mb-0 ${isScale == 1 ? " max-w-[374px] max-h-[438px] md:max-w-[726px] md:max-h-[853px] md:ml-[-190px] md:mb-[46px]" : isScale == 2 ? " max-w-[315px] max-h-[370px] md:max-w-[600px] md:max-h-[704px] md:ml-[-35px] md:mb-[106px]" : isScale == 3 ? "max-w-[376px] max-h-[441px] md:max-w-[800px] md:max-h-[938px] md:ml-[-210px] md:mb-0" : isScale == 4 ? "max-w-[376px] max-h-[441px] md:max-w-[763px] md:max-h-[896px] md:mr-[-80px] md:mb-0 md:ml-[-50px]" : " max-w-[324px] max-h-[380px] md:max-w-[717px] md:max-h-[841px] md:ml-[-200px] md:mb-[53px]"} ml-auto z-0`}
             />
             <Image
               src={
@@ -268,7 +277,7 @@ const CharacterSection: React.FC = () => {
               alt="character"
               width={391}
               height={486}
-              className={` max-w-[124px] max-h-[181px] z-20 absolute md:right-0 ${isScale == 1 ? " max-w-[87px] max-h-[150px] right-[52px] md:max-w-[282px] md:max-h-[483px] " : isScale == 2 ? "max-w-[121px] max-h-[150px] right-[20px] mb-[-50px] md:max-w-[391px] md:max-h-[486px]" : isScale == 3 ? "max-w-[120px] max-h-[150px] right-[40px] md:max-w-[385px] md:max-h-[494px]" : isScale == 4 ? "max-w-[106px] max-h-[150px] right-[60px] mb-[10px] md:max-w-[326px] md:max-h-[448px]" : "max-w-[121px] max-h-[150px] right-0 mb-[-50px] md:max-w-[391px] md:max-h-[486px]"}  `}
+              className={` transition-all duration-300 max-w-[124px] max-h-[181px] z-20 absolute md:right-0 ${isScale == 1 ? " max-w-[87px] max-h-[150px] right-[52px] md:max-w-[282px] md:max-h-[483px] " : isScale == 2 ? "max-w-[121px] max-h-[150px] right-[20px] mb-[-50px] md:max-w-[391px] md:max-h-[486px]" : isScale == 3 ? "max-w-[120px] max-h-[150px] right-[40px] md:max-w-[385px] md:max-h-[494px]" : isScale == 4 ? "max-w-[106px] max-h-[150px] right-[60px] mb-[10px] md:max-w-[326px] md:max-h-[448px]" : "max-w-[121px] max-h-[150px] right-0 mb-[-50px] md:max-w-[391px] md:max-h-[486px]"}  `}
             />
           </div>
         </div>
