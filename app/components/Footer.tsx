@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
               <button
                 className="w-[60px] h-[60px] bg-[#6F58FF] flex justify-center items-center"
                 onClick={() => {
-                  navigator.push("/");
+                  navigator.push("https://t.me/solarenaio");
                 }}
               >
                 <Image
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
               <button
                 className="w-[60px] h-[60px] bg-[#6F58FF] flex justify-center items-center"
                 onClick={() => {
-                  navigator.push("/");
+                  navigator.push("https://x.com/solarena_io");
                 }}
               >
                 <Image
@@ -92,7 +92,7 @@ const Footer: React.FC = () => {
               <button
                 className="w-[60px] h-[60px] bg-[#6F58FF] flex justify-center items-center"
                 onClick={() => {
-                  navigator.push("/");
+                  navigator.push("https://discord.com/invite/chillchatgames");
                 }}
               >
                 <Image
