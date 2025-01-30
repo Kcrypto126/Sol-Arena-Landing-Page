@@ -132,10 +132,16 @@ body {
   .swiper-slide.slider-desktop {
     display: none;
   }
+  .swiper-slide.footer-slider {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .swiper-slide.slider-mobile {
+    display: none;
+  }
+  .swiper-slide.footer-slider {
     display: none;
   }
 }

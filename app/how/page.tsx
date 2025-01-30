@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Pagination } from "swiper/modules";
+import Footer from "../components/Footer";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -61,7 +62,7 @@ const Page: React.FC = () => {
                   1. Enter the Arena
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                     <source src="/assets/play/video/video-1.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -95,7 +96,7 @@ const Page: React.FC = () => {
                       2. Gather Energy
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                         <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -146,7 +147,7 @@ const Page: React.FC = () => {
                       3. Mystery Box & Power-ups
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                         <source src="/assets/play/video/video-3.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -185,7 +186,7 @@ const Page: React.FC = () => {
                   2. Gather Energy
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF] z-10">
                     <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -214,7 +215,7 @@ const Page: React.FC = () => {
                     alt="2m-4"
                     width={143}
                     height={145}
-                    className=" w-[93px] h-[95px] md:w-[143px] md:h-[145px] absolute left-[-13%] bottom-[-10%] z-20"
+                    className=" w-[93px] h-[95px] md:w-[143px] md:h-[145px] absolute left-[-15%] bottom-[-13%] z-0"
                   />
                   <Image
                     src={"/assets/play/2m-2.png"}
@@ -236,7 +237,7 @@ const Page: React.FC = () => {
                   3. Mystery Box & Power-ups
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                     <source src="/assets/play/video/video-3.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -276,7 +277,7 @@ const Page: React.FC = () => {
                       4. Boost to Win
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
                         <source src="/assets/play/video/video-4.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -306,7 +307,7 @@ const Page: React.FC = () => {
                       5. Collect noCHILL
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#F29114]">
                         <source src="/assets/play/video/video-5.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -346,7 +347,7 @@ const Page: React.FC = () => {
                   4. Boost to Win
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#0F86E8]">
                     <source src="/assets/play/video/video-4.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -376,7 +377,7 @@ const Page: React.FC = () => {
                   5. Collect noCHILL
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#F29114]">
                     <source src="/assets/play/video/video-5.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -417,7 +418,7 @@ const Page: React.FC = () => {
                       6. Avoid Collisions
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                         <source src="/assets/play/video/video-6.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -447,7 +448,7 @@ const Page: React.FC = () => {
                       7. Defeat Enemies
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                         <source src="/assets/play/video/video-7.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -473,7 +474,7 @@ const Page: React.FC = () => {
                   6. Avoid Collisions
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                     <source src="/assets/play/video/video-6.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -503,7 +504,7 @@ const Page: React.FC = () => {
                   7. Defeat Enemies
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#E80F5B]">
                     <source src="/assets/play/video/video-7.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -530,7 +531,7 @@ const Page: React.FC = () => {
                       8. Use Wormholes to Extract
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#82E240]">
                         <source src="/assets/play/video/video-8.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -561,7 +562,7 @@ const Page: React.FC = () => {
                       9. Airdrop
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" controls>
+                      <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
                         <source src="/assets/play/video/video-9.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -587,7 +588,7 @@ const Page: React.FC = () => {
                   8. Use Wormholes to Extract
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#82E240]">
                     <source src="/assets/play/video/video-8.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -618,7 +619,7 @@ const Page: React.FC = () => {
                   9. Airdrop
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" controls>
+                  <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#FFEC40]">
                     <source src="/assets/play/video/video-9.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -657,7 +658,7 @@ const Page: React.FC = () => {
                     10. Refer your Friends!
                   </h2>
                   <div className=" relative">
-                    <video width="640" height="360" controls>
+                    <video width="640" height="360" controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
                       <source src="/assets/play/video/video-10.mp4" type="video/mp4" />
                     </video>
                     <Image
@@ -704,6 +705,9 @@ const Page: React.FC = () => {
                   </div>
                 </div>
               </div>
+            </SwiperSlide>
+            <SwiperSlide className=" footer-slider">
+              <Footer/>
             </SwiperSlide>
           </Swiper>
         </div>
