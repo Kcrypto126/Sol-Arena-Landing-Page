@@ -6,6 +6,9 @@ import Link from "next/link";
 
 const Footer: React.FC = () => {
   const navigator = useRouter();
+  const handleLink = (event: any) => {
+    event.preventDefault();
+  }
   return (
     <>
       <div
@@ -134,15 +137,15 @@ const Footer: React.FC = () => {
             className="w-[96px] h-[40px] lg:w-[140px] lg:h-[58px]"
           />
           <div className="flex flex-row gap-1 lg:gap-6 text-[8px] lg:text-[12px] text-[#99B9FF]">
-            <Link href={"/"} prefetch>
+            <Link href={"https://chillchat.notion.site/Privacy-Policy-46764a9686914a499528f8450d36a6c3?pvs=4"} prefetch>
               Privacy Policy
             </Link>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
-            <Link href={"/"} prefetch>
+            <span className=" cursor-pointer">
               Copyright Chillchat Holdings Pte Ltd. All rights reserved.
-            </Link>
+            </span>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
-            <Link href={"/"} prefetch>
+            <Link href={"https://chillchat.notion.site/Terms-of-Service-db8c231d210d404c8aad973b4d6f5e1b?pvs=4"} prefetch>
               Terms of Service
             </Link>
           </div>
