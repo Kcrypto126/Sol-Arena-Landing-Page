@@ -27,6 +27,7 @@ const Lists = [
     { id: "How-Do-I-Participate", name: "How Do I Participate?" },
     { id: "Links", name: "Links" },
 ];
+
 const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen }) => {
 
     return (

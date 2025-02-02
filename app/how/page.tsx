@@ -175,7 +175,6 @@ const Page: React.FC = () => {
 
   return (
     <>
-      {/* <Layout> */}
       <div className=" w-full bg-[url('/assets/play/back.webp')] bg-no-repeat h-screen bg-center bg-cover pt-[72px]">
         <div className="max-w-[1440px] m-auto ">
           <Swiper
@@ -843,13 +842,12 @@ const Page: React.FC = () => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className=" footer-slider">
+            {/* <SwiperSlide className=" footer-slider">
               <Footer />
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
-      {/* </Layout> */}
     </>
   );
 };
