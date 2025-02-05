@@ -79,7 +79,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         </div>
                         <div className=" pl-5 text-[16px] space-y-8">
                             <p>
-                                We’re trying to build a game that gets better with web3. In our opinion, web3 games should have crypto integrated throughout, not just a token that is slapped on at the end. This means integrating the 2 core values of crypto: networks (community) and financialization. Like early Facebook games that were inherently social (Farmville), or early mobile games that took advantage of the touch screen (Fruit Ninja, Angry Birds), we believe that early web3 games need to take advantage of networks (crypto communities) and financialization (financial risk/reward).
+                                We’re trying to build a game that gets <i className=" font-bold">better</i> with web3. In our opinion, web3 games should have crypto integrated throughout, not just a token that is slapped on at the end. This means integrating the 2 core values of crypto: <i className="font-bold">networks</i> (community) and <i className="font-bold">financialization</i>. Like early Facebook games that were inherently social (Farmville), or early mobile games that took advantage of the touch screen (Fruit Ninja, Angry Birds), we believe that early web3 games need to take advantage of networks (crypto communities) and financialization (financial risk/reward).
                             </p>
 
                             <p>We’ve built these elements into the heart of SOL Arena. Utilizing characters and teams sourced directly from the Solana ecosystem, crypto wagering that brings the high-stakes thrill of memecoin trading, delivered in a simple and easy-to-play snake game with proven game mechanics.</p>
@@ -98,14 +98,14 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
                 <div className=" w-full relative py-[20px] md:py-[80px]" id="What-Are-the-Key-Features">
                     <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12 relative z-20" >
-                        <div className="relative h-fit">
+                        <div className="relative h-fit" id="High-Stakes-Gameplay-noCHILL-Crypto-and-Extraction">
                             <Image src={"/assets/chill/Section2Title.png"} alt="" width={500} height={200} className=" w-[487px] h-[68px]" />
                             <div className="  absolute top-[50%] left-7 translate-y-[-50%] text-black md:text-[28px] text-[20px] font-semibold">
                                 What Are the Key Features?
                             </div>
                         </div>
                         <div className=" pl-5 flex flex-col gap-12" >
-                            <div id="High-Stakes-Gameplay-noCHILL-Crypto-and-Extraction">
+                            <div >
                                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">High-Stakes Gameplay: noCHILL, Crypto, and Extraction</h3>
                                 <div className=" text-[16px] space-y-8">
                                     <p>
@@ -118,7 +118,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div id="Community-Driven-Competition-Represent-Your-Coins" >
+                            <div id="Community-Driven-Competition-Represent-Your-Coins" className="mt-[-80px] pt-[80px]">
                                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Community-Driven Competition: Represent Your Coins</h3>
                                 <div className=" text-[16px] space-y-8">
                                     <p>
@@ -129,7 +129,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                     </div>
                                 </div>
                             </div>
-                            <div id="Accessible-for-All-Rewarding-for-Competitors">
+                            <div id="Accessible-for-All-Rewarding-for-Competitors" className="mt-[-80px] pt-[80px]">
                                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Accessible for All, Rewarding for Competitors</h3>
                                 <div className=" text-[16px] space-y-8">
                                     <p>
@@ -277,6 +277,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                     </ul>
                                 </div>
                             </div>
+                            <i>Note: Roadmap plans are likely to change to adapt to player feedback and data, ensuring we deliver the right features at the right time.</i>
                         </div>
                     </div>
                     <Image
@@ -314,7 +315,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                                     </ul>
                                 </div>
                             </div>
-                            <div id="Tokenomics">
+                            <div id="Tokenomics" className="mt-[-80px] pt-[80px]">
                                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Tokenomics</h3>
                                 <div className=" text-[16px] space-y-8">
                                     <ul className=" list-disc pl-5">
@@ -402,7 +403,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                             <div >
                                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Season 0: Extract to Airdrop</h3>
                                 <div className=" text-[16px] space-y-8">
-                                    Start playing SOL Arena today at solarena.io on any browser (Mac or PC) or through a mobile Solana wallet app. Collect and extract noCHILL to climb the leaderboard and qualify for the $CHILL airdrop when the token launches.
+                                    Start playing SOL Arena today at <a href="https://play.solarena.io/" target="_blank" className="underline">play.solarena.io</a> on any browser (Mac or PC) or through a mobile Solana wallet app. Collect and extract noCHILL to climb the leaderboard and qualify for the $CHILL airdrop when the token launches.
                                 </div>
                             </div>
                         </div>
@@ -410,7 +411,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                             <div className=" flex flex-col gap-6">
                                 <h3 className=" text-[18px] text-[#41FFC6]">Hold our NFTs</h3>
                                 <div className=" text-[16px] space-y-8">
-                                    Own a piece of SOL Arena by holding NFTs from the Chillchat Origin collection or the upcoming Challenger collection. These NFTs not only grant exclusive in-game cosmetics but also guarantee your eligibility for the $CHILL airdrop.
+                                    Own a piece of SOL Arena by holding NFTs from the <a href="https://magiceden.io/marketplace/chillchat" className="underline" target="_blank">Chillchat Origin collection</a> or the upcoming Challenger collection. These NFTs not only grant exclusive in-game cosmetics but also guarantee your eligibility for the $CHILL airdrop.
                                 </div>
                                 <ul className=" list-decimal pl-5 space-y-6">
                                     <li>
