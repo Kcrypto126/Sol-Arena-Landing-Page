@@ -79,15 +79,15 @@ const CharacterSection: React.FC = () => {
               </h1>
             </div>
             <div
-              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-[31px] mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
-                ? "border-[#38E8FF] bg-[url('/assets/character/description-back-1.png')]"
+              className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-[31px] mt-0 md:mt-[48px] bg-right md:bg-left border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
+                ? "border-[#38E8FF] bg-[url('/assets/character/description-mobile-back-1.png')] md:bg-[url('/assets/character/description-back-1.png')]"
                 : isScale == 2
-                  ? "border-[#FFD752] bg-[url('/assets/character/description-back-2.png')]"
+                  ? "border-[#FFD752] bg-[url('/assets/character/description-mobile-back-2.png')] md:bg-[url('/assets/character/description-back-2.png')]"
                   : isScale == 3
-                    ? "border-[#FF3859] bg-[url('/assets/character/description-back-3.png')]"
+                    ? "border-[#FF3859] bg-[url('/assets/character/description-mobile-back-3.png')] md:bg-[url('/assets/character/description-back-3.png')]"
                     : isScale == 4
-                      ? "border-[#38FFCA] bg-[url('/assets/character/description-back-4.png')]"
-                      : "border-[#FFA21F] bg-[url('/assets/character/description-back-5.png')]"
+                      ? "border-[#38FFCA] bg-[url('/assets/character/description-mobile-back-4.png')] md:bg-[url('/assets/character/description-back-4.png')]"
+                      : "border-[#FFA21F] bg-[url('/assets/character/description-mobile-back-5.png')] md:bg-[url('/assets/character/description-back-5.png')]"
                 } bg-[#070733] bg-opacity-45 bg-no-repeat`}
               style={{ backgroundSize: "auto 100%" }}
             >

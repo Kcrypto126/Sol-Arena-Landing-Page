@@ -224,7 +224,7 @@ const Header: React.FC = () => {
               } `}
           >
             <button
-              className={` w-[163px] h-[52px] transition-all ${isScroll ? "lg:w-[150px] lg:h-[48px] lg:text-[21px]" : "lg:w-[264px] lg:h-[84px] lg:text-[38px]"} rounded-md font-bold font-[Oswald] text-[28px] text-[#020215] `}
+              className={` w-[163px] h-[52px] transition-all ${isScroll ? "lg:w-[150px] lg:h-[48px] lg:text-[21px]" : "lg:w-[264px] lg:h-[84px] lg:text-[38px]"} rounded-md font-bold font-[Oswald] text-[26px] text-[#020215] `}
               style={{
                 backgroundImage: "url(./assets/play-now-btn.png)",
                 backgroundSize: "100% 100%",

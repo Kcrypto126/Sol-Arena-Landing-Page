@@ -40,7 +40,7 @@ export default function Home() {
                 className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
                 style={{ backgroundSize: "100% 100%" }}
               >
-                <h1 className=" text-center pb-1 text-[18px] md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
+                <h1 className=" z-30 text-center pb-0 md:pb-1 text-[18px] md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
                   The Race for 150,000,000 $CHILL Has Begun
                 </h1>
               </div>
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="flex justify-center items-center w-[100%] absolute top-[520px] sm:top-[642px] md:top-[782px]">
               <button
-                className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[34px] text-[#020215]"
+                className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[26px] md:text-[34px] text-[#020215]"
                 style={{
                   backgroundImage: "url(./assets/play-now-btn.png)",
                   backgroundSize: "100% 100%",
@@ -296,7 +296,7 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                 <SeasonSection />
               </div>
               <button
-                className="w-[264px] h-[84px] rounded-md font-bold font-[Oswald] text-[34px] text-[#020215]"
+                className="w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[26px] md:text-[34px] text-[#020215]"
                 style={{
                   backgroundImage: "url(./assets/play-now-btn.png)",
                   backgroundSize: "100% 100%",
