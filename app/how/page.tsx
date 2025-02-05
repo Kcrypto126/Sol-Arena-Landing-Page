@@ -11,6 +11,7 @@ import 'swiper/swiper-bundle.css'; // Import Swiper styles
 import { useRef, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Swiper as SwiperType } from "swiper";
+import { sendEvent } from "@/app/googleTag";
 
 const Page: React.FC = () => {
   const [isButton, setIsButton] = useState(false);
@@ -825,7 +826,7 @@ const Page: React.FC = () => {
                         boxShadow: "0px 0px 10px 1px",
                       }}
                       onClick={() => {
-                        handlePlayButton();
+                        sendEvent('play-now', {}, () => handlePlayButton());
                       }}
                     >
                       PLAY NOW

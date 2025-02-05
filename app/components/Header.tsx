@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { sendEvent } from "@/app/googleTag";
 
 const Header: React.FC = () => {
   const navigator = useRouter();
@@ -230,7 +231,7 @@ const Header: React.FC = () => {
                 boxShadow: "0px 0px 20px 3px",
               }}
               onClick={() => {
-                effectPlayButton();
+                sendEvent('play-now', {}, () => effectPlayButton());
               }}
             >
               PLAY NOW
