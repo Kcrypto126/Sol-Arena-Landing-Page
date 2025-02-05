@@ -10,6 +10,7 @@ import { useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { sendEvent } from "@/app/googleTag";
 // Import Swiper sty
 import "swiper/css";
 import "swiper/css/pagination";
@@ -58,7 +59,7 @@ export default function Home() {
                   boxShadow: "0px 0px 10px 1px",
                 }}
                 onClick={() => {
-                  handlePlayButton();
+                  sendEvent('play-now', {}, () => handlePlayButton());
                 }}
               >
                 PLAY NOW
@@ -287,7 +288,7 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                   boxShadow: "0px 0px 20px 1px",
                 }}
                 onClick={() => {
-                  navigator.push("https://play.solarena.io");
+                  sendEvent('play-now', {}, () => navigator.push("https://play.solarena.io"));
                 }}
               >
                 PLAY NOW
