@@ -49,7 +49,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                     <Image src={"/assets/main1.webp"} alt="" width={1440} height={1000} className="max-w-[640px] sm:max-w-[1440px] absolute right-[50%] translate-x-[50%] translate-y-0 sm:translate-y-[-300px] " />
                     {/* <Image src={"/assets/chill/art-mobile.webp"} alt="" width={640} height={812} className=" block sm:hidden w-[100%] h-[812px] absolute right-[50%] translate-x-[50%] " /> */}
                 </div>
-                <div className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]" style={{ textShadow: "0px 0px 40px rgb(255,255,255)" }}>
+                <div className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]" style={{ textShadow: "0px 0px 50px #0707FD" }}>
                     <div className="py-[80px] text-center">
                         SOL Arena Whitepaper
                     </div>

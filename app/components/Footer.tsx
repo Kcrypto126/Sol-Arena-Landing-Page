@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
         </div>
         <div className=" absolute right-[-60px] sm:right-0 top-[331px] lg:top-9">
           <Image
-            src={"/assets/footer/footer-girl.webp"}
+            src={"/assets/footer/Eva3.webp"}
             alt=""
             width={573}
             height={570}

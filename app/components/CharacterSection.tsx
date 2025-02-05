@@ -80,15 +80,15 @@ const CharacterSection: React.FC = () => {
             </div>
             <div
               className={` z-10 max-w-[100%] md:max-w-[594px] ms-4 md:ms-8 xl:ms-0 p-4 md:p-[31px] mt-0 md:mt-[48px] border-r-4 md:border-r-0 border-l-0 md:border-l-8 absolute bottom-[40px] md:bottom-auto right-4 md:right-auto md:relative ${isScale == 1
-                ? "border-[#38E8FF]"
+                ? "border-[#38E8FF] bg-[url('/assets/character/description-back-1.png')]"
                 : isScale == 2
-                  ? "border-[#FFD752]"
+                  ? "border-[#FFD752] bg-[url('/assets/character/description-back-2.png')]"
                   : isScale == 3
-                    ? "border-[#FF3859]"
+                    ? "border-[#FF3859] bg-[url('/assets/character/description-back-3.png')]"
                     : isScale == 4
-                      ? "border-[#38FFCA]"
-                      : "border-[#FFA21F]"
-                } bg-[#070733] bg-opacity-45 bg-[url('/assets/character/Pattern.png')] bg-no-repeat`}
+                      ? "border-[#38FFCA] bg-[url('/assets/character/description-back-4.png')]"
+                      : "border-[#FFA21F] bg-[url('/assets/character/description-back-5.png')]"
+                } bg-[#070733] bg-opacity-45 bg-no-repeat`}
               style={{ backgroundSize: "auto 100%" }}
             >
               <p className="text-[#CAD4EF] font-semibold text-[10px] md:text-[20px] leading-[150%]">
@@ -235,6 +235,7 @@ const CharacterSection: React.FC = () => {
               priority
               className={` transition-all duration-300 max-w-[124px] max-h-[181px] z-20 absolute md:right-0 ${isScale == 1 ? " max-w-[87px] max-h-[150px] right-[52px] md:max-w-[282px] md:max-h-[483px] " : isScale == 2 ? "max-w-[121px] max-h-[150px] right-[20px] mb-[-50px] md:max-w-[391px] md:max-h-[486px]" : isScale == 3 ? "max-w-[120px] max-h-[150px] right-[40px] md:max-w-[385px] md:max-h-[494px]" : isScale == 4 ? "max-w-[106px] max-h-[150px] right-[60px] mb-[10px] md:max-w-[326px] md:max-h-[448px]" : "max-w-[121px] max-h-[150px] right-0 mb-[-50px] md:max-w-[391px] md:max-h-[486px]"}  `}
             />
+            
           </div>
         </div>
       </div>

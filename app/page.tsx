@@ -40,19 +40,19 @@ export default function Home() {
                 className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
                 style={{ backgroundSize: "100% 100%" }}
               >
-                <h1 className=" text-center leading-[110%] text-[18px] md:text-[40px] lg:text-[56px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-10px] md:bg-[left_0_bottom_-25px] lg:bg-[left_0_bottom_-35px]">
+                <h1 className=" text-center pb-1 text-[18px] md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
                   The Race for 150,000,000 $CHILL Has Begun
                 </h1>
               </div>
               <div className=" w-[100%] m-auto mt-[-130px] md:mt-[-210px] h-[200px] md:h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
-                <h1 className=" text-center leading-[110%] font-bold text-[16px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-27px]">
+                <h1 className=" text-center leading-[110%] font-bold text-[16px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-30px]">
                   Collect, Extract, Dominate.
                 </h1>
               </div>
             </div>
             <div className="flex justify-center items-center w-[100%] absolute top-[520px] sm:top-[642px] md:top-[782px]">
               <button
-                className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[28px] text-[#020215]"
+                className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[34px] text-[#020215]"
                 style={{
                   backgroundImage: "url(./assets/play-now-btn.png)",
                   backgroundSize: "100% 100%",
@@ -91,15 +91,30 @@ export default function Home() {
                 >
                   <h1 className="pl-[25px] pb-0 md:pb-[8px]">Features</h1>
                 </div>
-                <div className=" hidden md:block">
+                <div className=" ">
                   <Image
                     src={"/assets/features/frog.png"}
                     alt="frog"
                     width={238}
                     height={240}
-                    className="absolute bottom-[-75px] right-[-30px] z-20"
+                    className="absolute bottom-[-75px] right-[-30px] z-20 hidden md:block"
+                  />
+                  <Image
+                    src={"/assets/features/butterfly-1.png"}
+                    alt="butterfly"
+                    width={119}
+                    height={119}
+                    className=" absolute top-[65px] z-30 md:top-[-13%] right-0 md:right-[-3%]"
+                  />
+                  <Image
+                    src={"/assets/features/butterfly-2.png"}
+                    alt="butterfly"
+                    width={119}
+                    height={119}
+                    className=" absolute top-[55px] z-30 md:top-auto bottom-auto md:bottom-[-5%] left-0"
                   />
                 </div>
+
                 <div className=" hidden md:block overflow-auto scrollbar-hide">
                   <div id="card-content" className=" flex flex-row items-center gap-5 px-[70px] scrollbar-hide">
                     <FeaturesSection
