@@ -93,7 +93,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         alt="Eva"
                         width={246}
                         height={390}
-                        className=" absolute right-0 bottom-0 z-10 opacity-30 md:opacity-70"
+                        className=" absolute right-0 bottom-0 z-10 opacity-20 md:opacity-70"
                     />
                 </div>
                 <div className=" w-full relative py-[20px] md:py-[80px]" id="What-Are-the-Key-Features">
@@ -150,14 +150,14 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         alt="effect"
                         width={209}
                         height={495}
-                        className=" absolute left-0 top-[40%] opacity-70"
+                        className=" absolute left-0 top-[40%] opacity-[20%] md:opacity-70"
                     />
                     <Image
                         src={"/assets/chill/chill-right-1.png"}
                         alt="effect"
                         width={209}
                         height={495}
-                        className=" absolute right-0 top-[40%] opacity-70"
+                        className=" absolute right-0 top-[40%] opacity-[20%] md:opacity-70"
                     />
                 </div>
                 <div className=" w-full relative py-[20px] md:py-[80px]" id="Whats-the-Roadmap">
@@ -285,14 +285,14 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         alt="butterfly"
                         width={82}
                         height={98}
-                        className=" absolute left-[5%] top-[60%] opacity-70"
+                        className=" absolute left-[5%] top-[60%] opacity-[20%] md:opacity-70"
                     />
                     <Image
                         src={"/assets/chill/butterfly-2.png"}
                         alt="butterfly"
                         width={40}
                         height={48}
-                        className=" absolute right-[10%] top-[40%] opacity-70"
+                        className=" absolute right-[10%] top-[40%] opacity-[20%] md:opacity-70"
                     />
                 </div>
                 <div className=" w-full relative py-[20px] md:py-[80px]" id="Why-Should-I-Own-CHILL">
