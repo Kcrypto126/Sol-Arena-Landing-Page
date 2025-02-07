@@ -236,7 +236,7 @@ const Page: React.FC = () => {
                       2. Gather Energy
                     </h2>
                     <div className=" relative">
-                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF]">
+                      <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF] relative z-10">
                         <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                       </video>
                       <Image
@@ -467,9 +467,9 @@ const Page: React.FC = () => {
                       <Image
                         src={"/assets/play/5m-3.png"}
                         alt="5m-3"
-                        width={141}
-                        height={141}
-                        className=" absolute right-[-70px] bottom-[-70px]"
+                        width={111}
+                        height={111}
+                        className=" absolute right-[-50px] bottom-[-50px]"
                       />
                     </div>
                     <p className=" text-[#C9D5FF] text-[18px] font-medium leading-[150%] max-w-[640px] h-[140px] flex justify-center items-center text-center">
