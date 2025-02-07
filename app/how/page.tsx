@@ -326,7 +326,7 @@ const Page: React.FC = () => {
                   2. Gather Energy
                 </h2>
                 <div className=" relative">
-                  <video width="640" height="360" ref={addVideoRef} controls className=" border-[2px] md:border-[6px] border-[#6F58FF] z-10">
+                  <video width="640" height="360" ref={addVideoRef} controls className=" relative border-[2px] md:border-[6px] border-[#6F58FF] z-10">
                     <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
                   </video>
                   <Image
@@ -334,7 +334,7 @@ const Page: React.FC = () => {
                     alt="2m-1"
                     width={121}
                     height={126}
-                    className=" w-[80px] h-[83px] md:w-[121px] md:h-[126px] absolute left-[-10%] top-[5%] z-0 "
+                    className=" w-[60px] h-[63px] md:w-[121px] md:h-[126px] absolute left-[-10%] top-[5%] z-0 "
                   />
                   <Image
                     src={"/assets/play/2m-2.png"}
@@ -348,14 +348,14 @@ const Page: React.FC = () => {
                     alt="2m-3"
                     width={97}
                     height={101}
-                    className=" w-[67px] h-[71px] md:w-[97px] md:h-[101px] absolute right-[10%] bottom-[-15%] z-20"
+                    className=" w-[67px] h-[71px] md:w-[97px] md:h-[101px] absolute right-[10%] bottom-[-20%] z-20"
                   />
                   <Image
                     src={"/assets/play/2m-4.png"}
                     alt="2m-4"
                     width={143}
                     height={145}
-                    className=" w-[93px] h-[95px] md:w-[143px] md:h-[145px] absolute left-[-15%] bottom-[-13%] z-0"
+                    className=" w-[73px] h-[75px] md:w-[143px] md:h-[145px] absolute left-[-15%] bottom-[-13%] z-10"
                   />
                   <Image
                     src={"/assets/play/2m-2.png"}
@@ -392,14 +392,14 @@ const Page: React.FC = () => {
                     alt="3m-2"
                     width={227}
                     height={226}
-                    className=" w-[107px] h-[106px] md:w-[227px] md:h-[226px] absolute right-[0%] bottom-[-20%]"
+                    className=" w-[77px] h-[76px] md:w-[227px] md:h-[226px] absolute right-[0%] bottom-[-20%]"
                   />
                   <Image
                     src={"/assets/play/3m-3.png"}
                     alt="3m-3"
                     width={77}
                     height={77}
-                    className=" w-[37px] h-[37px] md:w-[77px] md:h-[77px] absolute left-[0%] top-[30%]"
+                    className=" w-[27px] h-[27px] md:w-[77px] md:h-[77px] absolute left-[0%] top-[30%]"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
@@ -425,7 +425,7 @@ const Page: React.FC = () => {
                         alt="4m-1"
                         width={111}
                         height={112}
-                        className=" absolute left-[-55px] top-[-55px] z-20"
+                        className=" w-[51px] h-[51px] md:w-[81px] md:h-[82px] absolute left-[10%] top-[-55px] z-20"
                       />
                       <Image
                         src={"/assets/play/4m-2.png"}
@@ -495,7 +495,7 @@ const Page: React.FC = () => {
                     alt="4m-1"
                     width={111}
                     height={112}
-                    className=" w-[50px] h-[50px] md:w-[111px] md:h-[112px] absolute left-[5%] top-[-20%] z-20"
+                    className=" w-[30px] h-[30px] md:w-[111px] md:h-[112px] absolute left-[5%] top-[-15%] z-20"
                   />
                   <Image
                     src={"/assets/play/4m-2.png"}
@@ -539,7 +539,7 @@ const Page: React.FC = () => {
                     alt="5m-3"
                     width={141}
                     height={141}
-                    className=" w-[71px] h-[71px] md:w-[141px] md:h-[141px] absolute right-[10%] bottom-[-15%]"
+                    className=" w-[51px] h-[51px] md:w-[141px] md:h-[141px] absolute right-[10%] bottom-[-15%]"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
@@ -622,14 +622,14 @@ const Page: React.FC = () => {
                     alt="6m-1"
                     width={140}
                     height={79}
-                    className=" w-[100px] h-[55px] md:w-[140px] md:h-[79px] absolute left-[-5%] top-[0%] z-20"
+                    className=" w-[70px] h-[35px] md:w-[140px] md:h-[79px] absolute left-[-5%] top-[0%] z-20"
                   />
                   <Image
                     src={"/assets/play/6m-2.png"}
                     alt="6m-2"
                     width={144}
                     height={132}
-                    className=" w-[95px] h-[85px] md:w-[144px] md:h-[132px] absolute right-[0%] bottom-[-10%] z-20"
+                    className=" w-[65px] h-[55px] md:w-[144px] md:h-[132px] absolute right-[0%] bottom-[-10%] z-20"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
@@ -652,7 +652,7 @@ const Page: React.FC = () => {
                     alt="7m-1"
                     width={194}
                     height={208}
-                    className=" w-[104px] h-[118px] md:w-[194px] md:h-[208px] absolute right-[-5%] bottom-[-20%]"
+                    className=" w-[84px] h-[98px] md:w-[194px] md:h-[208px] absolute right-[-5%] bottom-[-20%]"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
@@ -736,14 +736,14 @@ const Page: React.FC = () => {
                     alt="8m-1"
                     width={82}
                     height={57}
-                    className=" w-[62px] h-[40px] md:w-[82px] md:h-[57px] absolute left-[0%] bottom-[-5%] z-20"
+                    className=" w-[42px] h-[30px] md:w-[82px] md:h-[57px] absolute left-[0%] bottom-[-5%] z-20"
                   />
                   <Image
                     src={"/assets/play/8m-2.png"}
                     alt="8m-2"
                     width={122}
                     height={75}
-                    className=" w-[92px] h-[60px] md:w-[122px] md:h-[75px] absolute right-[0%] bottom-[-10%] z-20"
+                    className=" w-[62px] h-[40px] md:w-[122px] md:h-[75px] absolute right-[0%] bottom-[-10%] z-20"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
@@ -767,21 +767,21 @@ const Page: React.FC = () => {
                     alt="9m-1"
                     width={270}
                     height={206}
-                    className=" w-[170px] h-[136px] md:w-[270px] md:h-[206px] absolute right-[0%] bottom-[-20%]"
+                    className=" w-[120px] h-[86px] md:w-[270px] md:h-[206px] absolute right-[0%] bottom-[-15%]"
                   />
                   <Image
                     src={"/assets/play/9m-2.png"}
                     alt="9m-2"
-                    width={63}
-                    height={68}
-                    className=" absolute left-[-3%] bottom-[30%]"
+                    width={43}
+                    height={48}
+                    className=" absolute left-[-3%] bottom-[45%]"
                   />
                   <Image
                     src={"/assets/play/9m-3.png"}
                     alt="9m-3"
-                    width={56}
-                    height={67}
-                    className=" absolute right-[0%] top-[-20%]"
+                    width={36}
+                    height={37}
+                    className=" absolute right-[0%] top-[-10%]"
                   />
                 </div>
                 <p className="text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] h-[60px] md:h-[154px] flex justify-center items-center text-center">
