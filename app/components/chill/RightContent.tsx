@@ -143,7 +143,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
             </div>
           </div>
           <Image
-            src={"/assets/chill/Eva.png"}
+            src={"/assets/chill/Eva1.png"}
             alt="Eva"
             width={246}
             height={390}
