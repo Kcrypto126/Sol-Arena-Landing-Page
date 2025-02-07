@@ -4,7 +4,8 @@ import React from "react";
 
 interface LeftBarPropsType {
     className?: string,
-    isOpen?: boolean
+    isOpen?: boolean,
+    setIsOpen?: (f: boolean) => void
 }
 const Lists = [
     { id: "What-is-SOL-Arena", name: "What is SOL Arena?" },
@@ -28,7 +29,7 @@ const Lists = [
     { id: "Links", name: "Links" },
 ];
 
-const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen }) => {
+const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) => {
 
     return (
         <>
@@ -46,24 +47,38 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen }) => {
                         Lists.map((e, index) => {
                             return <div key={index}>
                                 <div>
-                                    <a href={`#${e.id}`} >{e.name}</a>
+                                    <a href={`#${e.id}`} onClick={() => setIsOpen(false)} >{e.name}</a>
                                 </div>
-                                <ul className={` relative space-y-5 pl-5 border-s-2`}>
+                                <ul className={` block relative space-y-5 pl-5 border-s-2`}>
                                     {e.childern && e.childern.map((k, i) => {
                                         return (
                                             <li key={i} className=" relative">
                                                 <div className=" absolute -start-[22px] top-[24px]">
                                                     <div className="h-[2px] w-5 bg-white">
-
                                                     </div>
                                                 </div>
                                                 <div className=" translate-y-4">
-                                                    <a href={`#${k.id}`}>{k.name}</a>
+                                                    <a href={`#${k.id}`} onClick={() => setIsOpen(false)}>{k.name}</a>
                                                 </div>
                                             </li>
                                         )
                                     })}
                                 </ul>
+                                {/* <ul className={` block md:hidden relative space-y-5 pl-5 border-s-2 border`}>
+                                    {e.childern && e.childern.map((k, i) => {
+                                        return (
+                                            <li key={i} className=" relative">
+                                                <div className=" absolute -start-[22px] top-[24px]">
+                                                    <div className="h-[2px] w-5 bg-white">
+                                                    </div>
+                                                </div>
+                                                <div className=" translate-y-4 border">
+                                                    <a href={`#${k.id}`} onClick={() => setIsOpen(false)}>{k.name}</a>
+                                                </div>
+                                            </li>
+                                        )
+                                    })}
+                                </ul> */}
                             </div>
                         })
                     }

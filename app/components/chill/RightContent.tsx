@@ -49,8 +49,8 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
       onScroll={handleScroll}
       className={`${className} w-full h-[100vh] md:col-span-3 bg-cover bg-no-repeat overflow-auto scrollbar-hide relative bg-[url('/assets/chill/BG_img.png')]`}
     >
-      <div className=" relative w-full h-[100vh]">
-        <div className=" h-[90vh] overflow-hidden object-center relative mt-[-10px]">
+      <div className=" relative w-full h-[1000px] md:h-[100vh]">
+        <div className=" h-[1000px] md:h-[90vh] overflow-hidden object-center relative mt-[-10px]">
           <Image
             src={"/assets/main1.webp"}
             alt=""
@@ -58,10 +58,9 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
             height={1000}
             className="max-w-[640px] sm:max-w-[1440px] absolute right-[50%] translate-x-[50%] translate-y-0 sm:translate-y-[-300px] "
           />
-          {/* <Image src={"/assets/chill/art-mobile.webp"} alt="" width={640} height={812} className=" block sm:hidden w-[100%] h-[812px] absolute right-[50%] translate-x-[50%] " /> */}
         </div>
         <div
-          className=" absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]"
+          className=" mb-[-40px] md:mb-auto absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]"
           style={{ textShadow: "0px 0px 50px #0707FD" }}
         >
           <div className="py-[80px] text-center">SOL Arena Whitepaper</div>

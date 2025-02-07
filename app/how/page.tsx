@@ -197,7 +197,7 @@ const Page: React.FC = () => {
           >
             {/* 1m */}
             <SwiperSlide className=" relative flex flex-row justify-center items-center px-[30px] md:px-0">
-              <div className=" w-[100%] h-[100%] flex flex-col justify-center items-center gap-8 ">
+              <div className=" w-[100%] h-[100vh] flex flex-col justify-center items-center gap-8 ">
                 <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                   1. Enter the Arena
                 </h2>
