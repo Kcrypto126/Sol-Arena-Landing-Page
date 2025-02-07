@@ -5,7 +5,7 @@ import React from "react";
 interface LeftBarPropsType {
     className?: string,
     isOpen?: boolean,
-    setIsOpen?: (f: boolean) => void
+    setIsOpen: (f: boolean) => void
 }
 const Lists = [
     { id: "What-is-SOL-Arena", name: "What is SOL Arena?" },
