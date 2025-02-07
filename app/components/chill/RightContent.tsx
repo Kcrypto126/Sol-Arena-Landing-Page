@@ -61,7 +61,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
         </div>
         <div
           className=" mb-[-40px] md:mb-auto absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]"
-          style={{ textShadow: "0px 0px 50px #0707FD" }}
+          style={{ textShadow: "0px 0px 50px #00C4F5" }}
         >
           <div className="py-[80px] text-center">SOL Arena Whitepaper</div>
         </div>
