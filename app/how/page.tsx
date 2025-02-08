@@ -300,8 +300,8 @@ const Page: React.FC = () => {
                       <Image
                         src={"/assets/play/3m-2.png"}
                         alt="3m-2"
-                        width={227}
-                        height={226}
+                        width={197}
+                        height={196}
                         className=" absolute right-[-100px] bottom-[-100px]"
                       />
                       <Image
