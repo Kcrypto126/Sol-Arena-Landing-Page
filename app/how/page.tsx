@@ -765,22 +765,22 @@ const Page: React.FC = () => {
                   <Image
                     src={"/assets/play/9m-1.png"}
                     alt="9m-1"
-                    width={270}
-                    height={206}
-                    className=" w-[120px] h-[86px] md:w-[270px] md:h-[206px] absolute right-[0%] bottom-[-15%]"
+                    width={242}
+                    height={189}
+                    className=" w-[122px] h-[89px] md:w-[242px] md:h-[189px] absolute right-[0%] bottom-[-15%]"
                   />
                   <Image
                     src={"/assets/play/9m-2.png"}
                     alt="9m-2"
-                    width={43}
-                    height={48}
+                    width={52}
+                    height={66}
                     className=" absolute left-[-3%] bottom-[45%]"
                   />
                   <Image
                     src={"/assets/play/9m-3.png"}
                     alt="9m-3"
-                    width={36}
-                    height={37}
+                    width={46}
+                    height={47}
                     className=" absolute right-[0%] top-[-10%]"
                   />
                 </div>
