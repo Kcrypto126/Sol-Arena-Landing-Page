@@ -61,7 +61,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
         </div>
         <div
           className=" mb-[-40px] md:mb-auto absolute bottom-0 w-full flex justify-center items-center font-[1000] bg-gradient-to-t from-[#00000000] via-[#051539,#051539,#051539,#051539] to-[#00000020,#00000020,#00000020,#00000020, #00000010, #00000000] text-white md:text-[60px] text-[40px]"
-          style={{ textShadow: "0px 0px 50px #00C4F5" }}
+          style={{ textShadow: "0px 0px 50px # 00C4F5" }}
         >
           <div className="py-[80px] text-center">SOL Arena Whitepaper</div>
         </div>
@@ -561,7 +561,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   </ul>
                 </div>
               </div>
-              <i>
+              <i className=" text-[#CAD4EF]">
                 Note: Roadmap plans are likely to change to adapt to player
                 feedback and data, ensuring we deliver the right features at the
                 right time.
