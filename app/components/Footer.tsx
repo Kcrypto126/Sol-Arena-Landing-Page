@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <div
-        className="footer w-full h-[691px] lg:h-[607px] bg-center bg-no-repeat relative overflow-hidden "
+        className="footer w-full h-[691px] lg:h-[607px] bg-center bg-no-repeat relative overflow-hidden z-50"
         style={{ backgroundImage: "url('/assets/footer/Footer-back.webp')" }}
       >
         <div className="max-w-[1440px] m-auto flex flex-row">

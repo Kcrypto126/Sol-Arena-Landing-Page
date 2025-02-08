@@ -33,7 +33,7 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) =
 
     return (
         <>
-            <div id="right-bar" className={`${className} md:h-[97.9vh] transition-all duration-1000 md:block ${isOpen ? "block" : "hidden" } fixed z-40 left-5 border-[#6841FF] md:border-none rounded-2xl pb-[20px] md:rounded-none border-[5px] md:left-0 md:pt-24 md:mt-0 mt-24 right-5 top-5 md:relative text-white bg-[#11114C] md:bg-[#03102D]`}>
+            <div id="right-bar" className={`${className} md:col-span-3 lg:col-span-2 transition-all duration-1000 md:block ${isOpen ? "block" : "hidden" } fixed z-40 left-5 border-[#6841FF] md:border-none rounded-2xl pb-[20px] md:rounded-none border-[5px] md:left-0 md:pt-24 md:mt-0 mt-24 right-5 top-5 md:relative text-white bg-[#11114C] md:bg-[#03102D]`}>
                 <div className=" absolute z-40 md:mt-5 -translate-y-[50%] -translate-x-[6px]">
                     <div className=" relative h-fit md:w-[28vw] w-[60vw]">
                         <Image src={"/assets/chill/Group2303.png"} className="w-full" width={1000} height={200} alt="" />

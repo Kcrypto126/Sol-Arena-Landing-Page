@@ -191,8 +191,16 @@ const Page: React.FC = () => {
               height: height - 72 + "px",
             }}
             slidesPerView={1}
-            onSlideChange={handleSlideChange}
-            mousewheel
+            mousewheel={true}
+            onReachEnd={(swiper) => {  
+              swiper.mousewheel.disable();  
+            }}
+            onSlideChange={(swiper) => { 
+              handleSlideChange 
+              if (swiper.isEnd === false) {  
+                swiper.mousewheel.enable();  
+              }  
+            }}
             className="playSlider"
           >
             {/* 1m */}
