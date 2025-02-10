@@ -33,16 +33,16 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) =
 
     return (
         <>
-            <div id="right-bar" className={`${className} md:col-span-3 lg:col-span-2 transition-all duration-1000 md:block ${isOpen ? "block" : "hidden" } fixed z-40 left-5 border-[#6841FF] md:border-none rounded-2xl pb-[20px] md:rounded-none border-[5px] md:left-0 md:pt-24 md:mt-0 mt-24 right-5 top-5 md:relative text-white bg-[#11114C] md:bg-[#03102D]`}>
-                <div className=" absolute z-40 md:mt-5 -translate-y-[50%] -translate-x-[6px]">
-                    <div className=" relative h-fit md:w-[28vw] w-[60vw]">
+            <div id="right-bar" className={`${className} col-span-1 lg:block ${isOpen ? "block" : "hidden" } lg:overflow-scroll scrollbar-hide h-fit lg:h-[100vh] absolute lg:relative z-40 left-5 border-[#6841FF] lg:border-none rounded-2xl pb-[20px] lg:rounded-none border-[5px] lg:left-0 lg:pt-24 lg:mt-0 mt-24 right-5 top-5 text-white bg-[#11114C] lg:bg-[#03102D]`}>
+                <div className=" absolute z-40 lg:mt-5 -translate-y-[50%] -translate-x-[6px]">
+                    <div className=" relative h-fit lg:w-[25vw] md:w-[300px] w-[230px]">
                         <Image src={"/assets/chill/Group2303.png"} className="w-full" width={1000} height={200} alt="" />
-                        <div className=" absolute  top-[50%] translate-y-[-50%] left-5 text-[18px]">
+                        <div className=" absolute  top-[50%] translate-y-[-50%] left-5 text-[18px] md:text-[24px] xl:text-[26px]">
                             Table of Contents
                         </div>
                     </div>
                 </div>
-                <div className=" flex flex-col gap-[20px] md:gap-[30px] md:mt-[100px] pl-5 text-[16px]">
+                <div className=" flex flex-col gap-[15px] xl:gap-[30px] lg:mt-[100px] px-5 pt-[50px] lg:pt-0 pb-3 text-[16px] ">
                     {
                         Lists.map((e, index) => {
                             return <div key={index}>
@@ -53,7 +53,7 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) =
                                     {e.childern && e.childern.map((k, i) => {
                                         return (
                                             <li key={i} className=" relative">
-                                                <div className=" absolute -start-[22px] top-[24px]">
+                                                <div className=" absolute -left-[22px] top-[24px]">
                                                     <div className="h-[2px] w-5 bg-white">
                                                     </div>
                                                 </div>
