@@ -71,7 +71,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <div className="w-full bg-[#02021D] fixed top-0 left-0 z-50">
+      <div className="w-full bg-[#02021D] fixed top-0 left-0 z-[60]">
         <div
           className="max-w-[1440px] h-[72px] m-[auto] flex flex-row justify-between items-center bg-no-repeat bg-right-top pl-0 pr-0 relative"
           style={{
