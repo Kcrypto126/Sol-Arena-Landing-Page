@@ -35,12 +35,12 @@ export default function Home() {
           <div
             className="hero-section w-full h-[1024px] bg-center bg-no-repeat mb-[-2px]"
           >
-            <div className=" w-[100%] absolute top-[340px] sm:top-[438px] flex flex-col justify-center items-center">
+            {/* <div className=" w-[100%] absolute top-[340px] sm:top-[438px] flex flex-col justify-center items-center">
               <div
                 className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
                 style={{ backgroundSize: "100% 100%" }}
               >
-                <h1 className=" z-30 text-center pb-0 md:pb-1 text-[18px] md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
+                <h1 className=" relative inline-block border-effect z-10 text-center pb-0 md:pb-1 text-[18px] text-stroke-2 md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
                   The Race for 150,000,000 $CHILL Has Begun
                 </h1>
               </div>
@@ -49,8 +49,24 @@ export default function Home() {
                   Collect, Extract, Dominate.
                 </h1>
               </div>
+            </div> */}
+            <div className=" h-[100%] w-full flex flex-col justify-center items-center">
+              <Image
+                src={"/assets/main_text-1.svg"}
+                alt=""
+                width={1629}
+                height={356}
+                className=" mt-[-10%]"
+              />
+              <Image
+                src={"/assets/main_text-2.svg"}
+                alt=""
+                width={649}
+                height={217}
+                className=" w-[60%] md:w-[40%] mt-[-11%]"
+              />
             </div>
-            <div className="flex justify-center items-center w-[100%] absolute top-[520px] sm:top-[642px] md:top-[782px]">
+            <div className="flex justify-center items-center w-[100%] absolute top-[490px] sm:top-[642px] md:top-[760px]">
               <button
                 className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[26px] md:text-[34px] text-[#020215]"
                 style={{

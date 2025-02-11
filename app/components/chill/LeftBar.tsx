@@ -42,7 +42,7 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) =
                         </div>
                     </div>
                 </div>
-                <div className=" flex flex-col gap-[15px] xl:gap-[30px] lg:mt-[100px] px-5 pt-[50px] lg:pt-0 pb-3 text-[16px] ">
+                <div className=" flex flex-col gap-[15px] xl:gap-[20px] lg:mt-[100px] px-5 pt-[50px] lg:pt-0 pb-3 text-[16px] ">
                     {
                         Lists.map((e, index) => {
                             return <div key={index}>
@@ -64,21 +64,6 @@ const LeftBar: React.FC<LeftBarPropsType> = ({ className, isOpen, setIsOpen }) =
                                         )
                                     })}
                                 </ul>
-                                {/* <ul className={` block md:hidden relative space-y-5 pl-5 border-s-2 border`}>
-                                    {e.childern && e.childern.map((k, i) => {
-                                        return (
-                                            <li key={i} className=" relative">
-                                                <div className=" absolute -start-[22px] top-[24px]">
-                                                    <div className="h-[2px] w-5 bg-white">
-                                                    </div>
-                                                </div>
-                                                <div className=" translate-y-4 border">
-                                                    <a href={`#${k.id}`} onClick={() => setIsOpen(false)}>{k.name}</a>
-                                                </div>
-                                            </li>
-                                        )
-                                    })}
-                                </ul> */}
                             </div>
                         })
                     }
