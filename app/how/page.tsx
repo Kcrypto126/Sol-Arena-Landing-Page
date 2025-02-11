@@ -220,7 +220,7 @@ const Page: React.FC = () => {
             >
               {/* 1m */}
               <SwiperSlide className=" relative flex flex-row justify-center items-center px-[30px] md:px-[20px]">
-                <div className={` w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                <div className={` w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     1. Enter the Arena
                   </h2>
@@ -252,7 +252,7 @@ const Page: React.FC = () => {
                       className=" w-auto md:w-[406px] h-[85px] md:h-[187px] absolute left-[83%] md:left-[100%] bottom-[-20px] md:bottom-0 "
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Choose your Challenger and Team—teammates can’t harm you!
                     When you’re ready, Enter the Arena!
                   </p>
@@ -263,7 +263,7 @@ const Page: React.FC = () => {
                 <div className=" w-[100%] h-[100%] flex flex-row gap-5 justify-center items-center">
                   {/* 2m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         2. Gather Energy
                       </h2>
@@ -316,14 +316,14 @@ const Page: React.FC = () => {
                           className=" absolute left-[60px] bottom-[-45px] z-0"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Collect Energy to grow your Trail!
                       </p>
                     </div>
                   </div>
                   {/* 3m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
-                  <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                  <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         3. Mystery Box & Power-ups
                       </h2>
@@ -362,7 +362,7 @@ const Page: React.FC = () => {
                           className=" absolute left-37 top-[150px]"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Grab Mystery Boxes for random Power-ups!
                       </p>
                     </div>
@@ -371,7 +371,7 @@ const Page: React.FC = () => {
               </SwiperSlide>
               {/* 2m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-                <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+                <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     2. Gather Energy
                   </h2>
@@ -424,14 +424,14 @@ const Page: React.FC = () => {
                       className=" absolute left-[60px] bottom-[-45px] z-0"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Collect Energy to grow your Trail!
                   </p>
                 </div>
               </SwiperSlide>
               {/* 3m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-                <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+                <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     3. Mystery Box & Power-ups
                   </h2>
@@ -470,7 +470,7 @@ const Page: React.FC = () => {
                       className=" w-[27px] h-[27px] md:w-[77px] md:h-[77px] absolute left-[0%] top-[30%]"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Grab Mystery Boxes for random Power-ups!
                   </p>
                 </div>
@@ -480,7 +480,7 @@ const Page: React.FC = () => {
                 <div className=" w-[100%] h-[100%] flex flex-row gap-5 justify-center items-center">
                   {/* 4m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         4. Boost to Win
                       </h2>
@@ -512,14 +512,14 @@ const Page: React.FC = () => {
                           className=" absolute right-0 top-[-30px] z-20"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Tap Boost to speed up, but beware—it burns your Energy!
                       </p>
                     </div>
                   </div>
                   {/* 5m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         5. Collect noCHILL
                       </h2>
@@ -558,7 +558,7 @@ const Page: React.FC = () => {
                           className=" absolute right-[-50px] bottom-[-50px]"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Your main objective is to collect noCHILL. This is how
                         you’ll climb the leaderboards.
                       </p>
@@ -568,7 +568,7 @@ const Page: React.FC = () => {
               </SwiperSlide>
               {/* 4m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     4. Boost to Win
                   </h2>
@@ -600,14 +600,14 @@ const Page: React.FC = () => {
                       className=" w-[124px] h-[14px] md:w-[258px] md:h-[30px] absolute right-0 top-[-14px] md:top-[-30px] z-20"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Tap Boost to speed up, but beware—it burns your Energy!
                   </p>
                 </div>
               </SwiperSlide>
               {/* 5m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     5. Collect noCHILL
                   </h2>
@@ -646,7 +646,7 @@ const Page: React.FC = () => {
                       className=" w-[51px] h-[51px] md:w-[141px] md:h-[141px] absolute right-[10%] bottom-[-15%]"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Your main objective is to collect noCHILL. This is how
                     you’ll climb the leaderboards.
                   </p>
@@ -657,7 +657,7 @@ const Page: React.FC = () => {
                 <div className=" w-[100%] h-[100%] flex flex-row gap-5 justify-center items-center">
                   {/* 6m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         6. Avoid Collisions
                       </h2>
@@ -689,14 +689,14 @@ const Page: React.FC = () => {
                           className=" absolute right-[-40px] bottom-[-35px] z-20"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Avoid obstacles and enemy trails—colliding means defeat!
                       </p>
                     </div>
                   </div>
                   {/* 7m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         7. Defeat Enemies
                       </h2>
@@ -721,7 +721,7 @@ const Page: React.FC = () => {
                           className=" absolute right-[-75px] bottom-[-80px]"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Defeat players by making them crash into your trail to
                         loot their backpack and claim their noCHILL!
                       </p>
@@ -731,7 +731,7 @@ const Page: React.FC = () => {
               </SwiperSlide>
               {/* 6m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     6. Avoid Collisions
                   </h2>
@@ -763,14 +763,14 @@ const Page: React.FC = () => {
                       className=" w-[65px] h-[55px] md:w-[144px] md:h-[132px] absolute right-[0%] bottom-[-10%] z-20"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Avoid obstacles and enemy trails—colliding means defeat!
                   </p>
                 </div>
               </SwiperSlide>
               {/* 7m-mobile */}
               <SwiperSlide className=" slider-mobile relative flex flex-row justify-center items-center px-[30px] md:px-0">
-              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`}>
+              <div className={`w-[100%] h-[100%] flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`}>
                   <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                     7. Defeat Enemies
                   </h2>
@@ -795,7 +795,7 @@ const Page: React.FC = () => {
                       className=" w-[84px] h-[98px] md:w-[194px] md:h-[208px] absolute right-[-5%] bottom-[-20%]"
                     />
                   </div>
-                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                  <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                     Defeat players by making them crash into your trail to loot
                     their backpack and claim their noCHILL!
                   </p>
@@ -806,7 +806,7 @@ const Page: React.FC = () => {
                 <div className=" w-[100%] h-[100%] flex flex-row gap-5 justify-center items-center">
                   {/* 8m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-end">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         8. Use Wormholes to Extract
                       </h2>
@@ -838,7 +838,7 @@ const Page: React.FC = () => {
                           className=" absolute right-[-20px] bottom-[-30px] z-20"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium z-30 leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium z-30 leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         Escape through a wormhole to secure your noCHILL and
                         rise on the leaderboards!
                       </p>
@@ -846,7 +846,7 @@ const Page: React.FC = () => {
                   </div>
                   {/* 9m */}
                   <div className=" w-[100%] h-[100%] flex flex-col justify-center items-start">
-                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                    <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                       <h2 className=" font-semibold text-[24px] text-[#41FFC6] text-center">
                         9. Airdrop
                       </h2>
@@ -871,7 +871,7 @@ const Page: React.FC = () => {
                           className=" absolute right-[-65px] bottom-[-33px]"
                         />
                       </div>
-                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                      <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[74px]"} flex justify-center items-center text-center`}>
                         The more noCHILL you extract, the more $CHILL airdrop
                         you’ll receive!
                       </p>
@@ -969,7 +969,7 @@ const Page: React.FC = () => {
               {/* 10m */}
               <SwiperSlide className=" relative flex flex-row justify-center items-center px-[30px] md:px-0">
                 <div className=" w-[100%] h-[100%] flex flex-col justify-center items-center">
-                  <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-8"}`} >
+                  <div className={`flex flex-col justify-center items-center ${isMiddleScreen ? "gap-2" : "gap-6"}`} >
                     <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                       10. Refer your Friends!
                     </h2>
@@ -1001,7 +1001,7 @@ const Page: React.FC = () => {
                         className=" w-[69px] h-[104px] md:w-[191px] md:h-[308px] absolute left-[83%] md:left-[100%] bottom-[-15%] md:bottom-0 z-20"
                       />
                     </div>
-                    <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[154px]"} flex justify-center items-center text-center`}>
+                    <p className={` text-[#C9D5FF] text-[13px] md:text-[18px] font-medium leading-[150%] max-w-[640px] ${isMiddleScreen ? "h-[50px]" : "h-[60px] md:h-[44px]"} flex justify-center items-center text-center`}>
                       Refer your friends and earn a 5% bonus on all their
                       noCHILL extractions!
                     </p>
