@@ -207,7 +207,7 @@ const Page: React.FC = () => {
             className="playSlider"
           >
             {/* 1m */}
-            <SwiperSlide className=" relative flex flex-row justify-center items-center px-[30px] md:px-0">
+            <SwiperSlide className=" relative flex flex-row justify-center items-center px-[30px] md:px-0 border border-red-600">
               <div className=" w-[100%] h-[100vh] flex flex-col justify-center items-center gap-8 ">
                 <h2 className=" font-semibold text-[16px] md:text-[24px] text-[#41FFC6] text-center">
                   1. Enter the Arena

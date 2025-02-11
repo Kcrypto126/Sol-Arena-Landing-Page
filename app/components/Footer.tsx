@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                 />
               </button>
             </div>
-            {/* <div className=" flex flex-col gap-4">
+            <div className=" flex flex-col gap-4">
               <div className="font-[Oswald] text-[16px] text-white font-semibold text-center lg:text-left">
                 Subscribe to the latest news
               </div>
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                   />
                 </button>
               </div>
-            </div> */}
+            </div>
             <div className=" flex flex-row gap-8">
               <button
                 className="w-[60px] h-[60px] bg-[#6F58FF] flex justify-center items-center"
