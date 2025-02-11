@@ -122,7 +122,19 @@ body {
   background-color: #5CFFE2 !important;
 }
 
-@media only screen and (max-width: 640px) {
+.swiper-scrollbar {
+  background-color: #1F1F6B!important;
+  width: 4px!important;
+  border-radius: 4px!important; 
+}  
+
+/* Custom scrollbar drag handle */  
+.swiper-scrollbar-drag {  
+  background-color: #5528E7!important; /* Blue color for the drag handle */  
+  border-radius: 4px!important;
+}  
+
+@media only screen and (max-width: 768px) {
   .swiper-pagination-vertical {
     display: none;
   }
@@ -142,6 +154,9 @@ body {
     display: none;
   }
   .swiper-slide.footer-slider {
+    display: none;
+  }
+  .swiper-scrollbar {
     display: none;
   }
 }

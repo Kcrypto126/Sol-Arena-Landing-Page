@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Pagination } from "swiper/modules";
+import { Mousewheel, Pagination, Scrollbar } from "swiper/modules";
 import Footer from "../components/Footer";
 // Import Swiper styles
 import "swiper/css";
@@ -185,8 +185,11 @@ const Page: React.FC = () => {
             pagination={{
               clickable: true,
             }}
-            modules={[Pagination, Mousewheel]}
-            // scrollbar={{ draggable: true }}
+            scrollbar={{  
+              hide: false,
+              draggable: true
+            }} 
+            modules={[Pagination, Mousewheel, Scrollbar]}
             style={{
               height: height - 72 + "px",
             }}
