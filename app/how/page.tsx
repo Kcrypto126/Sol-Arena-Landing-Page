@@ -22,8 +22,6 @@ const Page: React.FC = () => {
   const videoMobileRefs = useRef<HTMLVideoElement[]>([]);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const [aa, setAdd] = useState(0);
-
   const handleSlideChange = (swiper: SwiperType) => {
     setActiveIndex(swiper.activeIndex);
   };
@@ -210,7 +208,7 @@ const Page: React.FC = () => {
                 swiper.mousewheel.disable();
                 setTimeout(() => {
                   swiper.mousewheel.enable();
-                }, 300);
+                }, 1000);
               }}
               onSlideChange={(swiper) => {
                 handleSlideChange;
