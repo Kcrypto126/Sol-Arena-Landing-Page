@@ -1,11 +1,44 @@
 #right-content {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .active {
-    color: #41FFC6;
+  color: #41ffc6;
 }
 #right-bar a {
-    transition: all;
-    transition-delay: 100ms;
+  transition: all;
+  transition-delay: 100ms;
 }
 
+.loadmap::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -3px;
+  width: 2px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1668px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: -3px;
+    width: 2px;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 1102px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
+    bottom: 46px;
+    left: -3px;
+    width: 2px;
+    height: 83%;
+    background-color: rgb(255, 255, 255);
+  }
+}
