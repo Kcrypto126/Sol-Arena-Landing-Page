@@ -23,10 +23,22 @@
   .loadmap::after {
     content: "";
     position: absolute;
+    bottom: -2px;
+    left: -3px;
+    width: 2px;
+    height: 98%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 1520px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
     bottom: 22px;
     left: -3px;
     width: 2px;
-    height: 90%;
+    height: 88%;
     background-color: rgb(255, 255, 255);
   }
 }
@@ -35,10 +47,46 @@
   .loadmap::after {
     content: "";
     position: absolute;
+    bottom: 22px;
+    left: -3px;
+    width: 2px;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: -3px;
+    width: 2px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
+    bottom: 22px;
+    left: -3px;
+    width: 2px;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .loadmap::after {
+    content: "";
+    position: absolute;
     bottom: 46px;
     left: -3px;
     width: 2px;
-    height: 83%;
+    height: 82%;
     background-color: rgb(255, 255, 255);
   }
 }
