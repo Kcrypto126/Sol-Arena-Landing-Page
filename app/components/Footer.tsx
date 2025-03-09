@@ -3,12 +3,65 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useState } from "react";
+import react, { useRef } from "react";
+import emailjs from '@emailjs/browser';  
+// import dotenv from "dotenv";
+
+// dotenv.config();
 
 const Footer: React.FC = () => {
   const navigator = useRouter();
-  const handleLink = (event: any) => {
-    event.preventDefault();
+  const [email, setEmail] = useState<string>("");
+  const [errorMessage, setErrorMessage] = useState<string>("");
+
+  const validateFormData = (): boolean => {
+    if (!email) {
+      setErrorMessage("Email is required");
+      return false;
+    } else if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      setErrorMessage("Invalid email format");
+      return false;
+    }
+    setErrorMessage("");
+    return true;
   }
+
+  const handleEmail = async () => {
+    if (!validateFormData()) {
+      return;
+    }
+
+    const serviceId: string = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? '';
+    const templateId: string =  process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? '';
+    const publicKey: string = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? '';
+
+    interface TemplateParams {
+      email: string;
+      [key: string]: any;
+    }
+
+    const templateParams: TemplateParams = {
+      email: email,
+    }
+
+    try {
+      const response = await emailjs.send(
+        serviceId, 
+        templateId, 
+        templateParams, 
+        publicKey
+      );
+      setEmail("");
+      console.log('SUCCESS', response.status, response.text);
+      setErrorMessage("Email sent successfully");
+    } catch (error) {
+      console.log('FAILED...', error);
+      setErrorMessage("Failed to send email. Please try again.");
+    }
+    
+  };
+
   return (
     <>
       <div
@@ -40,7 +93,7 @@ const Footer: React.FC = () => {
                 />
               </button>
             </div>
-            {/* <div className=" flex flex-col gap-4">
+            <div className=" flex flex-col gap-4">
               <div className="font-[Oswald] text-[16px] text-white font-semibold text-center lg:text-left">
                 Subscribe to the latest news
               </div>
@@ -48,11 +101,15 @@ const Footer: React.FC = () => {
                 <input
                   className="border-2 border-[#41FFC6] w-[260px] lg:w-[290px] h-[50px] lg:h-[60px] bg-[#070733] outline-none ring-0 pl-3 font-[Oswald] text-[#41FFC6] font-bold text-[20px] placeholder:text-[#3e977d]"
                   placeholder="Enter Email"
+                  type="Email"
+                  value={email}
+                  required={true}
+                  onChange={(e) => setEmail(e.target.value)}
                 ></input>
                 <button
                   className=" w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] ml-[-2px] flex justify-center items-center bg-[#41FFC6]"
                   onClick={() => {
-                    navigator.push("/");
+                    handleEmail();
                   }}
                 >
                   <Image
@@ -64,7 +121,10 @@ const Footer: React.FC = () => {
                   />
                 </button>
               </div>
-            </div> */}
+              <p className={`-mt-[13px] ${errorMessage == "Email sent successfully" ? "text-green-600" : "text-red-600"} text-[12px] font-bold`}>
+                {errorMessage}
+              </p>
+            </div>
             <div className=" flex flex-row gap-8 mt-[30px] md:mt-auto">
               <button
                 className="w-[60px] h-[60px] bg-[#6F58FF] flex justify-center items-center"
@@ -137,7 +197,12 @@ const Footer: React.FC = () => {
             className="w-[96px] h-[40px] lg:w-[140px] lg:h-[58px]"
           />
           <div className="flex flex-row gap-1 lg:gap-6 text-[8px] lg:text-[12px] text-[#99B9FF]">
-            <Link href={"https://chillchat.notion.site/Privacy-Policy-46764a9686914a499528f8450d36a6c3?pvs=4"} prefetch>
+            <Link
+              href={
+                "https://chillchat.notion.site/SOL-Arena-Terms-of-Use-Privacy-Policy-1202b901b5f98020a945c1291eae0dc5"
+              }
+              prefetch
+            >
               Privacy Policy
             </Link>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
@@ -145,7 +210,12 @@ const Footer: React.FC = () => {
               Copyright Chillchat Holdings Pte Ltd. All rights reserved.
             </span>
             <div className="w-[2px] h-[8px] lg:h-[19px] bg-[#8581FF]"></div>
-            <Link href={"https://chillchat.notion.site/Terms-of-Service-db8c231d210d404c8aad973b4d6f5e1b?pvs=4"} prefetch>
+            <Link
+              href={
+                "https://chillchat.notion.site/CHILL-Airdrop-Terms-Conditions-1a02b901b5f98010803bebab74031960"
+              }
+              prefetch
+            >
               Terms of Service
             </Link>
           </div>

@@ -106,6 +106,6 @@ th {
   /* background-color: #f2f2f2; */
 }
 
-tr td:first-child {
-  font-weight: bold;
-}
+/* tr td:first-child { */
+  /* font-weight: bold; */
+/* } */

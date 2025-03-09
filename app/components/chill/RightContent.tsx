@@ -296,6 +296,9 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
               </div>
             </div>
             <div className=" px-5 text-[16px]">
+              <div className="text-[18px] mb-8">
+              Our roadmap is planned with players and investors in mind. Our goal is to continually improve player engagement and rewards with each update, building a sustainable foundation for our growth and delivering long-term value for our players, community, and supporters.
+              </div>
               <ol className="relative border-s-[2px] border-s-[#5CFFE2]">
                 <li className="mb-10 ms-4">
                   <svg
@@ -714,16 +717,16 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         <td>Airdrop</td>
                         <td>17%</td>
                         <td>
-                          <b>SOL Arena Players (10%)</b>
+                          SOL Arena Players (10%)
                           <ul>
                             <li>
                               - 5% Season 0: Day 1 unlock, vested over 3 months
                             </li>
                             <li>- 5% Season 0.5: Future allocation</li>
                           </ul>
-                          <b>Origins (6%)</b>: Day 1 unlock, vested over 3
+                          Origins (6%): Day 1 unlock, vested over 3
                           months <br />
-                          <b>Challengers (1%)</b>: Day 1 unlock, vested over 3
+                          Challengers (1%): Day 1 unlock, vested over 3
                           months
                         </td>
                       </tr>
@@ -739,9 +742,9 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                         <td>Investors</td>
                         <td>31.19%</td>
                         <td>
-                          <b>Non-US Investors</b>: 3-month cliff, then 100%
+                          Non-US Investors: 3-month cliff, then 100%
                           unlock
-                          <br /> <b>US Investors</b>: 1-year cliff, then 100%
+                          <br /> US Investors: 1-year cliff, then 100%
                           unlock
                         </td>
                       </tr>
