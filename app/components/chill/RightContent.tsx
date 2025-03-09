@@ -426,7 +426,14 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                     <li className="mb-4 text-base font-normal list-disc">
                       Challenger NFT Release: Launch an NFT collection featuring
                       our new revamped art style in an exclusive limited-time
-                      cosmetics, only available for our earliest supporters
+                      cosmetics, only available for our earliest supporters{" "}
+                      <a
+                        href="https://magiceden.io/marketplace/sol_arena_challengers"
+                        target="_blank"
+                        className="underline"
+                      >
+                        Available NOW on Magic Eden
+                      </a>
                     </li>
                     <li className="mb-4 text-base font-normal list-disc">
                       $CHILL Token Launch: Launch the $CHILL token which will be
@@ -609,36 +616,205 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                     and utility.
                   </div>
                   <ul className=" list-decimal pl-5">
-                    <li>Entertainment: Social, comic, and animated content.</li>
                     <li>
-                      Utility: Stake and play for in-game resources and $CHILL
-                      rewards.
+                      Entertainment:
+                      <ul className=" list-disc pl-6">
+                        <li>Social, comic, and animated content.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      Utility:
+                      <ul className=" list-disc pl-6">
+                        <li>Stake and play for in-game resources.</li>
+                        <li>
+                          Exclusive buy-in currency for{" "}
+                          <a
+                            href="https://chillchat.notion.site/18b2b901b5f9804a9decf598ef28f75e?pvs=25#18b2b901b5f9817fa0b0e17ba9534134"
+                            className=" underline"
+                            target="_blank"
+                          >
+                            Higher Roller Mode
+                          </a>
+                          .
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div id="Tokenomics" className="mt-[-80px] pt-[80px]">
+              <div>
+                <Image
+                  src={"/assets/chill/image.webp"}
+                  alt=""
+                  className="mb-3"
+                  width={1000}
+                  height={1000}
+                />
+                <i className=" text-[#CAD4EF]">
+                  <b>$CHILL</b> is a token designed for in-game use only. It has
+                  no investment value and is not a financial product.
+                </i>
+              </div>
+              <div id="Tokenomics" className="mt-[-40px] pt-[70px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Tokenomics</h3>
-                <div className=" text-[16px] space-y-8">
-                  <ul className=" list-disc pl-5">
+                <div className=" text-[16px] space-y-2">
+                  {/* <ul className=" list-disc pl-5">
                     <li>25% Team and Advisors</li>
                     <li>31.19% Investors</li>
                     <li>23.81% Community</li>
                     <li>10% Public Launch</li>
                     <li>10% Airdrop</li>
-                  </ul>
-                  <div>
+                  </ul> */}
+                  <div className="">
                     <Image
-                      src={"/assets/chill/image1199.webp"}
+                      src={"/assets/chill/CHILL-Allocation.webp"}
                       alt=""
+                      className=" mb-4"
                       width={1000}
                       height={1000}
                     />
                   </div>
-                  <div className=" text-[#CAD4EF] italic">
-                    Note: Allocation plans are subject to change to adapt to
-                    market conditions.
+                  <i className=" text-[#CAD4EF] italic">
+                    Disclaimer: Allocation plans are subject to change to adapt
+                    to market conditions.
+                  </i>
+                  <div className="">
+                    <Image
+                      src={"/assets/chill/image-chat.webp"}
+                      alt=""
+                      className=" mb-4"
+                      width={1000}
+                      height={1000}
+                    />
                   </div>
+                  <i className=" text-[#CAD4EF] italic">
+                    Disclaimer: Distribution schedules are subject to change to
+                    adapt to market conditions.
+                  </i>
+                  <table className=" text-[12px] sm:text-[16px]">
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>Allocation</th>
+                        <th>Unlock Schedule</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Launch Liquidity</td>
+                        <td>3%</td>
+                        <td>Fully unlocked at launch</td>
+                      </tr>
+                      <tr>
+                        <td>Community Reserve</td>
+                        <td>28.81%</td>
+                        <td>Fully unlocked at launch</td>
+                      </tr>
+                      <tr>
+                        <td>Airdrop</td>
+                        <td>17%</td>
+                        <td>
+                          <b>SOL Arena Players (10%)</b>
+                          <ul>
+                            <li>
+                              - 5% Season 0: Day 1 unlock, vested over 3 months
+                            </li>
+                            <li>- 5% Season 0.5: Future allocation</li>
+                          </ul>
+                          <b>Origins (6%)</b>: Day 1 unlock, vested over 3
+                          months <br />
+                          <b>Challengers (1%)</b>: Day 1 unlock, vested over 3
+                          months
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Team & Advisors</td>
+                        <td>20%</td>
+                        <td>
+                          1-year cliff, 20% unlock after cliff, then linear
+                          vesting over 12 months
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Investors</td>
+                        <td>31.19%</td>
+                        <td>
+                          <b>Non-US Investors</b>: 3-month cliff, then 100%
+                          unlock
+                          <br /> <b>US Investors</b>: 1-year cliff, then 100%
+                          unlock
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div id="Launch-Liquidity" className="mt-[-60px] pt-[60px]">
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">
+                  Launch Liquidity (3%)
+                </h3>
+                <div className=" text-[16px] space-y-2">
+                  3% of the total supply is set aside for liquidity pools to
+                  ensure smooth trading with deep liquidity.
+                </div>
+              </div>
+
+              <div id="Community-Reserve" className="mt-[-60px] pt-[60px]">
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">
+                  Community Reserve (28.81%)
+                </h3>
+                <div className=" text-[16px] space-y-2">
+                  28.81% of the total supply is managed by the Chillchat Team to
+                  support SOL Arena’s long-term growth. This reserve will be
+                  used for strategic initiatives like future airdrops and
+                  expanding the ecosystem.
+                </div>
+              </div>
+
+              <div id="Airdrop" className="mt-[-60px] pt-[60px]">
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">
+                  Airdrop (17%)
+                </h3>
+                <div className=" text-[16px] space-y-2">
+                  <div>
+                    17% of the total supply is allocated to airdrops, rewarding
+                    early adopters and active participants in SOL Arena.
+                  </div>
+                  <ul className=" list-disc pl-5">
+                    <li>
+                      Unlock Schedule:
+                      <ul className=" list-[circle] pl-5">
+                        <li>
+                          SOL Arena Players (10%)
+                          <ul className=" list-[square] pl-5">
+                            <li>5% - Season 0</li>
+                            <li>5% - Season 0.5</li>
+                          </ul>
+                        </li>
+                        <li>Origins (6%)</li>
+                        <li>Challengers (1%)</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="Team" className="mt-[-60px] pt-[60px]">
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">Team (20%)</h3>
+                <div className=" text-[16px] space-y-2">
+                  20% of the total supply is allocated to the team who have been
+                  building at Chillchat for more than three years.
+                </div>
+              </div>
+
+              <div id="Investors" className="mt-[-60px] pt-[60px]">
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">
+                  Investors (31.19%)
+                </h3>
+                <div className=" text-[16px] space-y-2">
+                  31.19% of the total supply was sold to investors in 2022
+                  through $10M and $50M funding rounds.
                 </div>
               </div>
             </div>
@@ -715,13 +891,13 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                     ecosystem since 2021, we’re proud to partner with leading
                     projects and investors:
                   </div>
-                  <ul className=" list-decimal pl-5">
+                  {/* <ul className=" list-decimal pl-5">
                     <li>Entertainment: Social, comic, and animated content.</li>
                     <li>
                       Utility: Stake and play for in-game resources and $CHILL
                       rewards.
                     </li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
               <div>
@@ -797,67 +973,250 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
               <Image
                 src={"/assets/chill/Section2Title.png"}
                 alt=""
-                width={500}
+                width={700}
                 height={200}
-                className=" w-[426px] h-[68px]"
+                className=" w-[536px] h-[68px]"
               />
               <div className="  absolute top-[50%] left-7 translate-y-[-50%] text-black md:text-[28px] text-[20px] font-semibold">
-                How Do I Participate?
+                How Do I Get a $CHILL Allocation?
               </div>
             </div>
             <div className=" px-5 flex flex-col gap-12">
               <div>
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
-                  Season 0: Extract to Airdrop
+                  Season 0 and Season 0.5: Extract to Airdrop
                 </h3>
                 <div className=" text-[16px] space-y-8">
-                  Start playing SOL Arena today at{" "}
+                  <i className=" underline">more noCHILL = more $CHILL</i>
+                  <br />
+                  Start playing SOL Arena today by going to{" "}
                   <a
-                    href="https://play.solarena.io/"
+                    href="http://play.solarena.io/"
                     target="_blank"
-                    className="underline"
+                    className=" underline"
                   >
-                    play.solarena.io
-                  </a>{" "}
-                  on any browser (Mac or PC) or through a mobile Solana wallet
-                  app. Collect and extract noCHILL to climb the leaderboard and
+                    solarena.io
+                  </a>
+                  . Collect and extract noCHILL to climb the leaderboard and
                   qualify for the $CHILL airdrop when the token launches.
                 </div>
-              </div>
-            </div>
-            <div className=" pl-5 flex flex-col gap-12">
-              <div className=" flex flex-col gap-6">
-                <h3 className=" text-[18px] text-[#41FFC6]">Hold our NFTs</h3>
-                <div className=" text-[16px] space-y-8">
-                  Own a piece of SOL Arena by holding NFTs from the{" "}
-                  <a
-                    href="https://magiceden.io/marketplace/chillchat"
-                    className="underline"
-                    target="_blank"
-                  >
-                    Chillchat Origin collection
-                  </a>{" "}
-                  or the upcoming Challenger collection. These NFTs not only
-                  grant exclusive in-game cosmetics but also guarantee your
-                  eligibility for the $CHILL airdrop.
+                <div className=" mt-3 mb-6">
+                  <Image
+                    src={"/assets/chill/Gk4hWrqWcAAmPSo.jpg"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
                 </div>
+
+                <h4 className=" font-bold text-[18px] text-[#ffffff] pb-4">
+                  How To Get noCHILL?
+                </h4>
                 <ul className=" list-decimal pl-5 space-y-6">
                   <li>
-                    Origins
-                    <ul className=" list-[lower-alpha] pl-5">
-                      <li>Soft stake to earn $CHILL airdrop rewards</li>
-                      <li>Hard stake to earn exclusive in-game currencies</li>
+                    <b>Enter the Arena & Extract noCHILL</b>
+                    <ul className=" list-disc pl-5">
+                      <li>
+                        <b>Enter the Arena</b> - Join the Arena and compete
+                        against other players in real time.
+                      </li>
+                      <li>
+                        <b>Collect noCHILL</b> - Gather noCHILL in the Arena and
+                        defeat opponents to take theirs.
+                      </li>
+                      <li>
+                        <b>Extract to Secure noCHILL</b> - Escape through a
+                        wormhole to lock in your noCHILL. Die before you extract
+                        and you’ll drop it for others to steal.
+                      </li>
                     </ul>
                   </li>
                   <li>
-                    Challengers
-                    <ul className=" list-[lower-alpha] pl-5">
-                      <li>Playable in-game as a limited time cosmetic</li>
-                      <li>Soft stake to earn $CHILL airdrop rewards</li>
-                      <li>Multiply your noCHILL extractions</li>
+                    <b>Refer your Friends</b>
+                    <ul className=" list-disc pl-5">
+                      <li>
+                        Refer your friends and earn a 5% bonus on all their
+                        noCHILL extractions!
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Daily Claims</b>
+                    <ul className=" list-disc pl-5">
+                      <li>
+                        Log in daily to claim rewards, with each consecutive day
+                        increasing the value of your noCHILL claim.
+                      </li>
+                      <li>On Day 7, you receive the biggest reward.</li>
+                      <li>Missing a day resets your streak.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <b>Redemption Codes</b>
+                    <ul className=" list-disc pl-5">
+                      <li>
+                        Stay active on Discord, Telegram, or X to earn exclusive
+                        redemption codes. These codes grant extra noCHILL, which
+                        you can redeem in-game for additional rewards.
+                      </li>
                     </ul>
                   </li>
                 </ul>
+                <div className=" mt-3 mb-6">
+                  <Image
+                    src={"/assets/chill/250207_SA_GetnoCHILLinTheArena.webp"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+
+                <h4 className=" font-bold text-[18px] text-[#ffffff] pb-4">
+                  noCHILL = $CHILL Eligibility
+                </h4>
+                <div className="text-[16px] space-y-8">
+                  To qualify for the noCHILL = $CHILL airdrop, players must
+                  extract at least 25,000 noCHILL from the Arena. Once this
+                  requirement is met, NFT multipliers will be applied, and
+                  noCHILL earned through referrals, daily claims and redemption
+                  codes will also count toward the $CHILL airdrop.
+                </div>
+                <div className=" mt-3 mb-6">
+                  <Image
+                    src={"/assets/chill/250210_SA_EligibilityCriteria.webp"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+              </div>
+            </div>
+            <div className=" pl-5 flex flex-col gap-12 px-[20px]">
+              <div className=" flex flex-col gap-6">
+                <h3 className=" text-[18px] text-[#41FFC6]">Hold our NFTs</h3>
+                <div className=" text-[16px] space-y-8">
+                  Own a piece of SOL Arena by holding either{" "}
+                  <a
+                    href="https://magiceden.io/marketplace/chillchat"
+                    target="_blank"
+                    className=" underline"
+                  >
+                    Chillchat Origin
+                  </a>{" "}
+                  or{" "}
+                  <a
+                    href="https://magiceden.io/marketplace/sol_arena_challengers"
+                    target="_blank"
+                    className=" underline"
+                  >
+                    SOL Arena Challengers
+                  </a>{" "}
+                  NFTs. These NFTs not only grant exclusive in-game cosmetics
+                  but also guarantee your eligibility for the $CHILL airdrop.
+                </div>
+                <ul className=" list-decimal pl-5 space-y-6">
+                  <li>
+                    <a
+                      href="https://magiceden.io/marketplace/chillchat"
+                      target="_blank"
+                      className=" underline"
+                    >
+                      Chillchat Origins
+                    </a>
+                    <ul className=" list-disc pl-5">
+                      <li>Earn $CHILL airdrop rewards.</li>
+                      <li>Hard stake to earn exclusive in-game currencies.</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="https://magiceden.io/launchpad/sol_arena_challengers"
+                      target="_blank"
+                      className=" underline"
+                    >
+                      SOL Arena Challengers
+                    </a>
+                    <ul className=" list-disc pl-5">
+                      <li>Playable in-game as a limited time cosmetic.</li>
+                      <li>Earn $CHILL airdrop rewards.</li>
+                      <li>Multiply your noCHILL extractions.</li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <h4 className=" font-bold text-[18px] text-[#ffffff]">
+                  noCHILL Multiplier Table
+                </h4>
+                <div className=" -mt-[18px] mb-6">
+                  <Image
+                    src={"/assets/chill/250211_SA_-NFTRewardsV2.webp"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+              </div>
+              <div className=" flex flex-col gap-6">
+                <h3 className=" text-[18px] text-[#41FFC6]">TaskOn Questing</h3>
+                <div className=" text-[16px]">
+                  In addition to collecting noCHILL in the Arena, players can
+                  complete additional quests on SOL Arena’s TaskOn Quest Board
+                  in order to earn more points towards their $CHILL Airdrop
+                  allocation.
+                </div>
+                <div className=" text-[16px] space-y-8">
+                  <a
+                    href="https://taskon.xyz/SOLArena"
+                    target="_blank"
+                    className=" underline"
+                  >
+                    TaskOn Quest Board
+                  </a>
+                </div>
+                <div className=" -mt-[18px] mb-6">
+                  <Image
+                    src={"/assets/chill/image-era.webp"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
+              </div>
+              <div className=" flex flex-col gap-6">
+                <h3 className=" text-[18px] text-[#41FFC6]">
+                  Discord Daily Quests
+                </h3>
+                <div className=" text-[16px] space-y-8">
+                  Besides the Arena and TaskOn Quests, players can farm for the
+                  $CHILL airdrop within the Chillchat Games community Discord
+                  server.
+                </div>
+                <ul className="list-disc pl-5">
+                  <li>Complete quests in the #Quests channel</li>
+                  <li>Claim daily points in the #Lootbox channel</li>
+                  <li>
+                    Earn <b>Eva Points</b>: points system specifically for{" "}
+                    <b>Discord Quests</b>. More Eva Points earned will result in
+                    a larger airdrop allocation.
+                  </li>
+                </ul>
+                <div className=" text-[16px] space-y-8">
+                  <a
+                    href="https://discord.gg/chillchatgames"
+                    target="_blank"
+                    className=" underline"
+                  >
+                    Join the Discord
+                  </a>
+                </div>
+                <div className=" -mt-[18px] mb-6">
+                  <Image
+                    src={"/assets/chill/image-pro.webp"}
+                    alt=""
+                    width={1920}
+                    height={1080}
+                  />
+                </div>
               </div>
               <div className=" flex flex-col gap-6">
                 <h3 className=" text-[18px] text-[#41FFC6]">
@@ -870,9 +1229,95 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   official launch details and secure your stake in the future of
                   Web3 gaming.
                 </div>
+                <ul className="list-disc pl-5">
+                  <li>Contract Address: TBC</li>
+                </ul>
               </div>
             </div>
           </div>
+
+          <div className="max-w-[1000px] m-auto pt-[80px] text-white flex flex-col gap-12 relative z-20">
+            <div className="relative h-fit">
+              <Image
+                src={"/assets/chill/Section2Title.png"}
+                alt=""
+                width={700}
+                height={200}
+                className=" w-[555px] h-[68px]"
+              />
+              <div className="  absolute top-[50%] left-7 translate-y-[-50%] text-black md:text-[28px] text-[20px] font-semibold">
+                SNAPSHOT DATE: 26th March 2025
+              </div>
+            </div>
+            <div className=" px-5 flex flex-col gap-12">
+              <div className="text-[18px] italic">
+                On this date, we will record all holders of both Collections and
+                submit the list to Streamflow for when the $CHILL claim website
+                goes live.
+              </div>
+              <div>
+                <h3 className=" text-[18px] text-[#41FFC6] pb-4">
+                  Snapshot Details
+                </h3>
+                <ul className="list-decimal pl-5 ">
+                  <li>
+                    <b>NFT Holders:</b>
+                    <ul className="list-disc pl-5">
+                      <li>
+                        We will record all holders of <b>Chillchat Origin</b>{" "}
+                        and <b>SOL Arena Challengers</b> NFTs.
+                      </li>
+                      <li>
+                        The list will be submitted to <b>Streamflow</b> for when
+                        the <b>$CHILL claim website</b> goes live.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    <b>Future Utility of NFTs:</b>
+                    <ul className="list-disc pl-5">
+                      <li>
+                        <b>Chillchat Origins</b> will become{" "}
+                        <b>purely collectibles</b>, with no further utility
+                        after the snapshot.
+                      </li>
+                      <li>
+                        <b>SOL Arena Challengers</b> will be{" "}
+                        <b>limited to in-game cosmetics</b>, with no further
+                        rewards.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    <b>noCHILL Balances & Multipliers:</b>
+                    <ul className="list-disc pl-5">
+                      <li>
+                        We will record <b>each player’s noCHILL balance</b> and
+                        apply their respective NFT <b>multipliers</b>.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    <b>TaskOn & Discord Daily Quest Snapshots:</b>
+                    <ul className="list-disc pl-5">
+                      <li>
+                        A final snapshot will be taken for{" "}
+                        <b>TaskOn quest points</b> and{" "}
+                        <b>Discord Daily Quest EVA points</b> to determine
+                        airdrop distribution.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div className="text-[18px] mt-4">
+                  This snapshot marks the definitive cutoff for eligibility and
+                  multipliers, ensuring that all rewards are accurately assigned
+                  before the launch of the $CHILL claim process.
+                </div>
+              </div>
+            </div>
+          </div>
+
           <Image
             src={"/assets/chill/coins-2.png"}
             alt="coin"
@@ -915,9 +1360,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   width={48}
                   height={48}
                 />
-                <div className=" text-[#41FFC6] text-[18px]">
-                  Discord
-                </div>
+                <div className=" text-[#41FFC6] text-[18px]">Discord</div>
               </div>
               <div
                 className=" flex flex-row gap-3 items-center md:justify-start justify-between cursor-pointer"
@@ -931,9 +1374,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   width={48}
                   height={48}
                 />
-                <div className=" text-[#41FFC6] text-[18px] ">
-                  X
-                </div>
+                <div className=" text-[#41FFC6] text-[18px] ">X</div>
               </div>
               <div
                 className=" flex flex-row gap-3 items-center cursor-pointer"
@@ -947,9 +1388,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   width={48}
                   height={48}
                 />
-                <div className=" text-[#41FFC6] text-[18px]">
-                  Telegram
-                </div>
+                <div className=" text-[#41FFC6] text-[18px]">Telegram</div>
               </div>
             </div>
           </div>
