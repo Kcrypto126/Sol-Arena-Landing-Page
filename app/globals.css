@@ -49,6 +49,9 @@ body {
 .section {
   background-size: 100% 100%;
 }
+.section-Eva {
+  background-size: 100% auto;
+}
 
 .footer {
   background-size: 100% 750px;
@@ -62,6 +65,10 @@ body {
   }
 
   .section {
+    background-size: auto 100%;
+  }
+
+  .section-Eva {
     background-size: auto 100%;
   }
 
