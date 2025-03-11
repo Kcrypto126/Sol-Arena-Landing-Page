@@ -33,8 +33,15 @@ export default function Home() {
       <div className="relative z-0 mt-[72px]">
         <main className="w-full">
           <div
-            className="hero-section w-full h-[1024px] bg-center bg-no-repeat mb-[-2px]"
+            className=" relative hero-section w-full h-[1024px] bg-top bg-no-repeat mb-[-2px]"
           >
+            {/* <Image
+              src={"/assets/hero-deco.webp"}
+              alt=""
+              width={1920}
+              height={1024}
+              className=" absolute bottom-0 left-0"
+            /> */}
             {/* <div className=" w-[100%] absolute top-[340px] sm:top-[438px] flex flex-col justify-center items-center">
               <div
                 className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
