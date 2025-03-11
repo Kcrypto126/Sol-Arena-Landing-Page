@@ -13,20 +13,6 @@ const Lists = [
   {
     id: "What-Are-the-Key-Features",
     name: "What Are the Key Features?",
-    children: [
-      {
-        id: "High-Stakes-Gameplay-noCHILL-Crypto-and-Extraction",
-        name: "High-Stakes Gameplay: noCHILL, Crypto, and Extraction",
-      },
-      {
-        id: "Community-Driven-Competition-Represent-Your-Coins",
-        name: "Community-Driven Competition: Represent Your Coins",
-      },
-      {
-        id: "Accessible-for-All-Rewarding-for-Competitors",
-        name: "Accessible for All, Rewarding for Competitors",
-      },
-    ],
   },
   { id: "Whats-the-Roadmap", name: "What’s the Roadmap?" },
   {
@@ -34,11 +20,36 @@ const Lists = [
     name: "Why Should I Own $CHILL?",
     children: [
       { id: "Tokenomics", name: "Tokenomics" },
-      // { id: "What-is-SOL-Arena?", name: "What is SOL Arena?" },
     ],
   },
   { id: "Who-Are-Your-Partners", name: "Who Are Your Partners?" },
-  { id: "How-Do-I-Participate", name: "How Do I Participate?" },
+  { 
+    id: "How-Do-I-Get-a-$CHILL-Allocation", 
+    name: "How Do I Get a $CHILL Allocation?",
+    children: [
+      {
+        id: "Season-and-Season-Extract-to-Airdrop",
+        name: "Season 0 and Season 0.5: Extract to Airdrop",
+      },
+      {
+        id: "Hold-our-NFTs",
+        name: "Hold our NFTs",
+      },
+      {
+        id: "TaskOn-Questing",
+        name: "TaskOn Questing",
+      },
+      {
+        id: "Discord-Daily-Quests",
+        name: "Discord Daily Quests",
+      },
+      {
+        id: "Buy-$CHILL-at-Launch",
+        name: "Buy $CHILL at Launch",
+      },
+    ],
+  },
+  { id: "SNAPSHOT-DATE-26th-March-2025", name: "SNAPSHOT DATE: 26th March 2025" },
   { id: "Links", name: "Links" },
 ];
 
@@ -104,7 +115,7 @@ const LeftBar: React.FC<LeftBarPropsType> = ({
                 }
                 {
                   e.children && e.children[0].id !== "Tokenomics" && (
-                    <ul className={` loadmap block relative space-y-5 pl-5 `}>
+                    <ul className={` loadmap block relative space-y-5 pl-5 mb-[10px]`}>
                       {e.children &&
                         e.children.map((k, i) => {
                           return (

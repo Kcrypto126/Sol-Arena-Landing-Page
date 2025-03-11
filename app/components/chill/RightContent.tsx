@@ -9,14 +9,17 @@ const IDLists: Array<string> = [
   "What-is-SOL-Arena",
   "Whats-the-Vision",
   "What-Are-the-Key-Features",
-  "High-Stakes-Gameplay-noCHILL-Crypto-and-Extraction",
-  "Community-Driven-Competition-Represent-Your-Coins",
-  "Accessible-for-All-Rewarding-for-Competitors",
   "Whats-the-Roadmap",
   "Why-Should-I-Own-CHILL",
   "Tokenomics",
   "Who-Are-Your-Partners",
-  "How-Do-I-Participate",
+  "How-Do-I-Get-a-$CHILL-Allocation",
+  "Season-and-Season-Extract-to-Airdrop",
+  "Hold-our-NFTs",
+  "TaskOn-Questing",
+  "Discord-Daily-Quests",
+  "Buy-$CHILL-at-Launch",
+  "SNAPSHOT-DATE-26th-March-2025",
   "Links",
 ];
 //bg-[url('/assets/chill/Art.png')]
@@ -68,7 +71,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
       </div>
       <div className=" flex flex-col gap-0 w-full pb-40">
         <div
-          className="w-full relative py-[20px] md:py-[80px]"
+          className="w-full relative py-[100px] -mt-[80px] md:-mt-[90px] md:py-[90px]"
           id="What-is-SOL-Arena"
         >
           <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12">
@@ -96,7 +99,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           </div>
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
           id="Whats-the-Vision"
         >
           <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12 relative z-20">
@@ -151,7 +154,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           />
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
           id="What-Are-the-Key-Features"
         >
           <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12 relative z-20">
@@ -195,7 +198,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   </p>
                   <div>
                     <Image
-                      src={"/assets/chill/high-stack.webp"}
+                      src={"/assets/chill/241111_SA_Gameplayloop_newstyle.webp"}
                       alt=""
                       width={1920}
                       height={1080}
@@ -279,7 +282,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           />
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
           id="Whats-the-Roadmap"
         >
           <div className="max-w-[1000px] m-auto text-white relative z-20 flex flex-col gap-12">
@@ -594,7 +597,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           />
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
           id="Why-Should-I-Own-CHILL"
         >
           <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12">
@@ -658,7 +661,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   no investment value and is not a financial product.
                 </i>
               </div>
-              <div id="Tokenomics" className="mt-[-40px] pt-[70px]">
+              <div id="Tokenomics" className="mt-[-90px] pt-[70px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Tokenomics</h3>
                 <div className=" text-[16px] space-y-2">
                   {/* <ul className=" list-disc pl-5">
@@ -753,7 +756,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
 
-              <div id="Launch-Liquidity" className="mt-[-60px] pt-[60px]">
+              <div id="Launch-Liquidity" className="mt-[-90px] pt-[60px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
                   Launch Liquidity (3%)
                 </h3>
@@ -763,7 +766,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
 
-              <div id="Community-Reserve" className="mt-[-60px] pt-[60px]">
+              <div id="Community-Reserve" className="mt-[-90px] pt-[60px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
                   Community Reserve (28.81%)
                 </h3>
@@ -775,7 +778,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
 
-              <div id="Airdrop" className="mt-[-60px] pt-[60px]">
+              <div id="Airdrop" className="mt-[-90px] pt-[60px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
                   Airdrop (17%)
                 </h3>
@@ -803,7 +806,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
 
-              <div id="Team" className="mt-[-60px] pt-[60px]">
+              <div id="Team" className="mt-[-90px] pt-[60px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">Team (20%)</h3>
                 <div className=" text-[16px] space-y-2">
                   20% of the total supply is allocated to the team who have been
@@ -811,7 +814,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
 
-              <div id="Investors" className="mt-[-60px] pt-[60px]">
+              <div id="Investors" className="mt-[-90px] pt-[60px]">
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
                   Investors (31.19%)
                 </h3>
@@ -824,7 +827,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           </div>
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
           id="Who-Are-Your-Partners"
         >
           <Image
@@ -904,7 +907,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
               <div>
-                <div className=" text-[16px] space-y-8">
+                <div className=" text-[16px] -mt-[30px] space-y-4">
                   <ul className="list-disc pl-5">
                     <li className="text-[#41FFC6]">
                       <strong>Collaborations:</strong>
@@ -968,8 +971,8 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
           </div>
         </div>
         <div
-          className=" w-full relative py-[20px] md:py-[80px]"
-          id="How-Do-I-Participate"
+          className=" w-full relative py-[100px] -mt-[150px] md:-mt-[110px] md:py-[90px]"
+          id="How-Do-I-Get-a-$CHILL-Allocation"
         >
           <div className="max-w-[1000px] m-auto text-white flex flex-col gap-12 relative z-20">
             <div className="relative h-fit">
@@ -984,7 +987,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 How Do I Get a $CHILL Allocation?
               </div>
             </div>
-            <div className=" px-5 flex flex-col gap-12">
+            <div className=" px-5 flex flex-col gap-12 -mt-[80px] pt-[80px]" id="Season-and-Season-Extract-to-Airdrop">
               <div>
                 <h3 className=" text-[18px] text-[#41FFC6] pb-4">
                   Season 0 and Season 0.5: Extract to Airdrop
@@ -1094,7 +1097,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
               </div>
             </div>
-            <div className=" pl-5 flex flex-col gap-12 px-[20px]">
+            <div className=" -mt-[110px] pt-[80px] pl-5 flex flex-col gap-12 px-[20px]" id="Hold-our-NFTs">
               <div className=" flex flex-col gap-6">
                 <h3 className=" text-[18px] text-[#41FFC6]">Hold our NFTs</h3>
                 <div className=" text-[16px] space-y-8">
@@ -1159,7 +1162,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   />
                 </div>
               </div>
-              <div className=" flex flex-col gap-6">
+              <div className=" -mt-[110px] pt-[80px] flex flex-col gap-6" id="TaskOn-Questing">
                 <h3 className=" text-[18px] text-[#41FFC6]">TaskOn Questing</h3>
                 <div className=" text-[16px]">
                   In addition to collecting noCHILL in the Arena, players can
@@ -1185,7 +1188,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   />
                 </div>
               </div>
-              <div className=" flex flex-col gap-6">
+              <div className=" -mt-[110px] pt-[80px] flex flex-col gap-6" id="Discord-Daily-Quests">
                 <h3 className=" text-[18px] text-[#41FFC6]">
                   Discord Daily Quests
                 </h3>
@@ -1221,7 +1224,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                   />
                 </div>
               </div>
-              <div className=" flex flex-col gap-6">
+              <div className=" -mt-[110px] pt-[80px] flex flex-col gap-6" id="Buy-$CHILL-at-Launch">
                 <h3 className=" text-[18px] text-[#41FFC6]">
                   Buy $CHILL at Launch
                 </h3>
@@ -1239,7 +1242,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
             </div>
           </div>
 
-          <div className="max-w-[1000px] m-auto pt-[80px] text-white flex flex-col gap-12 relative z-20">
+          <div className="max-w-[1000px] m-auto -mt-[70px] pt-[110px] text-white flex flex-col gap-12 relative z-20" id="SNAPSHOT-DATE-26th-March-2025">
             <div className="relative h-fit">
               <Image
                 src={"/assets/chill/Section2Title.png"}
@@ -1252,7 +1255,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 SNAPSHOT DATE: 26th March 2025
               </div>
             </div>
-            <div className=" px-5 flex flex-col gap-12">
+            <div className=" px-5 flex flex-col gap-6">
               <div className="text-[18px] italic">
                 On this date, we will record all holders of both Collections and
                 submit the list to Streamflow for when the $CHILL claim website
@@ -1336,7 +1339,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
             className=" hidden md:block absolute right-[-10%] bottom-[-10%] opacity-70"
           />
         </div>
-        <div className=" w-full relative py-[20px] md:py-[80px]" id="Links">
+        <div className=" w-full relative py-[100px] -mt-[150px] md:-mt-[130px] md:py-[90px]" id="Links">
           <div className="max-w-[1000px] w-full m-auto text-white flex flex-col gap-12">
             <div className="relative h-fit">
               <Image

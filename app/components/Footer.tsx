@@ -188,7 +188,7 @@ const Footer: React.FC = () => {
             className="w-[361px] h-[359px] lg:w-[573px] lg:h-[570px]"
           />
         </div>
-        <div className="max-w-[1440px] w-[100%] lg:w-auto m-auto mt-auto md:mt-[130px] pl-4 lg:pl-[30px] xl:pl-[185px] pt-[100px] lg:pt-[58px] pb-[15px] lg:pb-[38px] flex flex-col items-center lg:items-start gap-2 lg:gap-8 absolute bottom-0 lg:relative">
+        <div className="max-w-[1440px] w-[100%] lg:w-auto m-auto pl-4 lg:pl-[30px] xl:pl-[185px] pt-[100px] lg:pt-[58px] pb-[15px] lg:pb-[38px] flex flex-col items-center lg:items-start gap-2 lg:gap-8 absolute bottom-0 lg:relative">
           <Image
             src={"/assets/footer/footer-logo.png"}
             alt="footer logo"
