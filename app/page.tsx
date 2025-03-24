@@ -33,49 +33,26 @@ export default function Home() {
       <div className="relative z-0 mt-[72px]">
         <main className="w-full">
           <div
-            className=" relative hero-section w-full h-[1024px] bg-top bg-no-repeat mb-[-2px]"
+            className=" relative hero-section overflow-hidden w-full bg-cover bg-[center_top] bg-no-repeat bg-[url('/assets/hero-img-mobile.webp')] md:bg-[url('/assets/hero-img.webp')]"
           >
-            {/* <Image
-              src={"/assets/hero-deco.webp"}
-              alt=""
-              width={1920}
-              height={1024}
-              className=" absolute bottom-0 left-0"
-            /> */}
-            {/* <div className=" w-[100%] absolute top-[340px] sm:top-[438px] flex flex-col justify-center items-center">
-              <div
-                className=" w-[100%] m-auto h-[170px] md:h-[356px] font-bold bg-[url('/assets/text_back_1.png')] bg-center bg-no-repeat flex justify-center items-center"
-                style={{ backgroundSize: "100% 100%" }}
-              >
-                <h1 className=" relative inline-block border-effect z-10 text-center pb-0 md:pb-1 text-[18px] text-stroke-2 md:text-[40px] lg:text-[54px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-15px] md:bg-[left_0_bottom_-35px] lg:bg-[left_0_bottom_-45px]">
-                  The Race for 150,000,000 $CHILL Has Begun
-                </h1>
-              </div>
-              <div className=" w-[100%] m-auto mt-[-130px] md:mt-[-210px] h-[200px] md:h-[250px] bg-[url('/assets/text_back_2.png')] bg-center bg-no-repeat flex justify-center items-center">
-                <h1 className=" text-center leading-[110%] font-bold text-[16px] md:text-[32px] lg:text-[40px] font-[Oswald] text-transparent bg-clip-text bg-gradient-to-b from-[#4EFFFF] to-[#fff] bg-[left_0_bottom_-30px]">
-                  Collect, Extract, Dominate.
-                </h1>
-              </div>
-            </div> */}
-            <div className=" h-[100%] w-full flex flex-col justify-center items-center">
+            <div className=" h-[100%] w-[140%] md:w-[120%] translate-x-[-15%] md:translate-x-[-10%] flex flex-col justify-center items-center">
               <Image
                 src={"/assets/main_text-1.svg"}
                 alt=""
                 width={1629}
                 height={356}
-                className=" mt-[-10%]"
+                className=" w-full mb-[-10%] mt-[0px] md:mt-[-150px]"
               />
               <Image
                 src={"/assets/main_text-2.svg"}
                 alt=""
                 width={649}
                 height={217}
-                className=" w-[60%] md:w-[40%] mt-[-11%]"
+                className=" w-[50%] md:w-[40%] mt-[-20px]"
               />
-            </div>
-            <div className="flex justify-center items-center w-[100%] absolute top-[490px] sm:top-[642px] md:top-[760px]">
+            <div className="flex justify-center items-center w-[100%] mt-[30px]">
               <button
-                className=" w-[163px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[26px] md:text-[34px] text-[#020215]"
+                className=" w-[143px] h-[42px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[22px] md:text-[34px] text-[#020215]"
                 style={{
                   backgroundImage: "url(./assets/play-now-btn.png)",
                   backgroundSize: "100% 100%",
@@ -95,6 +72,7 @@ export default function Home() {
                 className=" absolute top-[-40px] left-[50%] w-[160px] h-[160px]"
                 style={{ display: isButton ? "block" : "none" }}
               />
+            </div>
             </div>
           </div>
 

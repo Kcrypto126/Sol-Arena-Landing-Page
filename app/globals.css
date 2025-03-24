@@ -41,9 +41,8 @@ body {
 }
 
 .hero-section {
-  background-image: url("/assets/hero-img.webp");
-  height: 1300px;
-  background-size: 100% 100%;
+  /* background-image: url("/assets/hero-img.webp"); */
+  height: calc(100vw * 1536 / 2160);
 }
 
 .section {
@@ -61,7 +60,6 @@ body {
 @media only screen and (max-width: 1440px) {
   .hero-section {
     height: 1024px;
-    background-size: auto 100%;
   }
 
   .section {
@@ -78,11 +76,9 @@ body {
 }
 
 /* bg-[url('/assets/hero-img-mobile.webp')] sm:bg-[url('/assets/hero-img.webp')] */
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 768px) {
   .hero-section {
-    background-image: url("/assets/hero-img-mobile.webp");
-    height: 764px;
-    background-size: 100% 100%;
+    height: calc(100vw * 2292 / 1125);
   }
 }
 
