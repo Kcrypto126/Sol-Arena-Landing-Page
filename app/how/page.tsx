@@ -98,7 +98,7 @@ export default function Home() {
     //     <div className="border" style={{ marginTop: '200vh'}}>
     //     </div>
     // </div>
-    <div onScroll={handleScroll} className="scroller w-full h-screen bg-[url('/assets/play/back.webp')] bg-no-repeat bg-center bg-cover">
+    <div onScroll={handleScroll} className="px-0 md:px-9 scroller w-full h-screen bg-[url('/assets/play/back.webp')] bg-no-repeat bg-center bg-cover">
       {/* 1m */}
       <div className=" relative px-[30px] md:px-[20px]" id="1m">
         <div
@@ -248,9 +248,9 @@ export default function Home() {
                 <Image
                   src={"/assets/play/3m-2.png"}
                   alt="3m-2"
-                  width={197}
+                  width={170}
                   height={196}
-                  className=" absolute right-[-100px] bottom-[-100px]"
+                  className="  absolute right-[-50px] bottom-[-80px]"
                 />
                 <Image
                   src={"/assets/play/3m-3.png"}
