@@ -25,54 +25,68 @@ export default function Home() {
     setTimeout(() => {
       setIsButton(false);
     }, 600);
-    navigator.push("https://play.solarena.io")
+    navigator.push("https://play.solarena.io");
   };
 
   return (
     <>
       <div className="relative z-0 mt-[72px]">
         <main className="w-full">
-          <div
-            className=" relative hero-section overflow-hidden w-full bg-cover bg-[center_top] bg-no-repeat bg-[url('/assets/hero-img-mobile.webp')] md:bg-[url('/assets/hero-img.webp')]"
-          >
+          <div className=" relative hero-section overflow-hidden w-full bg-cover bg-[center_top] bg-no-repeat bg-[url('/assets/hero-img-mobile.webp')] md:bg-[url('/assets/hero-img.webp')]">
             <div className=" h-[100%] w-[140%] md:w-[120%] translate-x-[-15%] md:translate-x-[-10%] flex flex-col justify-center items-center">
+              <div className="w-full mb-[-10%] mt-[50px] md:mt-[-150px] relative flex justify-center items-center md:hidden">
+                <Image
+                  src={"/assets/text_back_1.png"}
+                  alt=""
+                  width={1629}
+                  height={356}
+                  className="w-full h-[154px]"
+                />
+                <Image
+                  src={"/assets/main_text-1.png"}
+                  alt=""
+                  width={1068}
+                  height={45}
+                  className=" mt-[3px] w-auto h-[45px] z-30 absolute movingObject"
+                />
+              </div>
               <Image
                 src={"/assets/main_text-1.svg"}
                 alt=""
                 width={1629}
                 height={356}
-                className=" w-full mb-[-10%] mt-[0px] md:mt-[-150px]"
+                className=" w-full mb-[-10%] mt-[0px] md:mt-[-150px] hidden md:block"
               />
               <Image
                 src={"/assets/main_text-2.svg"}
                 alt=""
                 width={649}
                 height={217}
-                className=" w-[50%] md:w-[40%] mt-[-20px]"
+                className=" w-[50%] md:w-[40%] mt-[-20px] z-40"
               />
-            <div className="flex justify-center items-center w-[100%] mt-[30px]">
-              <button
-                className=" w-[143px] h-[42px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[22px] md:text-[34px] text-[#020215]"
-                style={{
-                  backgroundImage: "url(./assets/play-now-btn.png)",
-                  backgroundSize: "100% 100%",
-                  boxShadow: "0px 0px 10px 1px",
-                }}
-                onClick={() => {
-                  sendEvent('play-now', {}, () => handlePlayButton());
-                }}
-              >
-                PLAY NOW
-              </button>
-              <Image
-                src={"/assets/play-spark.png"}
-                alt="spark"
-                width={264}
-                height={264}
-                className=" absolute top-[-40px] left-[50%] w-[160px] h-[160px]"
-                style={{ display: isButton ? "block" : "none" }}
-              />
-            </div>
+              <div className="flex justify-center items-center w-[100%] mt-[80px]">
+                <button
+                  className=" w-[153px] h-[52px] md:w-[260px] md:h-[84px] rounded-md font-semibold font-[Oswald] text-[24px] md:text-[34px] text-[#020215]"
+                  style={{
+                    backgroundImage: "url(./assets/play-now-btn.png)",
+                    backgroundSize: "100% 100%",
+                    boxShadow: "0px 0px 10px 1px",
+                  }}
+                  onClick={() => {
+                    sendEvent("play-now", {}, () => handlePlayButton());
+                  }}
+                >
+                  PLAY NOW
+                </button>
+                <Image
+                  src={"/assets/play-spark.png"}
+                  alt="spark"
+                  width={264}
+                  height={264}
+                  className=" absolute top-[-40px] left-[50%] w-[160px] h-[160px]"
+                  style={{ display: isButton ? "block" : "none" }}
+                />
+              </div>
             </div>
           </div>
 
@@ -117,7 +131,10 @@ export default function Home() {
                 </div>
 
                 <div className=" hidden md:block overflow-auto scrollbar-hide">
-                  <div id="card-content" className=" flex flex-row items-center gap-5 px-[70px] scrollbar-hide">
+                  <div
+                    id="card-content"
+                    className=" flex flex-row items-center gap-5 px-[70px] scrollbar-hide"
+                  >
                     <FeaturesSection
                       setCardID={setActiveCardID}
                       id={0}
@@ -272,7 +289,6 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                         />
                       </div>
                     </SwiperSlide>
-
                   </Swiper>
                 </div>
               </div>
@@ -283,7 +299,9 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
 
           <div
             className="section w-full bg-[left_-80px_top] md:bg-center bg-no-repeat mt-[-215px] z-10 relative pt-[215px]"
-            style={{ backgroundImage: "url('/assets/season/season_back.webp')" }}
+            style={{
+              backgroundImage: "url('/assets/season/season_back.webp')",
+            }}
           >
             <div className="max-w-[1440px] m-auto flex flex-col gap-14 justify-center items-center pt-[40px] md:pt-[50px] pb-[162px]">
               <Image
@@ -304,7 +322,9 @@ Collect mystery boxes to unlock power-ups and use them at just the right moment 
                   boxShadow: "0px 0px 20px 1px",
                 }}
                 onClick={() => {
-                  sendEvent('play-now', {}, () => navigator.push("https://play.solarena.io"));
+                  sendEvent("play-now", {}, () =>
+                    navigator.push("https://play.solarena.io")
+                  );
                 }}
               >
                 PLAY NOW

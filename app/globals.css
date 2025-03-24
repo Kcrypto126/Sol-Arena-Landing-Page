@@ -94,7 +94,8 @@ body {
   transform: translateX(-50%) !important;
 }
 
-.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet {
+.swiper-pagination-bullets.swiper-pagination-horizontal
+  .swiper-pagination-bullet {
   margin: 0 6px;
 }
 
@@ -102,7 +103,8 @@ body {
   padding: 4px;
 }
 
-.swiper-pagination-bullets.swiper-pagination-vertical .swiper-pagination-bullet {
+.swiper-pagination-bullets.swiper-pagination-vertical
+  .swiper-pagination-bullet {
   margin: 0px !important;
   margin-top: 6px !important;
   margin-bottom: 6px !important;
@@ -110,32 +112,32 @@ body {
 
 .swiper-pagination-bullets {
   width: fit-content !important;
-  border: 2px solid #492AD3;
+  border: 2px solid #492ad3;
   border-radius: 20px;
-  background-color: #130C51;
+  background-color: #130c51;
 }
 
 .swiper-pagination-bullet {
   width: 12px !important;
   height: 12px !important;
-  background-color: #8998DD !important;
+  background-color: #8998dd !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #5CFFE2 !important;
+  background-color: #5cffe2 !important;
 }
 
 .swiper-scrollbar {
-  background-color: #1F1F6B!important;
-  width: 4px!important;
-  border-radius: 4px!important; 
-}  
+  background-color: #1f1f6b !important;
+  width: 4px !important;
+  border-radius: 4px !important;
+}
 
-/* Custom scrollbar drag handle */  
-.swiper-scrollbar-drag {  
-  background-color: #5528E7!important; /* Blue color for the drag handle */  
-  border-radius: 4px!important;
-}  
+/* Custom scrollbar drag handle */
+.swiper-scrollbar-drag {
+  background-color: #5528e7 !important; /* Blue color for the drag handle */
+  border-radius: 4px !important;
+}
 
 @media only screen and (max-width: 768px) {
   .swiper-pagination-vertical {
@@ -163,3 +165,18 @@ body {
     display: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .movingObject {
+    animation: moveLeft 14s linear infinite;
+  }
+}
+
+@keyframes moveLeft {  
+  0% {  
+    transform: translateX(100vw); /* Start from right outside the viewport */  
+  }  
+  100% {  
+    transform: translateX(-120%); /* Move left to a specific position */  
+  }  
+} 
