@@ -9,14 +9,7 @@ import SwiperComponent from "../components/how/VerticalSwiper";
 import "./style.css";
 
 export default function Home() {
-  const IDList: Array<string> = [
-    "1m",
-    "23m",
-    "45m",
-    "67m",
-    "89m",
-    "10m"
-  ];
+  const IDList: Array<string> = ["1m", "23m", "45m", "67m", "89m", "10m"];
 
   const handleScroll = () => {
     // Get the current scroll position
@@ -98,7 +91,10 @@ export default function Home() {
     //     <div className="border" style={{ marginTop: '200vh'}}>
     //     </div>
     // </div>
-    <div onScroll={handleScroll} className="px-0 md:px-9 scroller w-full h-screen bg-[url('/assets/play/back.webp')] bg-no-repeat bg-center bg-cover">
+    <div
+      onScroll={handleScroll}
+      className="px-0 md:px-9 scroller w-full h-screen bg-[url('/assets/play/back.webp')] bg-no-repeat bg-center bg-cover"
+    >
       {/* 1m */}
       <div className=" relative px-[30px] md:px-[20px]" id="1m">
         <div
@@ -115,6 +111,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#6F58FF]"
             >
               <source src="/assets/play/video/video-1.mp4" type="video/mp4" />
@@ -163,6 +163,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#6F58FF] relative z-10"
                 >
                   <source
@@ -231,6 +235,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#6F58FF]"
                 >
                   <source
@@ -287,6 +295,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" relative border-[2px] md:border-[6px] border-[#6F58FF] z-10"
             >
               <source src="/assets/play/video/video-2.mp4" type="video/mp4" />
@@ -352,6 +364,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#6F58FF]"
             >
               <source src="/assets/play/video/video-3.mp4" type="video/mp4" />
@@ -406,6 +422,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#0F86E8]"
                 >
                   <source
@@ -453,6 +473,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#F29114]"
                 >
                   <source
@@ -510,6 +534,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#0F86E8]"
             >
               <source src="/assets/play/video/video-4.mp4" type="video/mp4" />
@@ -554,6 +582,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#F29114]"
             >
               <source src="/assets/play/video/video-5.mp4" type="video/mp4" />
@@ -609,6 +641,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#E80F5B]"
                 >
                   <source
@@ -656,6 +692,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#E80F5B]"
                 >
                   <source
@@ -699,6 +739,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#E80F5B]"
             >
               <source src="/assets/play/video/video-6.mp4" type="video/mp4" />
@@ -743,6 +787,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#E80F5B]"
             >
               <source src="/assets/play/video/video-7.mp4" type="video/mp4" />
@@ -784,6 +832,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#82E240]"
                 >
                   <source
@@ -832,6 +884,10 @@ export default function Home() {
                   height="360"
                   ref={addVideoRef}
                   controls
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
                   className=" border-[2px] md:border-[6px] border-[#FFEC40]"
                 >
                   <source
@@ -875,6 +931,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#82E240]"
             >
               <source src="/assets/play/video/video-8.mp4" type="video/mp4" />
@@ -920,6 +980,10 @@ export default function Home() {
               height="360"
               ref={addVideoRef}
               controls
+              autoPlay
+              muted
+              playsInline
+              loop
               className=" border-[2px] md:border-[6px] border-[#FFEC40]"
             >
               <source src="/assets/play/video/video-9.mp4" type="video/mp4" />
@@ -973,6 +1037,10 @@ export default function Home() {
                 height="360"
                 ref={addVideoRef}
                 controls
+                autoPlay
+                muted
+                playsInline
+                loop
                 className=" border-[2px] md:border-[6px] border-[#6F58FF]"
               >
                 <source
@@ -1048,7 +1116,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="pagination" >
+      <div className="pagination">
         <a href="#1m" className=""></a>
         <a href="#23m" className=""></a>
         <a href="#45m" className=""></a>
