@@ -168,7 +168,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   .movingObject {
-    animation: moveLeft 14s linear infinite;
+    animation: moveLeft 12s linear infinite;
   }
 }
 
@@ -177,6 +177,6 @@ body {
     transform: translateX(100vw); /* Start from right outside the viewport */  
   }  
   100% {  
-    transform: translateX(-120%); /* Move left to a specific position */  
+    transform: translateX(-100%); /* Move left to a specific position */  
   }  
 } 
