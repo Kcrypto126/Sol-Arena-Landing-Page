@@ -1008,7 +1008,7 @@ const RightContent: React.FC<RightContentTypeProps> = ({ className }) => {
                 </div>
                 <div className=" mt-3 mb-6">
                   <Image
-                    src={"/assets/chill/Gk4hWrqWcAAmPSo.jpg"}
+                    src={"/assets/chill/250218_SA_SeasonsAndAirdrop_Mar28.webp"}
                     alt=""
                     width={1920}
                     height={1080}
